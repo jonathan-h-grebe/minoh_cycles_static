@@ -1,0 +1,21 @@
+{
+  "name": "minoh-cycles-static",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["vue", "cycle-tours", "minoh", "static-site"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.5"
+  },
+  "description": "Static website for Minoh Cycles bike tour business"
+}
