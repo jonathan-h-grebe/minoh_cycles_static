@@ -40,8 +40,8 @@
             <p>Visit the stunning Minoh Falls and the historic Katsuoji Temple, where tradition meets natural beauty. Experience the spiritual atmosphere among thousands of daruma dolls and enjoy breathtaking mountain views.</p>
           </div>
           <div class="feature-images">
+            <img src="/assets/taki_landscape.JPG" alt="Minoh Falls waterfall" class="feature-img">
             <img src="/assets/view_of_pond_at_katsuoji.jpg" alt="Katsuoji Temple pond" class="feature-img">
-            <img src="/assets/lots_of_darumas.jpg" alt="Daruma dolls at temple" class="feature-img">
           </div>
         </div>
 
@@ -64,7 +64,7 @@
             <p>Enjoy an active adventure on our premium e-bikes that take the strain out of the hills. Perfect for all fitness levels - experience the thrill of cycling through mountain roads while the electric assist makes it effortless.</p>
           </div>
           <div class="feature-images">
-            <img src="/assets/trek_fx_+_ebikes.jpg" alt="Trek e-bikes" class="feature-img">
+            <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike at Minoh Falls" class="feature-img">
             <img src="/assets/riding_bikes_on_mountain_road.jpg" alt="Riders on mountain road" class="feature-img">
           </div>
         </div>
