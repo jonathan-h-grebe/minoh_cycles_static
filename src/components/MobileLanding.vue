@@ -30,8 +30,8 @@
           </button>
         </div>
         <a href="#tours" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</a>
-        <a href="#bikes" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</a>
-        <a href="#about" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</a>
+        <router-link to="/bikes" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
+        <router-link to="/about" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
         <a href="#book" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</a>
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">

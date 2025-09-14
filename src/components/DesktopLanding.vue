@@ -7,8 +7,8 @@
       <div class="flex items-center space-x-6">
         <nav class="space-x-4">
           <a href="#tours" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.tours') }}</a>
-          <a href="#bikes" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bikes') }}</a>
-          <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.about') }}</a>
+          <router-link to="/bikes" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bikes') }}</router-link>
+          <router-link to="/about" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.about') }}</router-link>
           <a href="#book" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bookNow') }}</a>
         </nav>
         <div class="language-selector">
@@ -289,7 +289,7 @@ export default {
 /* Tours Section */
 .tours-section {
   background-color: #f8fafc;
-  padding: 6rem 0;
+  padding-top: 6rem;
 }
 
 .section-title {

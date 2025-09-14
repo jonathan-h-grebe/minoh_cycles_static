@@ -49,5 +49,12 @@
     "title": "Ready for Your Adventure?",
     "description": "Book your Minoh Falls & Katsuoji bike tour today",
     "button": "Book Now"
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "bikes": "We're preparing detailed information about our bikes and rental options. In the meantime, please refer to our {viatorLink} for details.",
+    "viatorLinkText": "Viator listing",
+    "about": "We're working on our company story and team information. In the meantime, you can learn more about our tours on our {viatorLink}.",
+    "backToTours": "Back to Tours"
   }
 }
