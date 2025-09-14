@@ -36,7 +36,7 @@
         <!-- Waterfall & Temple Feature -->
         <div class="feature-row">
           <div class="feature-content">
-            <h3>Beautiful Waterfall & Sacred Temple</h3>
+            <h3>Beautiful Waterfall & Majestic Temple</h3>
             <p>Visit the stunning Minoh Falls and the historic Katsuoji Temple, where tradition meets natural beauty. Experience the spiritual atmosphere among thousands of daruma dolls and enjoy breathtaking mountain views.</p>
           </div>
           <div class="feature-images">
@@ -61,7 +61,7 @@
         <div class="feature-row">
           <div class="feature-content">
             <h3>Active Fun Without the Strain</h3>
-            <p>Enjoy an active adventure on our premium e-bikes that take the strain out of the hills. Perfect for all fitness levels - experience the thrill of cycling through mountain roads while the electric assist makes it effortless.</p>
+            <p>Enjoy an active adventure on our premium e-bikes that take the strain out of the hills. Experience the thrill of cycling through mountain roads while the electric assist makes it effortless.</p>
           </div>
           <div class="feature-images">
             <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike at Minoh Falls" class="feature-img">
@@ -85,11 +85,30 @@
         <div class="feature-row">
           <div class="feature-content">
             <h3>Easily Accessible from Osaka</h3>
-            <p>Just 30 minutes by train from Umeda Station - escape the city and find yourself in nature faster than you thought possible. The perfect day trip that feels like a world away from urban life.</p>
+            <p>Our tour starts and finishes 5 minutes on foot from Sakurai Station - just 20 minutes by train from Osaka-Umeda.
+              This makes it a great way to escape the city and find yourself in nature faster than you thought possible.
+            </p>
           </div>
-          <div class="feature-images">
-            <img src="/assets/road_alongside_hankyu_train.jpg" alt="Road alongside Hankyu train" class="feature-img">
-            <img src="/assets/road_alongside_hankyu_train_2.jpg" alt="Cycling route near train line" class="feature-img">
+          <div class="train-route-infographic-full">
+            <div class="route-vertical">
+              <div class="station-start-with-icon">
+                <span class="train-icon">🚃</span>
+                Osaka-Umeda Station
+              </div>
+              <div class="arrow-with-change">
+                <span class="arrow-down">↓</span>
+                <span class="line-info">Takarazuka Line (Platform 4/5)</span>
+                <span class="time">15 min</span>
+              </div>
+              <div class="station-transfer">Ishibashi Handai-Mae</div>
+              <div class="arrow-with-change">
+                <span class="arrow-down">↓</span>
+                <span class="change-info">Change to Minoh Line</span>
+                <span class="time">5 min</span>
+              </div>
+              <div class="station-end">Sakurai Station</div>
+            </div>
+            <div class="total-time">Total: 20 minutes + 1 change</div>
           </div>
         </div>
       </div>
@@ -98,11 +117,12 @@
     <!-- Bikes Section -->
     <section id="bikes" class="bikes-section">
       <div class="container">
-        <h2 class="section-title">Premium E-Bikes</h2>
+        <h2 class="section-title">Premium Bikes</h2>
         <div class="bikes-content">
           <div class="bike-info">
-            <h3>Trek FX+ E-Bikes</h3>
-            <p>Ride our premium Trek FX+ electric bikes, perfectly suited for mountain terrain. With professional fitting and safety briefing, you'll be comfortable and confident on every ride.</p>
+            <h3>High-Quality E-Bikes & More</h3>
+            <p>Choose from our selection of premium electric bikes and traditional road bikes, all perfectly maintained and suited for mountain terrain. With professional fitting and safety briefing, you'll be comfortable and confident on every ride.</p>
+            <a href="#bikes" class="bike-link">View All Our Bikes →</a>
           </div>
           <img src="/assets/fitting_rider_to_trek_bike.jpg" alt="Professional bike fitting" class="bike-img">
         </div>
@@ -284,6 +304,196 @@ export default {
   transform: scale(1.05);
 }
 
+/* Train Route Infographic */
+.train-route-infographic {
+  background-color: #f1f5f9;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.train-route-infographic h4 {
+  margin: 0 0 1rem 0;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.route-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.station {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 0.25rem;
+}
+
+.arrow {
+  color: #64748b;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+.time {
+  background-color: #10b981;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  margin: 0.25rem;
+}
+
+.change-info {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0.75rem 0;
+  font-style: italic;
+}
+
+.total-time {
+  background-color: #1e293b;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+/* Full Width Train Route Infographic */
+.train-route-infographic-full {
+  background-color: #f1f5f9;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.train-route-infographic-full .route-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.train-route-infographic-full .station-start-with-icon {
+  display: flex;
+  align-items: center;
+  width: 282px;
+  gap: 0.75rem;
+  background-color: #dc2626;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+}
+
+.train-route-infographic-full .train-icon {
+  font-size: 1.5rem;
+}
+
+.train-route-infographic-full .station-start,
+.train-route-infographic-full .station-end {
+  background-color: #dc2626;
+  color: white;
+  width: 282px;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+  border: 3px solid #b91c1c;
+}
+
+.train-route-infographic-full .station-transfer {
+  background-color: #64748b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.train-route-infographic-full .arrow-down {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.25rem 0;
+}
+
+.train-route-infographic-full .arrow-time-compact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.train-route-infographic-full .time-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.train-route-infographic-full .time {
+  background-color: #10b981;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.train-route-infographic-full .line-info {
+  font-size: 0.7rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.train-route-infographic-full .arrow-with-change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.train-route-infographic-full .change-info {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-style: italic;
+  background-color: #f1f5f9;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.train-route-infographic-full .total-time {
+  background-color: #1e293b;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
 /* Bikes Section */
 .bikes-section {
   background-color: white;
@@ -308,6 +518,20 @@ export default {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+.bike-link {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.bike-link:hover {
+  border-bottom-color: #2563eb;
 }
 
 .bike-img {
