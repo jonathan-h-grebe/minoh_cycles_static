@@ -7,7 +7,7 @@
   },
   "hero": {
     "brandName": "箕面サイクルス",
-    "title": "箕面の滝・勝尾寺E-Bikeツアー",
+    "title": "{minohFallsLink}・{katsuojiLink}E-Bikeツアー",
     "subtitle": "大阪の隠れた名所を体験 - 梅田からわずか20分",
     "cta": "冒険を予約する"
   },
@@ -15,7 +15,7 @@
     "sectionTitle": "自然と文化を発見",
     "waterfall": {
       "title": "美しい滝と荘厳な寺院",
-      "description": "美しい箕面の滝と歴史ある勝尾寺を訪れ、伝統と自然の美しさが出会う場所を体験してください。数千体のだるまに囲まれた精神的な雰囲気と、息を呑むような山の景色をお楽しみください。"
+      "description": "美しい{minohFallsLink}と歴史ある{katsuojiLink}を訪れ、伝統と自然の美しさが出会う場所を体験してください。数千体のだるまに囲まれた精神的な雰囲気と、息を呑むような山の景色をお楽しみください。"
     },
     "cultural": {
       "title": "文化・歴史体験",
@@ -55,6 +55,8 @@
     "bikes": "プレミアムバイクとレンタルオプションについての詳細な情報を準備中です。それまでは、詳細について{viatorLink}をご参照ください。",
     "viatorLinkText": "Viatorリスティング",
     "about": "私たちの会社の物語とチーム情報を作成中です。それまでは、{viatorLink}で私たちのツアーについて詳しく知ることができます。",
-    "backToTours": "ツアーに戻る"
+    "backToTours": "ツアーに戻る",
+    "katsuojiLinkText": "勝尾寺",
+    "minohFallsLinkText": "箕面の滝"
   }
 }

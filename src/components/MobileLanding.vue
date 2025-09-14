@@ -48,12 +48,19 @@
         <div class="hero-text">
           <p class="brand-name">{{ $t('hero.brandName') }}</p>
           <h1 class="hero-title">
-            {{ $t('hero.title') }}
+            <i18n-t keypath="hero.title" tag="span">
+              <template #minohFallsLink>
+                <a href="https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/" target="_blank" rel="noopener noreferrer" class="temple-link">Minoh Falls</a>
+              </template>
+              <template #katsuojiLink>
+                <a href="https://katsuo-ji-temple.or.jp/audioguidance/index.php" target="_blank" rel="noopener noreferrer" class="temple-link">Katsuoji Temple</a>
+              </template>
+            </i18n-t>
           </h1>
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}
           </p>
-          <button class="cta-button">{{ $t('hero.cta') }}</button>
+          <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button">{{ $t('hero.cta') }}</a>
         </div>
       </div>
     </section>
@@ -68,7 +75,16 @@
           <img src="/assets/taki_landscape.JPG" alt="Minoh Falls waterfall" class="feature-img-mobile">
           <div class="feature-content">
             <h3>{{ $t('tours.waterfall.title') }}</h3>
-            <p>{{ $t('tours.waterfall.description') }}</p>
+            <p>
+              <i18n-t keypath="tours.waterfall.description" tag="span">
+                <template #minohFallsLink>
+                  <a href="https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/" target="_blank" rel="noopener noreferrer" class="temple-link">Minoh Falls</a>
+                </template>
+                <template #katsuojiLink>
+                  <a href="https://katsuo-ji-temple.or.jp/audioguidance/index.php" target="_blank" rel="noopener noreferrer" class="temple-link">Katsuoji Temple</a>
+                </template>
+              </i18n-t>
+            </p>
           </div>
           <img src="/assets/view_of_pond_at_katsuoji.jpg" alt="Katsuoji Temple pond" class="feature-img-mobile">
         </div>
@@ -154,7 +170,7 @@
       <div class="container">
         <h2>{{ $t('cta.title') }}</h2>
         <p>{{ $t('cta.description') }}</p>
-        <button class="cta-button-large">{{ $t('cta.button') }}</button>
+        <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button-large">{{ $t('cta.button') }}</a>
       </div>
     </section>
   </div>
@@ -283,6 +299,8 @@ export default {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .cta-button:hover {
@@ -625,6 +643,8 @@ export default {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .cta-button-large:hover {
@@ -663,5 +683,26 @@ export default {
   outline: none;
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Temple Link Styling */
+.temple-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
+  transition: text-decoration-color 0.3s ease;
+}
+
+.temple-link:hover {
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.feature-content .temple-link {
+  color: #2563eb;
+  text-decoration-color: rgba(37, 99, 235, 0.5);
+}
+
+.feature-content .temple-link:hover {
+  text-decoration-color: #2563eb;
 }
 </style>

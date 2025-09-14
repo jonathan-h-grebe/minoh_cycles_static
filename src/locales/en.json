@@ -7,7 +7,7 @@
   },
   "hero": {
     "brandName": "Minoh Cycles",
-    "title": "Minoh Falls & Katsuoji Bike Tours",
+    "title": "{minohFallsLink} & {katsuojiLink} Bike Tours",
     "subtitle": "Experience the beauty of Osaka's hidden gem - just 20 minutes from Osaka-Umeda",
     "cta": "Book Your Adventure"
   },
@@ -15,7 +15,7 @@
     "sectionTitle": "Discover Nature & Culture",
     "waterfall": {
       "title": "Beautiful Waterfall & Majestic Temple",
-      "description": "Visit the stunning Minoh Falls and the historic Katsuoji Temple, where tradition meets natural beauty. Experience the spiritual atmosphere among thousands of daruma dolls and enjoy breathtaking mountain views."
+      "description": "Visit the stunning {minohFallsLink} and the historic {katsuojiLink}, where tradition meets natural beauty. Experience the spiritual atmosphere among thousands of daruma dolls and enjoy breathtaking mountain views."
     },
     "cultural": {
       "title": "Cultural & Historical Experience",
@@ -55,6 +55,8 @@
     "bikes": "We're preparing detailed information about our bikes and rental options. In the meantime, please refer to our {viatorLink} for details.",
     "viatorLinkText": "Viator listing",
     "about": "We're working on our company story and team information. In the meantime, you can learn more about our tours on our {viatorLink}.",
-    "backToTours": "Back to Tours"
+    "backToTours": "Back to Tours",
+    "katsuojiLinkText": "Katsuoji Temple",
+    "minohFallsLinkText": "Minoh Falls"
   }
 }
