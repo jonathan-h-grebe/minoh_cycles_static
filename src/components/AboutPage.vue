@@ -26,13 +26,13 @@
         <p class="coming-soon-subtitle">
           <i18n-t keypath="comingSoon.about" tag="span">
             <template #viatorLink>
-              <a 
-                href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="viator-link"
               >
-                {{ $t('comingSoon.viatorLinkText') }}
+                Viator listing
               </a>
             </template>
           </i18n-t>
@@ -175,6 +175,17 @@ export default {
 
 .back-button:hover {
   background-color: #1d4ed8;
+}
+
+.viator-link {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-decoration-color: rgba(96, 165, 250, 0.5);
+  transition: text-decoration-color 0.3s ease;
+}
+
+.viator-link:hover {
+  text-decoration-color: #60a5fa;
 }
 
 @media (max-width: 768px) {

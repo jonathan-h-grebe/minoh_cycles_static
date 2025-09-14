@@ -7,9 +7,10 @@
   },
   "hero": {
     "brandName": "箕面サイクルス",
-    "title": "{minohFallsLink}・{katsuojiLink}E-Bikeツアー",
+    "title": "箕面の滝・勝尾寺E-Bikeツアー",
     "subtitle": "大阪の隠れた名所を体験 - 梅田からわずか20分",
-    "cta": "冒険を予約する"
+    "cta": "冒険を予約する",
+    "scrollDown": "ツアーを見る"
   },
   "tours": {
     "sectionTitle": "自然と文化を発見",

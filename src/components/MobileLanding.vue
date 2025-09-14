@@ -48,14 +48,7 @@
         <div class="hero-text">
           <p class="brand-name">{{ $t('hero.brandName') }}</p>
           <h1 class="hero-title">
-            <i18n-t keypath="hero.title" tag="span">
-              <template #minohFallsLink>
-                <a href="https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/" target="_blank" rel="noopener noreferrer" class="temple-link">Minoh Falls</a>
-              </template>
-              <template #katsuojiLink>
-                <a href="https://katsuo-ji-temple.or.jp/audioguidance/index.php" target="_blank" rel="noopener noreferrer" class="temple-link">Katsuoji Temple</a>
-              </template>
-            </i18n-t>
+            {{ $t('hero.title') }}
           </h1>
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}

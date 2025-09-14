@@ -26,20 +26,18 @@
         <div class="hero-text fade-in">
           <p class="brand-name">{{ $t('hero.brandName') }}</p>
           <h1 class="hero-title">
-            <i18n-t keypath="hero.title" tag="span">
-              <template #minohFallsLink>
-                <a href="https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/" target="_blank" rel="noopener noreferrer" class="temple-link">Minoh Falls</a>
-              </template>
-              <template #katsuojiLink>
-                <a href="https://katsuo-ji-temple.or.jp/audioguidance/index.php" target="_blank" rel="noopener noreferrer" class="temple-link">Katsuoji Temple</a>
-              </template>
-            </i18n-t>
+            {{ $t('hero.title') }}
           </h1>
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}
           </p>
           <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button">{{ $t('hero.cta') }}</a>
         </div>
+      </div>
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-indicator" @click="scrollToTours">
+        <div class="scroll-text">{{ $t('hero.scrollDown') }}</div>
+        <div class="scroll-arrow">↓</div>
       </div>
     </section>
 
@@ -176,9 +174,40 @@ export default {
       locale.value = currentLocale.value
     }
 
+    const scrollToTours = () => {
+      const toursSection = document.getElementById('tours')
+      if (toursSection) {
+        const startPosition = window.pageYOffset
+        const targetPosition = toursSection.offsetTop - 60 // Account for fixed header
+        const distance = targetPosition - startPosition
+        const duration = 500 // 1 second
+        let startTime = null
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime
+          const timeElapsed = currentTime - startTime
+          const progress = Math.min(timeElapsed / duration, 1)
+
+          // Easing function for smooth animation
+          const ease = progress < 0.5
+            ? 4 * progress * progress * progress
+            : (progress - 1) * (2 * progress - 2) * (2 * progress - 2) + 1
+
+          window.scrollTo(0, startPosition + distance * ease)
+
+          if (timeElapsed < duration) {
+            requestAnimationFrame(animation)
+          }
+        }
+
+        requestAnimationFrame(animation)
+      }
+    }
+
     return {
       currentLocale,
-      changeLanguage
+      changeLanguage,
+      scrollToTours
     }
   }
 }
@@ -295,6 +324,50 @@ export default {
 
 .cta-button:hover {
   background-color: #1d4ed8;
+}
+
+/* Scroll Down Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+
+.scroll-indicator:hover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.scroll-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-arrow {
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Container */

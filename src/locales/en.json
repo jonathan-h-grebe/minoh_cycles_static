@@ -7,9 +7,10 @@
   },
   "hero": {
     "brandName": "Minoh Cycles",
-    "title": "{minohFallsLink} & {katsuojiLink} Bike Tours",
+    "title": "Minoh Falls & Katsuoji Temple Bike Tours",
     "subtitle": "Experience the beauty of Osaka's hidden gem - just 20 minutes from Osaka-Umeda",
-    "cta": "Book Your Adventure"
+    "cta": "Book Your Adventure",
+    "scrollDown": ""
   },
   "tours": {
     "sectionTitle": "Discover Nature & Culture",
@@ -54,7 +55,7 @@
     "title": "Coming Soon",
     "bikes": "We're preparing detailed information about our bikes and rental options. In the meantime, please refer to our {viatorLink} for details.",
     "viatorLinkText": "Viator listing",
-    "about": "We're working on our company story and team information. In the meantime, you can learn more about our tours on our {viatorLink}.",
+    "about": "In the meantime, you can learn more about our tours on our {viatorLink}.",
     "backToTours": "Back to Tours",
     "katsuojiLinkText": "Katsuoji Temple",
     "minohFallsLinkText": "Minoh Falls"
