@@ -29,10 +29,16 @@
             </svg>
           </button>
         </div>
-        <a href="#tours" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Tours</a>
-        <a href="#bikes" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Bikes</a>
-        <a href="#about" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">About</a>
-        <a href="#book" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100">Book Now</a>
+        <a href="#tours" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</a>
+        <a href="#bikes" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</a>
+        <a href="#about" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</a>
+        <a href="#book" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</a>
+        <div class="language-selector-mobile p-4">
+          <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
+            <option value="en">EN</option>
+            <option value="ja">日本語</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -40,14 +46,14 @@
     <section class="hero-section">
       <div class="hero-content">
         <div class="hero-text">
-          <p class="brand-name">Minoh Cycles</p>
+          <p class="brand-name">{{ $t('hero.brandName') }}</p>
           <h1 class="hero-title">
-            Minoh Falls & Katsuoji Bike Tours
+            {{ $t('hero.title') }}
           </h1>
           <p class="hero-subtitle">
-            Experience the beauty of Osaka's hidden gem - just 30 minutes from Umeda
+            {{ $t('hero.subtitle') }}
           </p>
-          <button class="cta-button">Book Your Adventure</button>
+          <button class="cta-button">{{ $t('hero.cta') }}</button>
         </div>
       </div>
     </section>
@@ -55,14 +61,14 @@
     <!-- Tours Section -->
     <section id="tours" class="tours-section">
       <div class="container">
-        <h2 class="section-title">Discover Nature & Culture</h2>
+        <h2 class="section-title">{{ $t('tours.sectionTitle') }}</h2>
         
         <!-- Waterfall & Temple Feature -->
         <div class="feature-card">
           <img src="/assets/taki_landscape.JPG" alt="Minoh Falls waterfall" class="feature-img-mobile">
           <div class="feature-content">
-            <h3>Beautiful Waterfall & Majestic Temple</h3>
-            <p>Visit the stunning Minoh Falls and the historic Katsuoji Temple, where tradition meets natural beauty. Experience the spiritual atmosphere among thousands of daruma dolls and enjoy breathtaking mountain views.</p>
+            <h3>{{ $t('tours.waterfall.title') }}</h3>
+            <p>{{ $t('tours.waterfall.description') }}</p>
           </div>
           <img src="/assets/view_of_pond_at_katsuoji.jpg" alt="Katsuoji Temple pond" class="feature-img-mobile">
         </div>
@@ -71,8 +77,8 @@
         <div class="feature-card">
           <img src="/assets/water_god_shrine.jpg" alt="Water god shrine" class="feature-img-mobile">
           <div class="feature-content">
-            <h3>Cultural & Historical Experience</h3>
-            <p>Immerse yourself in Japanese culture and history as you explore ancient temples and shrines. Learn about local traditions and the significance of these sacred places while enjoying the peaceful mountain setting.</p>
+            <h3>{{ $t('tours.cultural.title') }}</h3>
+            <p>{{ $t('tours.cultural.description') }}</p>
           </div>
           <img src="/assets/boys_at_katsuoji_with_mountain_view.jpg" alt="Visitors at temple with mountain view" class="feature-img-mobile">
         </div>
@@ -81,8 +87,8 @@
         <div class="feature-card">
           <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike at Minoh Falls" class="feature-img-mobile">
           <div class="feature-content">
-            <h3>Active Fun Without the Strain</h3>
-            <p>Enjoy an active adventure on our premium e-bikes that take the strain out of the hills. Experience the thrill of cycling through mountain roads while the electric assist makes it effortless.</p>
+            <h3>{{ $t('tours.ebike.title') }}</h3>
+            <p>{{ $t('tours.ebike.description') }}</p>
           </div>
           <img src="/assets/riding_bikes_on_mountain_road.jpg" alt="Riders on mountain road" class="feature-img-mobile">
         </div>
@@ -91,8 +97,8 @@
         <div class="feature-card">
           <img src="/assets/group_picture_with_view.jpg" alt="Group photo with scenic view" class="feature-img-mobile">
           <div class="feature-content">
-            <h3>Half Day Tour - Amazing Efficiency</h3>
-            <p>Experience the best of Minoh in just half a day without feeling rushed. Our carefully planned route maximizes your time, letting you see waterfalls, temples, and stunning mountain scenery in one perfect adventure.</p>
+            <h3>{{ $t('tours.efficiency.title') }}</h3>
+            <p>{{ $t('tours.efficiency.description') }}</p>
           </div>
           <img src="/assets/riders_together.jpg" alt="Riders together" class="feature-img-mobile">
         </div>
@@ -100,8 +106,8 @@
         <!-- Accessibility -->
         <div class="feature-card">
           <div class="feature-content">
-            <h3>Easily Accessible from Osaka</h3>
-            <p>Just 20 minutes by train from Umeda Station - escape the city and find yourself in nature faster than you thought possible. The perfect day trip that feels like a world away from urban life.</p>
+            <h3>{{ $t('tours.accessibility.title') }}</h3>
+            <p>{{ $t('tours.accessibility.description') }}</p>
           </div>
           <div class="train-route-infographic-mobile-full">
             <div class="route-vertical-mobile">
@@ -111,18 +117,18 @@
               </div>
               <div class="arrow-with-change-mobile">
                 <span class="arrow-down-mobile">↓</span>
-                <span class="line-info-mobile">Takarazuka Line (Platform 4/5)</span>
+                <span class="line-info-mobile">{{ $t('route.takarazukaLine') }}</span>
                 <span class="time-mobile">15 min</span>
               </div>
               <div class="station-transfer-mobile">Ishibashi Handai-Mae</div>
               <div class="arrow-with-change-mobile">
                 <span class="arrow-down-mobile">↓</span>
-                <span class="change-info-mobile">Change to Minoh Line</span>
+                <span class="change-info-mobile">{{ $t('route.changeToMinoh') }}</span>
                 <span class="time-mobile">5 min</span>
               </div>
               <div class="station-end-mobile">Sakurai</div>
             </div>
-            <div class="total-time-mobile">Total: 20 minutes + 1 change</div>
+            <a href="https://maps.app.goo.gl/ZSb7GFpuHcDHNjWT6" target="_blank" rel="noopener noreferrer" class="total-time-link-mobile">{{ $t('route.totalTime') }}</a>
           </div>
         </div>
       </div>
@@ -131,13 +137,13 @@
     <!-- Bikes Section -->
     <section id="bikes" class="bikes-section">
       <div class="container">
-        <h2 class="section-title">Premium Bikes</h2>
+        <h2 class="section-title">{{ $t('bikes.sectionTitle') }}</h2>
         <div class="bike-card">
           <img src="/assets/fitting_rider_to_trek_bike.jpg" alt="Professional bike fitting" class="bike-img-mobile">
           <div class="bike-info">
-            <h3>High-Quality E-Bikes & More</h3>
-            <p>Choose from our selection of premium electric bikes and traditional road bikes, all perfectly maintained and suited for mountain terrain. With professional fitting and safety briefing, you'll be comfortable and confident on every ride.</p>
-            <a href="#bikes" class="bike-link-mobile">View All Our Bikes →</a>
+            <h3>{{ $t('bikes.title') }}</h3>
+            <p>{{ $t('bikes.description') }}</p>
+            <a href="#bikes" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</a>
           </div>
         </div>
       </div>
@@ -146,9 +152,9 @@
     <!-- CTA Section -->
     <section id="book" class="cta-section">
       <div class="container">
-        <h2>Ready for Your Adventure?</h2>
-        <p>Book your Minoh Falls & Katsuoji bike tour today</p>
-        <button class="cta-button-large">Book Now</button>
+        <h2>{{ $t('cta.title') }}</h2>
+        <p>{{ $t('cta.description') }}</p>
+        <button class="cta-button-large">{{ $t('cta.button') }}</button>
       </div>
     </section>
   </div>
@@ -156,11 +162,14 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export default {
   name: 'MobileLanding',
   setup() {
+    const { locale } = useI18n()
     const menuOpen = ref(false)
+    const currentLocale = ref(locale.value)
 
     const toggleMenu = () => {
       menuOpen.value = !menuOpen.value
@@ -182,6 +191,10 @@ export default {
       }
     }
 
+    const changeLanguage = () => {
+      locale.value = currentLocale.value
+    }
+
     onMounted(() => {
       document.addEventListener('keydown', handleEscapeKey)
     })
@@ -194,7 +207,9 @@ export default {
       menuOpen,
       toggleMenu,
       closeMenu,
-      closeMenuOnBackdrop
+      closeMenuOnBackdrop,
+      currentLocale,
+      changeLanguage
     }
   }
 }
@@ -556,7 +571,8 @@ export default {
   white-space: nowrap;
 }
 
-.train-route-infographic-mobile-full .total-time-mobile {
+.train-route-infographic-mobile-full .total-time-link-mobile {
+  display: block;
   background-color: #1e293b;
   color: white;
   padding: 0.75rem;
@@ -564,6 +580,17 @@ export default {
   font-weight: 600;
   margin-top: 1rem;
   font-size: 0.85rem;
+  text-decoration: none;
+  border: 2px solid #1e293b;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.train-route-infographic-mobile-full .total-time-link-mobile:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px -5px rgba(37, 99, 235, 0.3);
 }
 
 /* CTA Section */
@@ -607,5 +634,34 @@ export default {
 /* Menu stays on top */
 .fixed {
   position: fixed;
+}
+
+/* Language selector mobile */
+.language-selector-mobile {
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: center;
+}
+
+.lang-select-mobile {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: white;
+  color: #374151;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  min-width: 120px;
+}
+
+.lang-select-mobile:hover {
+  border-color: #9ca3af;
+}
+
+.lang-select-mobile:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 </style>

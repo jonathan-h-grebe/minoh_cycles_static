@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "tours": "Tours",
+    "bikes": "Bikes",
+    "about": "About",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "brandName": "Minoh Cycles",
+    "title": "Minoh Falls & Katsuoji Bike Tours",
+    "subtitle": "Experience the beauty of Osaka's hidden gem - just 20 minutes from Osaka-Umeda",
+    "cta": "Book Your Adventure"
+  },
+  "tours": {
+    "sectionTitle": "Discover Nature & Culture",
+    "waterfall": {
+      "title": "Beautiful Waterfall & Majestic Temple",
+      "description": "Visit the stunning Minoh Falls and the historic Katsuoji Temple, where tradition meets natural beauty. Experience the spiritual atmosphere among thousands of daruma dolls and enjoy breathtaking mountain views."
+    },
+    "cultural": {
+      "title": "Cultural & Historical Experience",
+      "description": "Immerse yourself in Japanese culture and history as you explore ancient temples and shrines. Learn about local traditions and the significance of these sacred places while enjoying the peaceful mountain setting."
+    },
+    "ebike": {
+      "title": "Active Fun Without the Strain",
+      "description": "Enjoy an active adventure on premium e-bikes that take the strain out of the hills. Experience the thrill of cycling through mountain roads while the electric assist makes it effortless."
+    },
+    "efficiency": {
+      "title": "Half Day Tour - Amazing Efficiency",
+      "description": "Experience the best of Minoh in just half a day without feeling rushed. Our carefully planned route maximizes your time, letting you see waterfalls, temples, and stunning mountain scenery in one perfect adventure."
+    },
+    "accessibility": {
+      "title": "Easily Accessible from Osaka",
+      "description": "Our tour starts and finishes 5 minutes on foot from Sakurai Station - just 20 minutes by train from Osaka-Umeda. This makes it a great way to escape the city and find yourself in nature faster than you thought possible."
+    }
+  },
+  "route": {
+    "takarazukaLine": "Takarazuka Line (Platform 4/5)",
+    "changeToMinoh": "Change to Minoh Line",
+    "totalTime": "Total: 20 minutes + 1 change"
+  },
+  "bikes": {
+    "sectionTitle": "Premium Bikes",
+    "title": "High-Quality E-Bikes & More",
+    "description": "Choose from our selection of premium electric bikes and traditional road bikes, all perfectly maintained and suited for mountain terrain. With professional fitting and safety briefing, you'll be comfortable and confident on every ride.",
+    "viewAll": "View All Our Bikes →"
+  },
+  "cta": {
+    "title": "Ready for Your Adventure?",
+    "description": "Book your Minoh Falls & Katsuoji bike tour today",
+    "button": "Book Now"
+  }
+}
