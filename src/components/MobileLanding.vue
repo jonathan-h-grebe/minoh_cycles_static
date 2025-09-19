@@ -29,7 +29,7 @@
             </svg>
           </button>
         </div>
-        <a href="#tours" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</a>
+        <router-link to="/tours" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
         <router-link to="/bikes" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
         <router-link to="/about" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
         <a href="#book" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</a>
@@ -71,10 +71,10 @@
             <p>
               <i18n-t keypath="tours.waterfall.description" tag="span">
                 <template #minohFallsLink>
-                  <a href="https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/" target="_blank" rel="noopener noreferrer" class="temple-link">Minoh Falls</a>
+                  <a :href="currentLocale === 'ja' ? 'https://www.mino-park.jp/about/182/' : 'https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/'" target="_blank" rel="noopener noreferrer" class="temple-link">{{ currentLocale === 'ja' ? '箕面大滝' : 'Minoh Falls' }}</a>
                 </template>
                 <template #katsuojiLink>
-                  <a href="https://katsuo-ji-temple.or.jp/audioguidance/index.php" target="_blank" rel="noopener noreferrer" class="temple-link">Katsuoji Temple</a>
+                  <a :href="currentLocale === 'ja' ? 'https://katsuo-ji-temple.or.jp/' : 'https://katsuo-ji-temple.or.jp/audioguidance/index.php'" target="_blank" rel="noopener noreferrer" class="temple-link">{{ currentLocale === 'ja' ? '勝尾寺' : 'Katsuoji Temple' }}</a>
                 </template>
               </i18n-t>
             </p>
