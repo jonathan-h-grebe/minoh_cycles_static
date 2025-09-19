@@ -37,6 +37,18 @@
             </template>
           </i18n-t>
         </p>
+        <p class="instagram-text">
+          Follow us on
+          <a
+            href="https://www.instagram.com/minoh.cycle.tours/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram-link"
+          >
+            Instagram
+          </a>
+          for the latest photos and updates!
+        </p>
         <router-link to="/" class="back-button">{{ $t('comingSoon.backToTours') }}</router-link>
       </div>
     </section>
@@ -157,6 +169,13 @@ export default {
 
 .coming-soon-subtitle {
   font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.instagram-text {
+  font-size: 1.1rem;
   margin-bottom: 2rem;
   opacity: 0.9;
   line-height: 1.5;
@@ -186,6 +205,18 @@ export default {
 
 .viator-link:hover {
   text-decoration-color: #60a5fa;
+}
+
+.instagram-link {
+  color: #e91e63;
+  text-decoration: underline;
+  text-decoration-color: rgba(233, 30, 99, 0.5);
+  transition: text-decoration-color 0.3s ease;
+  font-weight: 600;
+}
+
+.instagram-link:hover {
+  text-decoration-color: #e91e63;
 }
 
 @media (max-width: 768px) {
