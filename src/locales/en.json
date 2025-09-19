@@ -59,5 +59,60 @@
     "backToTours": "Back to Tours",
     "katsuojiLinkText": "Katsuoji Temple",
     "minohFallsLinkText": "Minoh Falls"
+  },
+  "tourDetails": {
+    "title": "Tour Details",
+    "subtitle": "Experience the mountain roads of Minoh by e-bike and visit both Minoh Falls and Katsuoji, the temple of winning",
+    "description": "High quality electric-assist bikes for a range of heights and helmets are provided.",
+    "itinerary": "Itinerary",
+    "steps": {
+      "orientation": {
+        "title": "Orientation",
+        "description": "A short safety briefing, in which I will explain how to operate the e-bikes and ensure everyone's bikes and helmets are adjusted correctly."
+      },
+      "rideToFalls": {
+        "title": "Ride up to Minoh Falls",
+        "description": "Ride alongside the Hankyu railway line to Minoh Station (2.7km), before entering the forested mountain road and climbing to the waterfall."
+      },
+      "enjoyFalls": {
+        "title": "Take in Minoh Falls",
+        "description": "Enjoy a well-earned rest and take in the beauty of the waterfall."
+      },
+      "continueToTemple": {
+        "title": "Continue on to Katsuoji",
+        "description": "Ascend deeper into the mountain and complete the climb to Katsuoji temple (3.2km)."
+      },
+      "experienceTemple": {
+        "title": "Experience Katsuoji",
+        "description": "Make a leisurely circuit of the temple of winning, Katsuoji. Learn about Japanese Buddhism and take in stunning views of Osaka."
+      },
+      "returnToSakurai": {
+        "title": "Return to Sakurai",
+        "description": "Reap the reward of the uphill journey and enjoy the scenery as we descend back to Minoh and return to Sakurai."
+      }
+    },
+    "preparation": {
+      "whatToBring": "What to Bring",
+      "whatIncluded": "What is Included",
+      "items": {
+        "exerciseClothes": "Clothes you can exercise in",
+        "water": "Water",
+        "waterNote": "A 600ml bottle is provided per bike, but you'll need more in summer",
+        "sunscreen": "Sunscreen",
+        "backpack": "A backpack to hold your things",
+        "money": "Money",
+        "moneyNote": "entrance to Katsuoji is included, but you may want extra snacks or souvenirs",
+        "premiumEbike": "Premium e-bike",
+        "helmet": "Safety helmet",
+        "waterBottle": "600ml bottle of water",
+        "entranceFee": "Temple entrance fee",
+        "guide": "Professional guide"
+      }
+    },
+    "cta": {
+      "title": "Ready for Your Adventure?",
+      "description": "Book your Minoh Falls & Katsuoji bike tour today",
+      "button": "Book Now"
+    }
   }
 }

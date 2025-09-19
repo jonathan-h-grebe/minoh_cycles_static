@@ -59,5 +59,60 @@
     "backToTours": "ツアーに戻る",
     "katsuojiLinkText": "勝尾寺",
     "minohFallsLinkText": "箕面の滝"
+  },
+  "tourDetails": {
+    "title": "ツアー詳細",
+    "subtitle": "電動自転車で箕面の山道を体験し、箕面の滝と勝負の寺・勝尾寺の両方を訪れます",
+    "description": "様々な身長に対応した高品質電動アシスト自転車とヘルメットを提供いたします。",
+    "itinerary": "スケジュール",
+    "steps": {
+      "orientation": {
+        "title": "オリエンテーション",
+        "description": "電動自転車の操作方法を説明し、全員の自転車とヘルメットが正しく調整されているかを確認する短い安全説明。"
+      },
+      "rideToFalls": {
+        "title": "箕面の滝へ向かう",
+        "description": "阪急電鉄に沿って箕面駅まで走行（2.7km）後、森林に覆われた山道に入り、滝まで登ります。"
+      },
+      "enjoyFalls": {
+        "title": "箕面の滝を満喫",
+        "description": "よく頑張った後の休憩を楽しみ、滝の美しさを堪能します。"
+      },
+      "continueToTemple": {
+        "title": "勝尾寺へ続く",
+        "description": "山のより深い場所へ登り、勝尾寺への登りを完了します（3.2km）。"
+      },
+      "experienceTemple": {
+        "title": "勝尾寺を体験",
+        "description": "勝負の寺・勝尾寺をゆっくりと一周します。日本の仏教について学び、大阪の素晴らしい景色を楽しみます。"
+      },
+      "returnToSakurai": {
+        "title": "桜井へ戻る",
+        "description": "これまでの上り坂の恩恵を受け、箕面に下りながら景色を楽しみ、桜井に戻ります。"
+      }
+    },
+    "preparation": {
+      "whatToBring": "持参するもの",
+      "whatIncluded": "含まれるもの",
+      "items": {
+        "exerciseClothes": "運動できる服装",
+        "water": "水",
+        "waterNote": "1台につき600mlのペットボトルを提供しますが、特に夏場はより多く必要です",
+        "sunscreen": "日焼け止め",
+        "backpack": "荷物を入れるバックパック",
+        "money": "お金",
+        "moneyNote": "勝尾寺の入場料は含まれていますが、途中で追加のお菓子やお土産を購入したい場合があります",
+        "premiumEbike": "プレミアム電動自転車",
+        "helmet": "安全ヘルメット",
+        "waterBottle": "600mlペットボトル",
+        "entranceFee": "寺院入場料",
+        "guide": "プロガイド"
+      }
+    },
+    "cta": {
+      "title": "冒険の準備はできましたか？",
+      "description": "箕面の滝・勝尾寺バイクツアーを今日予約しましょう",
+      "button": "今すぐ予約"
+    }
   }
 }

@@ -22,24 +22,24 @@
 
     <section class="tours-hero-section">
       <div class="tours-hero-content">
-        <h1 class="tours-title">Tour Details</h1>
-        <p class="tours-subtitle">Experience the mountain roads of Minoh by e-bike and visit both Minoh Falls and Katsuoji, the temple of winning</p>
-        <p class="tours-description">High quality electric-assist bikes for a range of heights and helmets are provided.</p>
+        <h1 class="tours-title">{{ $t('tourDetails.title') }}</h1>
+        <p class="tours-subtitle">{{ $t('tourDetails.subtitle') }}</p>
+        <p class="tours-description">{{ $t('tourDetails.description') }}</p>
       </div>
     </section>
 
     <!-- Itinerary Section -->
     <section class="itinerary-section">
       <div class="container">
-        <h2 class="section-title">Itinerary</h2>
+        <h2 class="section-title">{{ $t('tourDetails.itinerary') }}</h2>
 
         <!-- Step 1: Orientation -->
         <div class="itinerary-step">
           <div class="step-content">
             <div class="step-number">1</div>
             <div class="step-details">
-              <h3 class="step-title">Orientation <span class="duration">(15 mins)</span></h3>
-              <p class="step-description">A short safety briefing, in which I will explain how to operate the e-bikes and ensure everyone's bikes and helmets are adjusted correctly.</p>
+              <h3 class="step-title">{{ $t('tourDetails.steps.orientation.title') }} <span class="duration">({{ currentLocale === 'ja' ? '15分' : '15 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.orientation.description') }}</p>
             </div>
           </div>
           <div class="step-image">
@@ -55,8 +55,8 @@
           <div class="step-content">
             <div class="step-number">2</div>
             <div class="step-details">
-              <h3 class="step-title">Ride up to Minoh Falls <span class="duration">(45 mins)</span></h3>
-              <p class="step-description">Ride alongside the Hankyu railway line to Minoh Station (2.7km), before entering the forested mountain road and climbing to the waterfall.</p>
+              <h3 class="step-title">{{ $t('tourDetails.steps.rideToFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '45分' : '45 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.rideToFalls.description') }}</p>
             </div>
           </div>
         </div>
@@ -66,8 +66,8 @@
           <div class="step-content">
             <div class="step-number">3</div>
             <div class="step-details">
-              <h3 class="step-title">Take in Minoh Falls <span class="duration">(30 mins)</span></h3>
-              <p class="step-description">Enjoy a well-earned rest and take in the beauty of the waterfall.</p>
+              <h3 class="step-title">{{ $t('tourDetails.steps.enjoyFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.enjoyFalls.description') }}</p>
             </div>
           </div>
           <div class="step-image">
@@ -83,8 +83,8 @@
           <div class="step-content">
             <div class="step-number">4</div>
             <div class="step-details">
-              <h3 class="step-title">Continue on to Katsuoji <span class="duration">(20 mins)</span></h3>
-              <p class="step-description">Ascend deeper into the mountain and complete the climb to Katsuoji temple (3.2km).</p>
+              <h3 class="step-title">{{ $t('tourDetails.steps.continueToTemple.title') }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.continueToTemple.description') }}</p>
             </div>
           </div>
         </div>
@@ -94,8 +94,8 @@
           <div class="step-content">
             <div class="step-number">5</div>
             <div class="step-details">
-              <h3 class="step-title">Experience Katsuoji <span class="duration">(1hr 15mins)</span></h3>
-              <p class="step-description">Make a leisurely circuit of the temple of winning, Katsuoji. Learn about Japanese Buddhism and take in stunning views of Osaka.</p>
+              <h3 class="step-title">{{ $t('tourDetails.steps.experienceTemple.title') }} <span class="duration">({{ currentLocale === 'ja' ? '1時間15分' : '1hr 15mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.experienceTemple.description') }}</p>
             </div>
           </div>
           <div class="step-image">
@@ -111,8 +111,8 @@
           <div class="step-content">
             <div class="step-number">6</div>
             <div class="step-details">
-              <h3 class="step-title">Return to Sakurai <span class="duration">(30 mins)</span></h3>
-              <p class="step-description">Reap the reward of the uphill journey and enjoy the scenery as we descend back to Minoh and return to Sakurai.</p>
+              <h3 class="step-title">{{ $t('tourDetails.steps.returnToSakurai.title') }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.returnToSakurai.description') }}</p>
             </div>
           </div>
         </div>
@@ -124,24 +124,24 @@
       <div class="container">
         <div class="preparation-grid">
           <div class="preparation-card">
-            <h3 class="preparation-title">What to Bring</h3>
+            <h3 class="preparation-title">{{ $t('tourDetails.preparation.whatToBring') }}</h3>
             <ul class="preparation-list">
-              <li>Clothes you can exercise in</li>
-              <li>Water <span class="note">*A 600ml bottle is provided per bike, but you'll need more in summer</span></li>
-              <li>Sunscreen</li>
-              <li>A backpack to hold your things</li>
-              <li>Money <span class="note">- entrance to Katsuoji is included, but you may want extra snacks or souvenirs</span></li>
+              <li>{{ $t('tourDetails.preparation.items.exerciseClothes') }}</li>
+              <li>{{ $t('tourDetails.preparation.items.water') }} <span class="note">*{{ $t('tourDetails.preparation.items.waterNote') }}</span></li>
+              <li>{{ $t('tourDetails.preparation.items.sunscreen') }}</li>
+              <li>{{ $t('tourDetails.preparation.items.backpack') }}</li>
+              <li>{{ $t('tourDetails.preparation.items.money') }} <span class="note">- {{ $t('tourDetails.preparation.items.moneyNote') }}</span></li>
             </ul>
           </div>
 
           <div class="preparation-card">
-            <h3 class="preparation-title">What is Included</h3>
+            <h3 class="preparation-title">{{ $t('tourDetails.preparation.whatIncluded') }}</h3>
             <ul class="preparation-list included">
-              <li>Premium e-bike</li>
-              <li>Safety helmet</li>
-              <li>600ml bottle of water</li>
-              <li>Temple entrance fee</li>
-              <li>Professional guide</li>
+              <li>{{ $t('tourDetails.preparation.items.premiumEbike') }}</li>
+              <li>{{ $t('tourDetails.preparation.items.helmet') }}</li>
+              <li>{{ $t('tourDetails.preparation.items.waterBottle') }}</li>
+              <li>{{ $t('tourDetails.preparation.items.entranceFee') }}</li>
+              <li>{{ $t('tourDetails.preparation.items.guide') }}</li>
             </ul>
           </div>
         </div>
@@ -151,9 +151,9 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
-        <h2>Ready for Your Adventure?</h2>
-        <p>Book your Minoh Falls & Katsuoji bike tour today</p>
-        <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button-large">Book Now</a>
+        <h2>{{ $t('tourDetails.cta.title') }}</h2>
+        <p>{{ $t('tourDetails.cta.description') }}</p>
+        <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button-large">{{ $t('tourDetails.cta.button') }}</a>
       </div>
     </section>
   </div>
