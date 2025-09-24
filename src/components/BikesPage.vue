@@ -20,26 +20,60 @@
       </div>
     </header>
 
-    <section class="coming-soon-section">
-      <div class="coming-soon-content">
-        <h1 class="coming-soon-title">{{ $t('comingSoon.title') }}</h1>
-        <p class="coming-soon-subtitle">
-          <i18n-t keypath="comingSoon.bikes" tag="span">
-            <template #viatorLink>
-              <a 
-                href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="viator-link"
-              >
-                {{ $t('comingSoon.viatorLinkText') }}
-              </a>
-            </template>
-          </i18n-t>
-        </p>
-        <router-link to="/" class="back-button">{{ $t('comingSoon.backToTours') }}</router-link>
+    <main class="bikes-content">
+      <div class="bikes-container">
+        <div class="bikes-header">
+          <h1 class="bikes-title">{{ $t('bikesPage.title') }}</h1>
+          <p class="bikes-subtitle">{{ $t('bikesPage.subtitle') }}</p>
+        </div>
+
+        <div class="bikes-grid">
+          <!-- Trek FX+ 2 -->
+          <div class="bike-card">
+            <div class="bike-image">
+              <img src="/assets/trek_fx_+_ebikes.jpg" alt="Trek FX+ 2 E-bike">
+            </div>
+            <div class="bike-details">
+              <h3 class="bike-name">{{ $t('bikesPage.trek.name') }}</h3>
+              <ul class="bike-specs">
+                <li>{{ $t('bikesPage.trek.height') }}</li>
+                <li>{{ $t('bikesPage.trek.tireSize') }}</li>
+                <li>{{ $t('bikesPage.trek.gears') }}</li>
+                <li>{{ $t('bikesPage.trek.brakes') }}</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Panasonic Xealt L3 -->
+          <div class="bike-card">
+            <div class="bike-image">
+              <img src="/assets/panasonic_xealt_l3.JPG" alt="Panasonic Xealt L3 E-bike">
+            </div>
+            <div class="bike-details">
+              <h3 class="bike-name">{{ $t('bikesPage.panasonic.name') }}</h3>
+              <ul class="bike-specs">
+                <li>{{ $t('bikesPage.panasonic.height') }}</li>
+                <li>{{ $t('bikesPage.panasonic.tireSize') }}</li>
+                <li>{{ $t('bikesPage.panasonic.gears') }}</li>
+                <li>{{ $t('bikesPage.panasonic.brakes') }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bikes-footer">
+          <p class="bikes-note">{{ $t('bikesPage.note') }}</p>
+          <a 
+            href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="book-button"
+          >
+            {{ $t('cta.button') }}
+          </a>
+        </div>
       </div>
-    </section>
+    </main>
   </div>
 </template>
 
@@ -114,79 +148,139 @@ export default {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-.coming-soon-section {
-  background-image: url('/assets/trek_fx_+_ebikes.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.bikes-content {
+  padding-top: 120px;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
-.coming-soon-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+.bikes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.coming-soon-content {
-  position: relative;
-  z-index: 10;
+.bikes-header {
   text-align: center;
-  color: white;
-  max-width: 600px;
-  padding: 3rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
+  margin-bottom: 3rem;
 }
 
-.coming-soon-title {
+.bikes-title {
   font-size: 3rem;
   font-weight: 800;
+  color: #1e293b;
   margin-bottom: 1rem;
-  line-height: 1.1;
 }
 
-.coming-soon-subtitle {
+.bikes-subtitle {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  line-height: 1.5;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-.back-button {
+.bikes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.bike-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bike-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.bike-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.bike-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.bike-card:hover .bike-image img {
+  transform: scale(1.05);
+}
+
+.bike-details {
+  padding: 2rem;
+}
+
+.bike-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.bike-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bike-specs li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.bike-specs li:before {
+  content: '•';
+  color: #2563eb;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.bike-specs li:last-child {
+  border-bottom: none;
+}
+
+.bikes-footer {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.bikes-note {
+  color: #64748b;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.book-button {
   display: inline-block;
   background-color: #2563eb;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.back-button:hover {
+.book-button:hover {
   background-color: #1d4ed8;
-}
-
-.viator-link {
-  color: #60a5fa;
-  text-decoration: underline;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.viator-link:hover {
-  color: #93c5fd;
-  text-decoration: none;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -198,13 +292,33 @@ export default {
     display: none;
   }
   
-  .coming-soon-title {
-    font-size: 2rem;
+  .bikes-content {
+    padding-top: 100px;
   }
   
-  .coming-soon-content {
-    padding: 2rem;
-    margin: 1rem;
+  .bikes-container {
+    padding: 1rem;
+  }
+  
+  .bikes-title {
+    font-size: 2.5rem;
+  }
+  
+  .bikes-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .bikes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .bike-details {
+    padding: 1.5rem;
+  }
+  
+  .bikes-footer {
+    padding: 1.5rem;
   }
 }
 </style>

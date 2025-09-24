@@ -61,6 +61,25 @@
     "katsuojiLinkText": "Katsuoji Temple",
     "minohFallsLinkText": "Minoh Falls"
   },
+  "bikesPage": {
+    "title": "Our E-Bikes",
+    "subtitle": "Choose from our selection of high-quality electric bikes, professionally maintained and fitted for your comfort and safety.",
+    "trek": {
+      "name": "Trek FX+ 2",
+      "height": "Suitable for riders: 175cm - 185cm",
+      "tireSize": "Tire size: 700×40C",
+      "gears": "8-speed drivetrain",
+      "brakes": "Tektro MD-U310 mechanical disc brakes"
+    },
+    "panasonic": {
+      "name": "Panasonic Xealt L3",
+      "height": "Suitable for riders: 150cm - 180cm",
+      "tireSize": "Tire size: 700×38C",
+      "gears": "8-speed drivetrain",
+      "brakes": "Shimano V-brakes with power modulator"
+    },
+    "note": "Both bikes come with professional fitting, safety helmets, and a comprehensive safety briefing. Perfect for mountain terrain and all fitness levels. Battery life on both bikes is sufficient for multiple trips, so you don't need to worry about running out of power."
+  },
   "tourDetails": {
     "title": "Tour Details",
     "subtitle": "Experience the mountain roads of Minoh by e-bike and visit both Minoh Falls and Katsuoji, the temple of winning",
