@@ -8,7 +8,7 @@
   "hero": {
     "brandName": "Minoh Cycles",
     "title": "Minoh Falls & Katsuoji Temple Bike Tours",
-    "subtitle": "Experience the beauty of Osaka's hidden gem - just 20 minutes from Osaka-Umeda",
+    "subtitle": "Experience the beauty of Osaka's hidden gem - just 30 minutes from Osaka-Umeda",
     "cta": "Book Your Adventure",
     "scrollDown": ""
   },
@@ -32,7 +32,7 @@
     },
     "accessibility": {
       "title": "Easily Accessible from Osaka",
-      "description": "Our tour starts and finishes 5 minutes on foot from Sakurai Station - just 20 minutes by train from Osaka-Umeda. This makes it a great way to escape the city and find yourself in nature faster than you thought possible."
+      "description": "Our tour starts and finishes 10 minutes on foot from Sakurai Station - just 20 minutes by train from Osaka-Umeda. This makes it a great way to escape the city and find yourself in nature faster than you thought possible."
     }
   },
   "route": {
@@ -49,6 +49,7 @@
   "cta": {
     "title": "Ready for Your Adventure?",
     "description": "Book your Minoh Falls & Katsuoji bike tour today",
+    "schedule": "Tours run every Friday at 9am",
     "button": "Book Now"
   },
   "comingSoon": {
@@ -112,6 +113,7 @@
     "cta": {
       "title": "Ready for Your Adventure?",
       "description": "Book your Minoh Falls & Katsuoji bike tour today",
+      "schedule": "Tours run every Wednesday and Friday at 9am",
       "button": "Book Now"
     }
   }
