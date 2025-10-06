@@ -28,6 +28,23 @@
       </div>
     </section>
 
+    <!-- Video Section -->
+    <section class="video-section">
+      <div class="container">
+        <h2 class="section-title">{{ currentLocale === 'ja' ? 'ルートプレビュー' : 'Route Preview' }}</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/aML0fkEdhyQ?start=33"
+            title="Minoh Cycles Tour Route Preview"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="video-iframe">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- Itinerary Section -->
     <section class="itinerary-section">
       <div class="container">
@@ -281,6 +298,32 @@ export default {
   font-size: 1.1rem;
   opacity: 0.8;
   line-height: 1.6;
+}
+
+/* Video Section */
+.video-section {
+  background-color: white;
+  padding: 6rem 0;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 }
 
 .itinerary-section {

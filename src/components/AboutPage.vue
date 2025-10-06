@@ -47,6 +47,15 @@
           >
             Instagram
           </a>
+          and
+          <a
+            href="https://www.youtube.com/@MinohCycles"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram-link"
+          >
+            YouTube
+          </a>
           for the latest photos and updates!
         </p>
         <router-link to="/" class="back-button">{{ $t('comingSoon.backToTours') }}</router-link>
