@@ -64,52 +64,24 @@
           </div>
         </div>
 
-        <!-- Step 2: Ride to Minoh Falls -->
+        <!-- Step 2: Ride to Katsuoji -->
         <div class="itinerary-step reverse">
           <div class="step-image">
-            <img src="/assets/riding_bikes_on_mountain_road.jpg" alt="Riding to Minoh Falls" class="step-img">
+            <img src="/assets/riding_bikes_on_mountain_road.jpg" alt="Riding to Katsuoji Temple" class="step-img">
           </div>
           <div class="step-content">
             <div class="step-number">2</div>
             <div class="step-details">
-              <h3 class="step-title">{{ $t('tourDetails.steps.rideToFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '45分' : '45 mins' }})</span></h3>
-              <p class="step-description">{{ $t('tourDetails.steps.rideToFalls.description') }}</p>
+              <h3 class="step-title">{{ $t('tourDetails.steps.rideToTemple.title') }} <span class="duration">({{ currentLocale === 'ja' ? '45分' : '45 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.rideToTemple.description') }}</p>
             </div>
           </div>
         </div>
 
-        <!-- Step 3: Minoh Falls -->
+        <!-- Step 3: Experience Katsuoji -->
         <div class="itinerary-step">
           <div class="step-content">
             <div class="step-number">3</div>
-            <div class="step-details">
-              <h3 class="step-title">{{ $t('tourDetails.steps.enjoyFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
-              <p class="step-description">{{ $t('tourDetails.steps.enjoyFalls.description') }}</p>
-            </div>
-          </div>
-          <div class="step-image">
-            <img src="/assets/taki_landscape.JPG" alt="Minoh Falls waterfall" class="step-img">
-          </div>
-        </div>
-
-        <!-- Step 4: Continue to Katsuoji -->
-        <div class="itinerary-step reverse">
-          <div class="step-image">
-            <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike journey through mountains" class="step-img">
-          </div>
-          <div class="step-content">
-            <div class="step-number">4</div>
-            <div class="step-details">
-              <h3 class="step-title">{{ $t('tourDetails.steps.continueToTemple.title') }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
-              <p class="step-description">{{ $t('tourDetails.steps.continueToTemple.description') }}</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 5: Experience Katsuoji -->
-        <div class="itinerary-step">
-          <div class="step-content">
-            <div class="step-number">5</div>
             <div class="step-details">
               <h3 class="step-title">{{ $t('tourDetails.steps.experienceTemple.title') }} <span class="duration">({{ currentLocale === 'ja' ? '1時間15分' : '1hr 15mins' }})</span></h3>
               <p class="step-description">{{ $t('tourDetails.steps.experienceTemple.description') }}</p>
@@ -117,6 +89,34 @@
           </div>
           <div class="step-image">
             <img src="/assets/view_of_pond_at_katsuoji.jpg" alt="Katsuoji Temple" class="step-img">
+          </div>
+        </div>
+
+        <!-- Step 4: Continue to Minoh Falls -->
+        <div class="itinerary-step reverse">
+          <div class="step-image">
+            <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike journey through mountains" class="step-img">
+          </div>
+          <div class="step-content">
+            <div class="step-number">4</div>
+            <div class="step-details">
+              <h3 class="step-title">{{ $t('tourDetails.steps.continueToFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.continueToFalls.description') }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5: Enjoy Minoh Falls -->
+        <div class="itinerary-step">
+          <div class="step-content">
+            <div class="step-number">5</div>
+            <div class="step-details">
+              <h3 class="step-title">{{ $t('tourDetails.steps.enjoyFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <p class="step-description">{{ $t('tourDetails.steps.enjoyFalls.description') }}</p>
+            </div>
+          </div>
+          <div class="step-image">
+            <img src="/assets/taki_landscape.JPG" alt="Minoh Falls waterfall" class="step-img">
           </div>
         </div>
 
@@ -537,6 +537,7 @@ export default {
   font-weight: 600;
   display: inline-block;
   transition: background-color 0.3s ease;
+  margin-left: 20px;
 }
 
 .cta-button-large:hover {

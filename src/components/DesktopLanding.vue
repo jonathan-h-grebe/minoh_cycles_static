@@ -126,9 +126,14 @@
                 <span class="change-info">{{ $t('route.changeToMinoh') }}</span>
                 <span class="time">5 min</span>
               </div>
-              <div class="station-end">Sakurai Station</div>
+              <div class="station-transfer">Sakurai Station</div>
+              <div class="arrow-with-change">
+                <span class="arrow-down">↓</span>
+                <span class="change-info">{{ $t('route.walkToMinohCycles') }}</span>
+                <span class="time">10 min</span>
+              </div>
+              <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end">Minoh Cycles</a>
             </div>
-            <a href="https://maps.app.goo.gl/ZSb7GFpuHcDHNjWT6" target="_blank" rel="noopener noreferrer" class="total-time-link">{{ $t('route.totalTime') }}</a>
           </div>
         </div>
       </div>
@@ -574,6 +579,19 @@ export default {
   border: 3px solid #b91c1c;
 }
 
+.train-route-infographic-full a.station-end {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.train-route-infographic-full a.station-end:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(220, 38, 38, 0.5);
+}
+
 .train-route-infographic-full .station-transfer {
   background-color: #64748b;
   color: white;
@@ -736,7 +754,7 @@ export default {
   padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 2rem !important;
+  margin-bottom: 2.5rem !important;
   display: inline-block;
   color: #60a5fa;
 }
@@ -753,6 +771,7 @@ export default {
   transition: background-color 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  margin-left: 20px;
 }
 
 .cta-button-large:hover {

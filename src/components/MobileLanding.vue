@@ -135,9 +135,14 @@
                 <span class="change-info-mobile">{{ $t('route.changeToMinoh') }}</span>
                 <span class="time-mobile">5 min</span>
               </div>
-              <div class="station-end-mobile">Sakurai</div>
+              <div class="station-transfer-mobile">Sakurai</div>
+              <div class="arrow-with-change-mobile">
+                <span class="arrow-down-mobile">↓</span>
+                <span class="change-info-mobile">{{ $t('route.walkToMinohCycles') }}</span>
+                <span class="time-mobile">10 min</span>
+              </div>
+              <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end-mobile">Minoh Cycles</a>
             </div>
-            <a href="https://maps.app.goo.gl/ZSb7GFpuHcDHNjWT6" target="_blank" rel="noopener noreferrer" class="total-time-link-mobile">{{ $t('route.totalTime') }}</a>
           </div>
         </div>
       </div>
@@ -533,6 +538,19 @@ export default {
   border: 2px solid #b91c1c;
 }
 
+.train-route-infographic-mobile-full a.station-end-mobile {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.train-route-infographic-mobile-full a.station-end-mobile:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(220, 38, 38, 0.5);
+}
+
 .train-route-infographic-mobile-full .station-transfer-mobile {
   background-color: #64748b;
   color: white;
@@ -649,7 +667,7 @@ export default {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 2rem !important;
+  margin-bottom: 2.5rem !important;
   display: inline-block;
   color: #60a5fa;
 }

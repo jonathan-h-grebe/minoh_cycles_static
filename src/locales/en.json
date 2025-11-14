@@ -38,6 +38,7 @@
   "route": {
     "takarazukaLine": "Takarazuka Line (Platform 4/5)",
     "changeToMinoh": "Change to Minoh Line",
+    "walkToMinohCycles": "Walk",
     "totalTime": "Total: 20 minutes + 1 change"
   },
   "bikes": {
@@ -49,7 +50,7 @@
   "cta": {
     "title": "Ready for Your Adventure?",
     "description": "Book your Minoh Falls & Katsuoji bike tour today",
-    "schedule": "Tours run every Wednesday, Thursday, and Friday at 9am",
+    "schedule": "Tours run every weekday at 9am",
     "button": "Book Now"
   },
   "comingSoon": {
@@ -82,29 +83,29 @@
   },
   "tourDetails": {
     "title": "Tour Details",
-    "subtitle": "Experience the mountain roads of Minoh by e-bike and visit both Minoh Falls and Katsuoji, the temple of winning",
+    "subtitle": "Experience the mountain roads of Minoh by e-bike and visit both Minoh Falls and Katsuoji, the temple of winning. Includes lunch at a locally recommended restaurant.",
     "description": "High quality electric-assist bikes for a range of heights and helmets are provided.",
     "itinerary": "Itinerary",
     "steps": {
       "orientation": {
         "title": "Orientation",
-        "description": "A short safety briefing, in which I will explain how to operate the e-bikes and ensure everyone's bikes and helmets are adjusted correctly."
+        "description": "A short welcome and briefing, in which I will explain how to operate the e-bikes and ensure everyone's bikes and helmets are adjusted correctly."
       },
-      "rideToFalls": {
-        "title": "Ride up to Minoh Falls",
-        "description": "Ride alongside the Hankyu railway line to Minoh Station (2.7km), before entering the forested mountain road and climbing to the waterfall."
-      },
-      "enjoyFalls": {
-        "title": "Take in Minoh Falls",
-        "description": "Enjoy a well-earned rest and take in the beauty of the waterfall."
-      },
-      "continueToTemple": {
-        "title": "Continue on to Katsuoji",
-        "description": "Ascend deeper into the mountain and complete the climb to Katsuoji temple (3.2km)."
+      "rideToTemple": {
+        "title": "Ride up to Katsuoji",
+        "description": "Ride alongside the Hankyu railway line to Minoh Station (2.7km), before entering the forested mountain road and climbing to Katsuoji temple (3.2km)."
       },
       "experienceTemple": {
         "title": "Experience Katsuoji",
         "description": "Make a leisurely circuit of the temple of winning, Katsuoji. Learn about Japanese Buddhism and take in stunning views of Osaka."
+      },
+      "continueToFalls": {
+        "title": "Continue on to Minoh Falls",
+        "description": "Descend and then ascend again through the mountain to reach the waterfall."
+      },
+      "enjoyFalls": {
+        "title": "Take in Minoh Falls",
+        "description": "Enjoy a well-earned rest and take in the beauty of the waterfall."
       },
       "returnToSakurai": {
         "title": "Return to Sakurai",
@@ -132,7 +133,7 @@
     "cta": {
       "title": "Ready for Your Adventure?",
       "description": "Book your Minoh Falls & Katsuoji bike tour today",
-      "schedule": "Tours run every Wednesday, Thursday, and Friday at 9am",
+      "schedule": "Tours run every weekday at 9am",
       "button": "Book Now"
     }
   }
