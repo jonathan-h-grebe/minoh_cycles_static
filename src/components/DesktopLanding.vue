@@ -86,36 +86,39 @@
         </div>
 
         <!-- Accessibility -->
-        <div class="feature-row">
-          <div class="feature-content">
+        <div class="accessibility-section">
+          <div class="accessibility-text">
             <h3>{{ $t('tours.accessibility.title') }}</h3>
             <p>{{ $t('tours.accessibility.description') }}</p>
           </div>
-          <div class="train-route-infographic-full">
-            <div class="route-vertical">
-              <div class="station-start-with-icon">
-                <span class="train-icon">🚃</span>
-                Osaka-Umeda Station
+          <div class="accessibility-visuals">
+            <div class="train-route-infographic-full">
+              <div class="route-vertical">
+                <div class="station-start-with-icon">
+                  <span class="train-icon">🚃</span>
+                  Osaka-Umeda Station
+                </div>
+                <div class="arrow-with-change">
+                  <span class="arrow-down">↓</span>
+                  <span class="line-info">{{ $t('route.takarazukaLine') }}</span>
+                  <span class="time">15 min</span>
+                </div>
+                <div class="station-transfer">Ishibashi Handai-Mae</div>
+                <div class="arrow-with-change">
+                  <span class="arrow-down">↓</span>
+                  <span class="change-info">{{ $t('route.changeToMinoh') }}</span>
+                  <span class="time">5 min</span>
+                </div>
+                <div class="station-transfer">Sakurai Station</div>
+                <div class="arrow-with-change">
+                  <span class="arrow-down">↓</span>
+                  <span class="change-info">{{ $t('route.walkToMinohCycles') }}</span>
+                  <span class="time">10 min</span>
+                </div>
+                <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end">Minoh Cycles</a>
               </div>
-              <div class="arrow-with-change">
-                <span class="arrow-down">↓</span>
-                <span class="line-info">{{ $t('route.takarazukaLine') }}</span>
-                <span class="time">15 min</span>
-              </div>
-              <div class="station-transfer">Ishibashi Handai-Mae</div>
-              <div class="arrow-with-change">
-                <span class="arrow-down">↓</span>
-                <span class="change-info">{{ $t('route.changeToMinoh') }}</span>
-                <span class="time">5 min</span>
-              </div>
-              <div class="station-transfer">Sakurai Station</div>
-              <div class="arrow-with-change">
-                <span class="arrow-down">↓</span>
-                <span class="change-info">{{ $t('route.walkToMinohCycles') }}</span>
-                <span class="time">10 min</span>
-              </div>
-              <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end">Minoh Cycles</a>
             </div>
+            <iframe class="google-maps-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26203.169862743463!2d135.42458197431637!3d34.82112890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fb9093906f1b%3A0x4a18e9ef8a34f850!2sMinoh%20Cycles!5e0!3m2!1sen!2sjp!4v1763531840085!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -129,7 +132,7 @@
           <div class="bike-info">
             <h3>{{ $t('bikes.title') }}</h3>
             <p>{{ $t('bikes.description') }}</p>
-            <a href="#bikes" class="bike-link">{{ $t('bikes.viewAll') }}</a>
+            <router-link to="/bikes" class="bike-link">{{ $t('bikes.viewAll') }}</router-link>
           </div>
           <img src="/assets/fitting_rider_to_trek_bike.jpg" alt="Professional bike fitting" class="bike-img">
         </div>
@@ -475,6 +478,48 @@ export default {
   font-size: 0.8rem;
 }
 
+/* Accessibility Section Layout */
+.accessibility-section {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin-bottom: 6rem;
+}
+
+.accessibility-text {
+  margin-bottom: 3rem;
+}
+
+.accessibility-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.accessibility-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.accessibility-visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.google-maps-embed {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
 /* Full Width Train Route Infographic */
 .train-route-infographic-full {
   background-color: #f1f5f9;
@@ -801,19 +846,28 @@ export default {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .feature-row,
   .bikes-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .feature-images {
     grid-template-columns: 1fr;
   }
-  
+
   .section-title {
     font-size: 2rem;
+  }
+
+  .accessibility-visuals {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .google-maps-embed {
+    min-height: 300px;
   }
 }
 </style>
