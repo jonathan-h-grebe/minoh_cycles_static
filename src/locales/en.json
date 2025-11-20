@@ -64,7 +64,7 @@
   },
   "bikesPage": {
     "title": "Our E-Bikes",
-    "subtitle": "Choose from our selection of high-quality electric bikes, professionally maintained and fitted for your comfort and safety.",
+    "subtitle": "Choose from our selection of high-quality electric-assist bikes, professionally maintained and fitted for your comfort and safety.",
     "trek": {
       "name": "Trek FX+ 2",
       "height": "Suitable for riders: 175cm - 185cm",
@@ -79,33 +79,35 @@
       "gears": "8-speed drivetrain",
       "brakes": "Shimano V-brakes with power modulator"
     },
-    "note": "Both bikes come with professional fitting, safety helmets, and a comprehensive safety briefing. Perfect for mountain terrain and all fitness levels. Battery life on both bikes is sufficient for multiple trips, so you don't need to worry about running out of power."
+    "note": "Helmets are provided and seat positions will be adjusted according to rider height.  Perfect for mountain terrain and all fitness levels. Battery life on both bikes is sufficient for multiple trips, so you don't need to worry about running out of power."
   },
   "toursList": {
     "title": "Our Tours",
-    "subtitle": "Explore Northern Osaka by e-bike with our guided tours",
+    "subtitle_1": "Want to know the meanings behind the shrines of Katsuoji,\n insider tips for visiting Osaka, and local restaurant recommendations?",
+    "subtitle_2": "Unsure about Japanese cycling road rules, or just prefer to have a translator on hand?",
+    "subtitle_3": "Join a guided tour, for all this and more.",
     "categories": {
-      "minohKatsuoji": "Minoh Park & Katsuoji Area",
+      "minohKatsuoji": "Tours of Minoh Park & Katsuoji Area",
       "other": "Other Tours"
     },
     "tours": {
       "katsuojiMinohFalls": {
-        "name": "Katsuoji & Minoh Falls Half-Day Tour",
-        "description": "Visit both Katsuoji Temple and the stunning Minoh Falls on this half-day e-bike adventure through forested mountain roads.",
-        "duration": "4 hours",
+        "name": "Katsuoji & Minoh Falls Half-Day Tour With Lunch",
+        "description": "Visit both Katsuoji Temple and Minoh Falls on this half-day adventure, rounded off with lunch at a beloved local restaurant.",
+        "duration": "9AM~2PM",
         "difficulty": "Moderate"
       },
       "katsuojiVisitorCenter": {
         "name": "Katsuoji & Minoh Visitor Center Tour",
-        "description": "Explore Katsuoji Temple and discover the natural history of Minoh at the Visitor Center. Perfect for nature and culture enthusiasts.",
-        "duration": "3.5 hours",
-        "difficulty": "Easy"
+        "description": "Experience Katsuoji Temple and discover Minoh's natural history at the Visitor Center. Perfect for nature and culture enthusiasts.",
+        "duration": "9AM~12:30",
+        "difficulty": "Moderate"
       },
       "satsukiyamaSky": {
         "name": "Satsukiyama Sky Tour",
-        "description": "Challenge yourself with breathtaking mountain views and winding roads on this scenic e-bike tour.",
-        "duration": "5 hours",
-        "difficulty": "Challenging"
+        "description": "Explore a lesser known, but equally beautiful area, and take in views over the surrounding areas.",
+        "duration": "3 hours",
+        "difficulty": "Moderate"
       }
     },
     "viewDetails": "View Details",
@@ -140,8 +142,8 @@
         "description": "Enjoy a well-earned rest and take in the beauty of the waterfall."
       },
       "returnToSakurai": {
-        "title": "Return to Sakurai",
-        "description": "Reap the reward of the uphill journey and enjoy the scenery as we descend back to Minoh and return to Sakurai."
+        "title": "Return to Minoh Cycles HQ",
+        "description": "Reap the reward of the previous climbs and take in views of Osaka as we descend back into town. After returning the bikes, it's a 10 minute walk to Sakurai station."
       }
     },
     "preparation": {
@@ -155,9 +157,11 @@
         "backpack": "A backpack to hold your things",
         "money": "Money",
         "moneyNote": "entrance to Katsuoji is included, but you may want extra snacks or souvenirs",
-        "premiumEbike": "Premium e-bike",
-        "helmet": "Safety helmet",
+        "premiumEbike": "E-bike",
+        "helmet": "Bicyle helmet",
         "waterBottle": "600ml bottle of water",
+        "tsMarkInsurance": "Blue TS-Mark bicycle insurance (Covers rider injury & liability to 3rd parties)",
+        "snack": "A small snack to see you though to lunch",
         "entranceFee": "Temple entrance fee",
         "guide": "Professional guide"
       }

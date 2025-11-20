@@ -13,7 +13,13 @@
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}
           </p>
-          <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button">{{ $t('hero.cta') }}</a>
+          <div class="cta-buttons">
+            <router-link to="/tours" class="cta-button primary">View Tours</router-link>
+            <button class="cta-button secondary disabled" disabled>
+              Rent An E-Bike
+              <span class="tooltip">Coming Soon</span>
+            </button>
+          </div>
         </div>
       </div>
       <!-- Scroll Down Indicator -->
@@ -276,22 +282,82 @@ export default {
   opacity: 0.9;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .cta-button {
-  background-color: #2563eb;
-  color: white;
   padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  position: relative;
 }
 
-.cta-button:hover {
+.cta-button.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.cta-button.primary:hover {
   background-color: #1d4ed8;
+}
+
+.cta-button.secondary {
+  background-color: #10b981;
+  color: white;
+}
+
+.cta-button.secondary:hover:not(.disabled) {
+  background-color: #059669;
+}
+
+.cta-button.disabled {
+  background-color: #9ca3af;
+  color: #e5e7eb;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.cta-button.disabled:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e293b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1e293b;
 }
 
 /* Scroll Down Indicator */

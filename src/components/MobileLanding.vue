@@ -29,10 +29,10 @@
             </svg>
           </button>
         </div>
-        <router-link to="/tours" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
-        <router-link to="/bikes" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
-        <router-link to="/rentals" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
-        <router-link to="/about" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
+        <router-link to="/tours" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
+        <router-link to="/bikes" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
+        <router-link to="/rentals" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
+        <router-link to="/about" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
         <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Template/d50171-5603445P2" target="_blank" rel="noopener noreferrer" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</a>
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
@@ -54,7 +54,13 @@
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}
           </p>
-          <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button">{{ $t('hero.cta') }}</a>
+          <div class="cta-buttons">
+            <router-link to="/tours" class="cta-button primary">View Tours</router-link>
+            <button class="cta-button secondary disabled" disabled>
+              Rent An E-Bike
+              <span class="tooltip">Coming Soon</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -159,7 +165,7 @@
           <div class="bike-info">
             <h3>{{ $t('bikes.title') }}</h3>
             <p>{{ $t('bikes.description') }}</p>
-            <a href="#bikes" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</a>
+            <router-link to="/bikes" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</router-link>
           </div>
         </div>
       </div>
@@ -227,6 +233,11 @@ export default {
       locale.value = currentLocale.value
     }
 
+    const closeMenuAndScrollTop = () => {
+      closeMenu()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
     onMounted(() => {
       document.addEventListener('keydown', handleEscapeKey)
     })
@@ -241,7 +252,8 @@ export default {
       closeMenu,
       closeMenuOnBackdrop,
       currentLocale,
-      changeLanguage
+      changeLanguage,
+      closeMenuAndScrollTop
     }
   }
 }
@@ -305,22 +317,82 @@ export default {
   line-height: 1.4;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .cta-button {
-  background-color: #2563eb;
-  color: white;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  position: relative;
 }
 
-.cta-button:hover {
+.cta-button.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.cta-button.primary:hover {
   background-color: #1d4ed8;
+}
+
+.cta-button.secondary {
+  background-color: #10b981;
+  color: white;
+}
+
+.cta-button.secondary:hover:not(.disabled) {
+  background-color: #059669;
+}
+
+.cta-button.disabled {
+  background-color: #9ca3af;
+  color: #e5e7eb;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.cta-button.disabled:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e293b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1e293b;
 }
 
 /* Container */
