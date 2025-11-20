@@ -29,10 +29,10 @@
             </svg>
           </button>
         </div>
-        <router-link to="/tours" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
-        <router-link to="/bikes" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
-        <router-link to="/rentals" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
-        <router-link to="/about" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
+        <router-link to="/tours" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
+        <router-link to="/bikes" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
+        <router-link to="/rentals" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
+        <router-link to="/about" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
         <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Template/d50171-5603445P2" target="_blank" rel="noopener noreferrer" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</a>
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
@@ -54,7 +54,13 @@
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}
           </p>
-          <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button">{{ $t('hero.cta') }}</a>
+          <div class="cta-buttons">
+            <router-link to="/tours" class="cta-button primary">View Tours</router-link>
+            <button class="cta-button secondary disabled" disabled>
+              Rent An E-Bike
+              <span class="tooltip">Coming Soon</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -145,6 +151,7 @@
               <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end-mobile">Minoh Cycles</a>
             </div>
           </div>
+          <iframe class="google-maps-embed-mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26203.169862743463!2d135.42458197431637!3d34.82112890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fb9093906f1b%3A0x4a18e9ef8a34f850!2sMinoh%20Cycles!5e0!3m2!1sen!2sjp!4v1763531840085!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -158,7 +165,7 @@
           <div class="bike-info">
             <h3>{{ $t('bikes.title') }}</h3>
             <p>{{ $t('bikes.description') }}</p>
-            <a href="#bikes" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</a>
+            <router-link to="/bikes" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</router-link>
           </div>
         </div>
       </div>
@@ -226,6 +233,11 @@ export default {
       locale.value = currentLocale.value
     }
 
+    const closeMenuAndScrollTop = () => {
+      closeMenu()
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
     onMounted(() => {
       document.addEventListener('keydown', handleEscapeKey)
     })
@@ -240,7 +252,8 @@ export default {
       closeMenu,
       closeMenuOnBackdrop,
       currentLocale,
-      changeLanguage
+      changeLanguage,
+      closeMenuAndScrollTop
     }
   }
 }
@@ -304,22 +317,82 @@ export default {
   line-height: 1.4;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .cta-button {
-  background-color: #2563eb;
-  color: white;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  position: relative;
 }
 
-.cta-button:hover {
+.cta-button.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.cta-button.primary:hover {
   background-color: #1d4ed8;
+}
+
+.cta-button.secondary {
+  background-color: #10b981;
+  color: white;
+}
+
+.cta-button.secondary:hover:not(.disabled) {
+  background-color: #059669;
+}
+
+.cta-button.disabled {
+  background-color: #9ca3af;
+  color: #e5e7eb;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.cta-button.disabled:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e293b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1e293b;
 }
 
 /* Container */
@@ -491,6 +564,14 @@ export default {
   font-weight: 600;
   margin-top: 0.75rem;
   font-size: 0.75rem;
+}
+
+/* Google Maps Embed Mobile */
+.google-maps-embed-mobile {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  margin-top: 1.5rem;
 }
 
 /* Full Width Train Route Infographic Mobile */

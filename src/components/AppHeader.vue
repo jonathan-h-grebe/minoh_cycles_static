@@ -6,10 +6,10 @@
     </div>
     <div class="flex items-center space-x-6">
       <nav class="space-x-4 desktop-nav">
-        <router-link to="/tours" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.tours') }}</router-link>
-        <router-link to="/bikes" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bikes') }}</router-link>
-        <router-link to="/rentals" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Cycle Hire</router-link>
-        <router-link to="/about" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.about') }}</router-link>
+        <router-link to="/tours" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.tours') }}</router-link>
+        <router-link to="/bikes" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bikes') }}</router-link>
+        <router-link to="/rentals" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Cycle Hire</router-link>
+        <router-link to="/about" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.about') }}</router-link>
         <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bookNow') }}</a>
       </nav>
       <div class="language-selector">
@@ -36,9 +36,14 @@ export default {
       locale.value = currentLocale.value
     }
 
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
     return {
       currentLocale,
-      changeLanguage
+      changeLanguage,
+      scrollToTop
     }
   }
 }

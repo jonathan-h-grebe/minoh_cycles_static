@@ -13,7 +13,13 @@
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}
           </p>
-          <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button">{{ $t('hero.cta') }}</a>
+          <div class="cta-buttons">
+            <router-link to="/tours" class="cta-button primary">View Tours</router-link>
+            <button class="cta-button secondary disabled" disabled>
+              Rent An E-Bike
+              <span class="tooltip">Coming Soon</span>
+            </button>
+          </div>
         </div>
       </div>
       <!-- Scroll Down Indicator -->
@@ -86,36 +92,39 @@
         </div>
 
         <!-- Accessibility -->
-        <div class="feature-row">
-          <div class="feature-content">
+        <div class="accessibility-section">
+          <div class="accessibility-text">
             <h3>{{ $t('tours.accessibility.title') }}</h3>
             <p>{{ $t('tours.accessibility.description') }}</p>
           </div>
-          <div class="train-route-infographic-full">
-            <div class="route-vertical">
-              <div class="station-start-with-icon">
-                <span class="train-icon">🚃</span>
-                Osaka-Umeda Station
+          <div class="accessibility-visuals">
+            <div class="train-route-infographic-full">
+              <div class="route-vertical">
+                <div class="station-start-with-icon">
+                  <span class="train-icon">🚃</span>
+                  Osaka-Umeda Station
+                </div>
+                <div class="arrow-with-change">
+                  <span class="arrow-down">↓</span>
+                  <span class="line-info">{{ $t('route.takarazukaLine') }}</span>
+                  <span class="time">15 min</span>
+                </div>
+                <div class="station-transfer">Ishibashi Handai-Mae</div>
+                <div class="arrow-with-change">
+                  <span class="arrow-down">↓</span>
+                  <span class="change-info">{{ $t('route.changeToMinoh') }}</span>
+                  <span class="time">5 min</span>
+                </div>
+                <div class="station-transfer">Sakurai Station</div>
+                <div class="arrow-with-change">
+                  <span class="arrow-down">↓</span>
+                  <span class="change-info">{{ $t('route.walkToMinohCycles') }}</span>
+                  <span class="time">10 min</span>
+                </div>
+                <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end">Minoh Cycles</a>
               </div>
-              <div class="arrow-with-change">
-                <span class="arrow-down">↓</span>
-                <span class="line-info">{{ $t('route.takarazukaLine') }}</span>
-                <span class="time">15 min</span>
-              </div>
-              <div class="station-transfer">Ishibashi Handai-Mae</div>
-              <div class="arrow-with-change">
-                <span class="arrow-down">↓</span>
-                <span class="change-info">{{ $t('route.changeToMinoh') }}</span>
-                <span class="time">5 min</span>
-              </div>
-              <div class="station-transfer">Sakurai Station</div>
-              <div class="arrow-with-change">
-                <span class="arrow-down">↓</span>
-                <span class="change-info">{{ $t('route.walkToMinohCycles') }}</span>
-                <span class="time">10 min</span>
-              </div>
-              <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end">Minoh Cycles</a>
             </div>
+            <iframe class="google-maps-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26203.169862743463!2d135.42458197431637!3d34.82112890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fb9093906f1b%3A0x4a18e9ef8a34f850!2sMinoh%20Cycles!5e0!3m2!1sen!2sjp!4v1763531840085!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -129,7 +138,7 @@
           <div class="bike-info">
             <h3>{{ $t('bikes.title') }}</h3>
             <p>{{ $t('bikes.description') }}</p>
-            <a href="#bikes" class="bike-link">{{ $t('bikes.viewAll') }}</a>
+            <router-link to="/bikes" class="bike-link">{{ $t('bikes.viewAll') }}</router-link>
           </div>
           <img src="/assets/fitting_rider_to_trek_bike.jpg" alt="Professional bike fitting" class="bike-img">
         </div>
@@ -273,22 +282,82 @@ export default {
   opacity: 0.9;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .cta-button {
-  background-color: #2563eb;
-  color: white;
   padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  position: relative;
 }
 
-.cta-button:hover {
+.cta-button.primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.cta-button.primary:hover {
   background-color: #1d4ed8;
+}
+
+.cta-button.secondary {
+  background-color: #10b981;
+  color: white;
+}
+
+.cta-button.secondary:hover:not(.disabled) {
+  background-color: #059669;
+}
+
+.cta-button.disabled {
+  background-color: #9ca3af;
+  color: #e5e7eb;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.cta-button.disabled:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e293b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1e293b;
 }
 
 /* Scroll Down Indicator */
@@ -473,6 +542,48 @@ export default {
   font-weight: 600;
   margin-top: 1rem;
   font-size: 0.8rem;
+}
+
+/* Accessibility Section Layout */
+.accessibility-section {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin-bottom: 6rem;
+}
+
+.accessibility-text {
+  margin-bottom: 3rem;
+}
+
+.accessibility-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+.accessibility-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.accessibility-visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.google-maps-embed {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 /* Full Width Train Route Infographic */
@@ -801,19 +912,28 @@ export default {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .feature-row,
   .bikes-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .feature-images {
     grid-template-columns: 1fr;
   }
-  
+
   .section-title {
     font-size: 2rem;
+  }
+
+  .accessibility-visuals {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .google-maps-embed {
+    min-height: 300px;
   }
 }
 </style>
