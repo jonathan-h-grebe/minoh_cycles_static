@@ -69,12 +69,12 @@
         <!-- Step 4: Continue to Minoh Falls -->
         <div class="itinerary-step reverse">
           <div class="step-image">
-            <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike journey through mountains" class="step-img">
+            <img src="/assets/going_down_from_katsuoji.jpg" alt="E-bike journey through mountains" class="step-img">
           </div>
           <div class="step-content">
             <div class="step-number">4</div>
             <div class="step-details">
-              <h3 class="step-title">{{ $t('tourDetails.steps.continueToFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <h3 class="step-title">{{ $t('tourDetails.steps.continueToFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '15分' : '15 mins' }})</span></h3>
               <p class="step-description">{{ $t('tourDetails.steps.continueToFalls.description') }}</p>
             </div>
           </div>
@@ -85,7 +85,7 @@
           <div class="step-content">
             <div class="step-number">5</div>
             <div class="step-details">
-              <h3 class="step-title">{{ $t('tourDetails.steps.enjoyFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <h3 class="step-title">{{ $t('tourDetails.steps.enjoyFalls.title') }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
               <p class="step-description">{{ $t('tourDetails.steps.enjoyFalls.description') }}</p>
             </div>
           </div>

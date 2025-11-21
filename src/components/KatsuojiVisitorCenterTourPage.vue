@@ -60,12 +60,12 @@
         <!-- Step 4: Continue to Visitor Center -->
         <div class="itinerary-step reverse">
           <div class="step-image">
-            <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike journey through mountains" class="step-img">
+            <img src="/assets/going_down_from_katsuoji.jpg" alt="E-bike journey through mountains" class="step-img">
           </div>
           <div class="step-content">
             <div class="step-number">4</div>
             <div class="step-details">
-              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターへ続く' : 'Continue to Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターへ続く' : 'Continue to Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '15分' : '15 mins' }})</span></h3>
               <p class="step-description">{{ currentLocale === 'ja' ? '美しい山道を下り、箕面国定公園ビジターセンターへ向かいます。' : 'Descend through beautiful mountain roads towards the Minoh Quasi-National Park Visitor Center.' }}</p>
             </div>
           </div>
@@ -76,12 +76,12 @@
           <div class="step-content">
             <div class="step-number">5</div>
             <div class="step-details">
-              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターを探索' : 'Explore Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターを探索' : 'Explore Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
               <p class="step-description">{{ currentLocale === 'ja' ? 'ビジターセンターで箕面の自然、野生動物、生態系について学び、周辺エリアを散策します。' : 'Learn about Minoh\'s nature, wildlife, and ecosystems at the visitor center and explore the surrounding area.' }}</p>
             </div>
           </div>
           <div class="step-image">
-            <img src="/assets/water_god_shrine.jpg" alt="Minoh Visitor Center area" class="step-img">
+            <img src="/assets/minoh_visitor_center_outside.jpg" alt="Minoh Visitor Center" class="step-img">
           </div>
         </div>
 
