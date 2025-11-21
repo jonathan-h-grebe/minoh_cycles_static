@@ -137,7 +137,13 @@
         <div class="bikes-content">
           <div class="bike-info">
             <h3>{{ $t('bikes.title') }}</h3>
-            <p>{{ $t('bikes.description') }}</p>
+            <p>
+              <i18n-t keypath="bikes.description" tag="span">
+                <template #insuranceLink>
+                  <router-link to="/insurance" class="insurance-link">{{ $t('bikes.insuranceLink') }}</router-link>
+                </template>
+              </i18n-t>
+            </p>
             <router-link to="/bikes" class="bike-link">{{ $t('bikes.viewAll') }}</router-link>
           </div>
           <img src="/assets/fitting_rider_to_trek_bike.jpg" alt="Professional bike fitting" class="bike-img">
@@ -761,6 +767,18 @@ export default {
   margin-bottom: 1.5rem;
 }
 
+.insurance-link {
+  color: #2563eb;
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.5);
+  transition: text-decoration-color 0.3s ease;
+  font-weight: 600;
+}
+
+.insurance-link:hover {
+  text-decoration-color: #2563eb;
+}
+
 .bike-link {
   display: inline-block;
   color: #2563eb;
@@ -857,6 +875,7 @@ export default {
   border: 2px solid rgba(225, 48, 108, 0.3);
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 0.5rem;
 }
 
 .instagram-link:hover {

@@ -45,17 +45,17 @@
 
         <div class="bikes-footer">
           <p class="bikes-note">{{ $t('bikesPage.note') }}</p>
-          <a 
-            href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <router-link
+            to="/tours"
             class="book-button"
           >
             {{ $t('cta.button') }}
-          </a>
+          </router-link>
         </div>
       </div>
     </main>
+
+    <AppFooter />
   </div>
 </template>
 
@@ -63,11 +63,13 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
 
 export default {
   name: 'BikesPage',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   setup() {
     const { locale } = useI18n()

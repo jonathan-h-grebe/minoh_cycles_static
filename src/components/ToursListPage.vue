@@ -30,6 +30,7 @@
                 <div class="tour-meta">
                   <span class="duration">{{ $t('toursList.tours.katsuojiMinohFalls.duration') }}</span>
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiMinohFalls.difficulty') }}</span>
+                  <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="viator-badge">Viator Exclusive</a>
                 </div>
                 <router-link to="/tours/katsuoji-minoh-falls" @click="scrollToTop" class="tour-button">{{ $t('toursList.viewDetails') }}</router-link>
               </div>
@@ -39,6 +40,7 @@
             <div class="tour-card">
               <div class="tour-image">
                 <img src="/assets/direct_katsuoji_tour_combo.png" alt="Katsuoji and Visitor Center Tour">
+                <div class="new-badge">NEW!</div>
               </div>
               <div class="tour-content">
                 <h3 class="tour-name">{{ $t('toursList.tours.katsuojiVisitorCenter.name') }}</h3>
@@ -46,6 +48,11 @@
                 <div class="tour-meta">
                   <span class="duration">{{ $t('toursList.tours.katsuojiVisitorCenter.duration') }}</span>
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiVisitorCenter.difficulty') }}</span>
+                </div>
+                <div class="tour-pricing">
+                  <span class="price-original">¥10,000</span>
+                  <span class="price-discounted">¥5,000</span>
+                  <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格' : 'Introductory Price' }}</span>
                 </div>
                 <router-link to="/tours/katsuoji-visitor-center" @click="scrollToTop" class="tour-button">{{ $t('toursList.viewDetails') }}</router-link>
               </div>
@@ -77,16 +84,30 @@
         </div>
       </div>
     </section>
+
+    <AppFooter />
   </div>
 </template>
 
 <script>
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
 
 export default {
   name: 'ToursListPage',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
+  },
+  setup() {
+    const { locale } = useI18n()
+    const currentLocale = ref(locale.value)
+
+    return {
+      currentLocale
+    }
   },
   methods: {
     scrollToTop() {
@@ -101,21 +122,22 @@ export default {
   font-family: 'Inter', sans-serif;
   color: #333;
   min-height: 100vh;
+  background-color: #f8fafc;
 }
 
 .tours-hero-section {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background-color: #f8fafc;
   min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .tours-hero-content {
   text-align: center;
-  color: white;
+  color: #1e293b;
   max-width: 900px;
   padding: 3rem;
 }
@@ -125,12 +147,13 @@ export default {
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.1;
+  color: #1e293b;
 }
 
 .tours-subtitle {
   font-size: 1.2rem;
   line-height: 1.4;
-  opacity: 0.95;
+  color: #64748b;
   white-space: pre-wrap;
 }
 
@@ -224,6 +247,46 @@ export default {
   letter-spacing: 0.05em;
 }
 
+.new-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  z-index: 10;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.new-badge::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #059669;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+    transform: scale(1.05);
+  }
+}
+
 .tour-content {
   padding: 2rem;
 }
@@ -266,6 +329,55 @@ export default {
 .difficulty {
   color: #2563eb !important;
   background-color: #dbeafe !important;
+}
+
+.viator-badge {
+  color: white !important;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%) !important;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.viator-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+}
+
+.tour-pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.price-original {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price-discounted {
+  font-size: 1.8rem;
+  color: #10b981;
+  font-weight: 800;
+}
+
+.price-label {
+  font-size: 0.85rem;
+  color: white;
+  background-color: #10b981;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .tour-button {

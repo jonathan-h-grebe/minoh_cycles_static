@@ -33,7 +33,7 @@
         <router-link to="/bikes" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
         <router-link to="/rentals" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
         <router-link to="/about" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
-        <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Template/d50171-5603445P2" target="_blank" rel="noopener noreferrer" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</a>
+        <router-link to="/how-to-book" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link>
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
             <option value="en">EN</option>
@@ -164,7 +164,13 @@
           <img src="/assets/fitting_rider_to_trek_bike.jpg" alt="Professional bike fitting" class="bike-img-mobile">
           <div class="bike-info">
             <h3>{{ $t('bikes.title') }}</h3>
-            <p>{{ $t('bikes.description') }}</p>
+            <p>
+              <i18n-t keypath="bikes.description" tag="span">
+                <template #insuranceLink>
+                  <router-link to="/insurance" class="insurance-link-mobile">{{ $t('bikes.insuranceLink') }}</router-link>
+                </template>
+              </i18n-t>
+            </p>
             <router-link to="/bikes" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</router-link>
           </div>
         </div>
@@ -485,6 +491,18 @@ export default {
   margin-bottom: 1rem;
 }
 
+.insurance-link-mobile {
+  color: #2563eb;
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.5);
+  transition: text-decoration-color 0.3s ease;
+  font-weight: 600;
+}
+
+.insurance-link-mobile:hover {
+  text-decoration-color: #2563eb;
+}
+
 .bike-link-mobile {
   display: inline-block;
   color: #2563eb;
@@ -798,6 +816,7 @@ export default {
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
+  margin: 0 0.5rem;
 }
 
 .instagram-link:hover {

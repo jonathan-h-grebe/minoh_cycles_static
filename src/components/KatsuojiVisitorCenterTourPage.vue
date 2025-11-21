@@ -7,6 +7,14 @@
         <h1 class="tours-title">{{ currentLocale === 'ja' ? '勝尾寺とビジターセンターツアー' : 'Katsuoji Temple & Visitor Center Tour' }}</h1>
         <p class="tours-subtitle">{{ currentLocale === 'ja' ? '半日Eバイクツアー' : 'Half-Day E-Bike Tour' }}</p>
         <p class="tours-description">{{ currentLocale === 'ja' ? '箕面の山々を探索し、美しい勝尾寺を訪れ、箕面ビジターセンターで自然について学びます。' : 'Explore the mountains of Minoh, visit the beautiful Katsuoji Temple, and learn about nature at the Minoh Visitor Center.' }}</p>
+
+        <div class="tour-pricing-hero">
+          <span class="price-original">¥10,000</span>
+          <span class="price-discounted">¥5,000</span>
+          <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格' : 'Introductory Price' }}</span>
+        </div>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="booking-request-button">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
       </div>
     </section>
 
@@ -60,12 +68,12 @@
         <!-- Step 4: Continue to Visitor Center -->
         <div class="itinerary-step reverse">
           <div class="step-image">
-            <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike journey through mountains" class="step-img">
+            <img src="/assets/going_down_from_katsuoji.jpg" alt="E-bike journey through mountains" class="step-img">
           </div>
           <div class="step-content">
             <div class="step-number">4</div>
             <div class="step-details">
-              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターへ続く' : 'Continue to Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターへ続く' : 'Continue to Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '15分' : '15 mins' }})</span></h3>
               <p class="step-description">{{ currentLocale === 'ja' ? '美しい山道を下り、箕面国定公園ビジターセンターへ向かいます。' : 'Descend through beautiful mountain roads towards the Minoh Quasi-National Park Visitor Center.' }}</p>
             </div>
           </div>
@@ -76,12 +84,12 @@
           <div class="step-content">
             <div class="step-number">5</div>
             <div class="step-details">
-              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターを探索' : 'Explore Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '30分' : '30 mins' }})</span></h3>
+              <h3 class="step-title">{{ currentLocale === 'ja' ? 'ビジターセンターを探索' : 'Explore Visitor Center' }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
               <p class="step-description">{{ currentLocale === 'ja' ? 'ビジターセンターで箕面の自然、野生動物、生態系について学び、周辺エリアを散策します。' : 'Learn about Minoh\'s nature, wildlife, and ecosystems at the visitor center and explore the surrounding area.' }}</p>
             </div>
           </div>
           <div class="step-image">
-            <img src="/assets/water_god_shrine.jpg" alt="Minoh Visitor Center area" class="step-img">
+            <img src="/assets/minoh_visitor_center_outside.jpg" alt="Minoh Visitor Center" class="step-img">
           </div>
         </div>
 
@@ -137,7 +145,14 @@
       <div class="container">
         <h2>{{ currentLocale === 'ja' ? '今すぐ予約' : 'Book Your Tour Today' }}</h2>
         <p>{{ currentLocale === 'ja' ? 'このユニークなEバイク体験を予約して、箕面の美しさを発見しましょう。' : 'Reserve your spot on this unique e-bike experience and discover the beauty of Minoh.' }}</p>
-        <p class="schedule-info">{{ currentLocale === 'ja' ? '近日公開' : 'Coming Soon' }}</p>
+        <div class="tour-pricing-detail">
+          <div class="pricing-row">
+            <span class="price-original-detail">¥10,000</span>
+            <span class="price-discounted-detail">¥5,000</span>
+          </div>
+          <span class="price-label-detail">{{ currentLocale === 'ja' ? '導入特別価格' : 'Introductory Price' }}</span>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="booking-request-button-cta">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
       </div>
     </section>
   </div>
@@ -422,6 +437,122 @@ export default {
   margin-bottom: 2rem !important;
   display: inline-block;
   color: #60a5fa;
+}
+
+/* Tour Pricing in Hero */
+.tour-pricing-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.price-original {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price-discounted {
+  font-size: 2.5rem;
+  color: #10b981;
+  font-weight: 800;
+}
+
+.price-label {
+  font-size: 0.9rem;
+  color: white;
+  background-color: #10b981;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Booking Request Buttons */
+.booking-request-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.booking-request-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.booking-request-button-cta {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 1.25rem 3rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.booking-request-button-cta:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.tour-pricing-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.pricing-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.price-original-detail {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price-discounted-detail {
+  font-size: 3rem;
+  color: #10b981;
+  font-weight: 800;
+}
+
+.price-label-detail {
+  font-size: 0.9rem;
+  color: white;
+  background-color: #10b981;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 768px) {
