@@ -138,29 +138,23 @@
           </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="quick-links-section">
-          <h3>{{ $t('howToBook.quickLinks.title') }}</h3>
-          <div class="quick-links-grid">
-            <router-link to="/tours" class="quick-link-card">
-              <span class="link-icon">🗺️</span>
-              <span>{{ $t('howToBook.quickLinks.viewTours') }}</span>
-            </router-link>
-            <router-link to="/bikes" class="quick-link-card">
-              <span class="link-icon">🚴</span>
-              <span>{{ $t('howToBook.quickLinks.viewBikes') }}</span>
-            </router-link>
-            <router-link to="/rentals" class="quick-link-card">
-              <span class="link-icon">🚲</span>
-              <span>{{ $t('howToBook.quickLinks.cycleHire') }}</span>
-            </router-link>
-          </div>
-        </div>
-
       </div>
     </main>
 
-    <AppFooter />
+    <AppFooter>
+      <div class="footer-quick-links">
+        <div class="container">
+          <p class="quick-links-text">{{ $t('howToBook.quickLinks.title') }}:</p>
+          <div class="quick-links">
+            <router-link to="/tours" class="footer-link">{{ $t('howToBook.quickLinks.viewTours') }}</router-link>
+            <span class="separator">•</span>
+            <router-link to="/bikes" class="footer-link">{{ $t('howToBook.quickLinks.viewBikes') }}</router-link>
+            <span class="separator">•</span>
+            <router-link to="/rentals" class="footer-link">{{ $t('howToBook.quickLinks.cycleHire') }}</router-link>
+          </div>
+        </div>
+      </div>
+    </AppFooter>
   </div>
 </template>
 
@@ -517,48 +511,43 @@ export default {
   transform: translateY(-2px);
 }
 
-/* Quick Links */
-.quick-links-section {
-  margin-top: 3rem;
+/* Footer Quick Links */
+.footer-quick-links {
+  background-color: #1e293b;
+  padding: 2rem 0;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.quick-links-section h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin-bottom: 2rem;
+.quick-links-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.75rem;
 }
 
-.quick-links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.quick-link-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  border: 2px solid #e2e8f0;
-  text-decoration: none;
-  color: #1e293b;
-  font-weight: 600;
-  transition: all 0.3s ease;
+.quick-links {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.quick-link-card:hover {
-  border-color: #2563eb;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+.footer-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
-.link-icon {
-  font-size: 2.5rem;
+.footer-link:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
 }
 
 /* Responsive */
@@ -627,8 +616,13 @@ export default {
     grid-template-columns: 1fr;
   }
 
-  .quick-links-grid {
-    grid-template-columns: 1fr;
+  .quick-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .separator {
+    display: none;
   }
 }
 </style>

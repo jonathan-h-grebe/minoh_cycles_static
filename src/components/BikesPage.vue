@@ -47,6 +47,7 @@
           <p class="bikes-note">{{ $t('bikesPage.note') }}</p>
           <router-link
             to="/tours"
+            @click="scrollToTop"
             class="book-button"
           >
             {{ $t('cta.button') }}
@@ -77,6 +78,11 @@ export default {
 
     return {
       currentLocale
+    }
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 }
