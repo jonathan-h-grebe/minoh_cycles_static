@@ -3,7 +3,7 @@
     "tours": "Tours",
     "bikes": "Bikes",
     "about": "About",
-    "bookNow": "Book Now"
+    "bookNow": "How To Book"
   },
   "hero": {
     "brandName": "Minoh Cycles",
@@ -44,7 +44,8 @@
   "bikes": {
     "sectionTitle": "Premium Bikes",
     "title": "High-Quality E-Bikes & Equipment Provided",
-    "description": "In contrast to budget e-bikes typically used in city tours, our bikes are built for taking on mountain roads. Every bike is well maintained, and insured under the Japanese TS-Mark scheme. Insurance details here.",
+    "description": "In contrast to budget e-bikes typically used in city tours, our bikes are built for taking on mountain roads. Every bike is well maintained, and insured under the Japanese TS-Mark scheme. Insurance details {insuranceLink}.",
+    "insuranceLink": "here",
     "viewAll": "View All Our Bikes →"
   },
   "cta": {
@@ -171,6 +172,76 @@
       "description": "Book your Minoh Falls & Katsuoji bike tour today",
       "schedule": "Tours run every weekday at 9am",
       "button": "Book Now"
+    }
+  },
+  "howToBook": {
+    "title": "How To Book",
+    "subtitle": "",
+    "guidedTours": {
+      "title": "Guided Tours",
+      "step1": {
+        "title": "Choose your tour from the \"Tours\" page, and click \"View Details\"",
+        "description": "",
+        "linkText": "View Tours"
+      },
+      "step2": {
+        "title": "Make your booking request",
+        "description": "In both cases, please specify the names and heights of your party members.",
+        "viatorTour": {
+          "title": "Katsuoji and Minoh Falls",
+          "description": "Our original Katsuoji and Minoh Falls tour is available exclusively through Viator.",
+          "button": "Book on Viator"
+        },
+        "directTours": {
+          "title": "Other tours",
+          "badge": "NEW",
+          "description": "For other tours, please fill out a booking request to make a booking directly.",
+          "button": "Submit Booking Request"
+        }
+      },
+      "step3": {
+        "title": "We check bike availability and send confirmation",
+        "description": "After checking the availability of appropriate sized bikes, we will send you a booking confirmation either through the Viator platform, or by direct email. If we don't have the bikes to meet your request, we may suggest other dates.<br><br>We typically respond to booking requests within a few hours, though if you're requesting from outside Japan while we're asleep, it might take a bit longer."
+      },
+      "step4": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "payments": {
+      "title": "Payments",
+      "viator": {
+        "title": "Viator Bookings",
+        "description": "When booking tours through Viator, please pay via the Viator platform."
+      },
+      "direct": {
+        "title": "All other bookings",
+        "description": "For all other bookings, please pay in cash upon arrival.",
+        "note": "※ Please wait while our booking and payments system is under development"
+      }
+    },
+    "cycleHire": {
+      "title": "Cycle Hire",
+      "comingSoon": "Coming soon",
+      "linkText": "Learn more"
+    },
+    "availability": {
+      "title": "Checking Availability",
+      "viator": {
+        "title": "Viator Bookings",
+        "description": "For bookings through Viator, availability is reflected on the Viator platform."
+      },
+      "direct": {
+        "title": "Other bookings",
+        "description": "For other bookings, please enquire via this form.",
+        "button": "Enquire"
+      }
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "viewTours": "View All Tours",
+      "viewBikes": "Our Bikes",
+      "cycleHire": "Cycle Hire Info"
     }
   }
 }

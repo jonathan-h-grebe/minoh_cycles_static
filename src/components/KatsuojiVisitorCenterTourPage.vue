@@ -7,6 +7,7 @@
         <h1 class="tours-title">{{ currentLocale === 'ja' ? '勝尾寺とビジターセンターツアー' : 'Katsuoji Temple & Visitor Center Tour' }}</h1>
         <p class="tours-subtitle">{{ currentLocale === 'ja' ? '半日Eバイクツアー' : 'Half-Day E-Bike Tour' }}</p>
         <p class="tours-description">{{ currentLocale === 'ja' ? '箕面の山々を探索し、美しい勝尾寺を訪れ、箕面ビジターセンターで自然について学びます。' : 'Explore the mountains of Minoh, visit the beautiful Katsuoji Temple, and learn about nature at the Minoh Visitor Center.' }}</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="booking-request-button">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
       </div>
     </section>
 
@@ -137,7 +138,7 @@
       <div class="container">
         <h2>{{ currentLocale === 'ja' ? '今すぐ予約' : 'Book Your Tour Today' }}</h2>
         <p>{{ currentLocale === 'ja' ? 'このユニークなEバイク体験を予約して、箕面の美しさを発見しましょう。' : 'Reserve your spot on this unique e-bike experience and discover the beauty of Minoh.' }}</p>
-        <p class="schedule-info">{{ currentLocale === 'ja' ? '近日公開' : 'Coming Soon' }}</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="booking-request-button-cta">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
       </div>
     </section>
   </div>
@@ -422,6 +423,46 @@ export default {
   margin-bottom: 2rem !important;
   display: inline-block;
   color: #60a5fa;
+}
+
+/* Booking Request Buttons */
+.booking-request-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.booking-request-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.booking-request-button-cta {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 1.25rem 3rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.booking-request-button-cta:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
 }
 
 @media (max-width: 768px) {

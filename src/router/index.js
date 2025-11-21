@@ -7,6 +7,8 @@ import SatsukiyamaSkyTourPage from '../components/SatsukiyamaSkyTourPage.vue'
 import BikesPage from '../components/BikesPage.vue'
 import RentalPage from '../components/RentalPage.vue'
 import AboutPage from '../components/AboutPage.vue'
+import InsurancePage from '../components/InsurancePage.vue'
+import HowToBookPage from '../components/HowToBookPage.vue'
 
 const routes = [
   {
@@ -48,6 +50,16 @@ const routes = [
     path: '/about',
     name: 'About',
     component: AboutPage
+  },
+  {
+    path: '/insurance',
+    name: 'Insurance',
+    component: InsurancePage
+  },
+  {
+    path: '/how-to-book',
+    name: 'HowToBook',
+    component: HowToBookPage
   }
 ]
 
