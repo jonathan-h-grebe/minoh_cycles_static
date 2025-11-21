@@ -159,17 +159,21 @@
 
       </div>
     </main>
+
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
 import { useI18n } from 'vue-i18n'
 
 export default {
   name: 'HowToBookPage',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   setup() {
     const { t } = useI18n()

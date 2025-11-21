@@ -49,6 +49,11 @@
                   <span class="duration">{{ $t('toursList.tours.katsuojiVisitorCenter.duration') }}</span>
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiVisitorCenter.difficulty') }}</span>
                 </div>
+                <div class="tour-pricing">
+                  <span class="price-original">¥10,000</span>
+                  <span class="price-discounted">¥5,000</span>
+                  <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格' : 'Introductory Price' }}</span>
+                </div>
                 <router-link to="/tours/katsuoji-visitor-center" @click="scrollToTop" class="tour-button">{{ $t('toursList.viewDetails') }}</router-link>
               </div>
             </div>
@@ -79,16 +84,30 @@
         </div>
       </div>
     </section>
+
+    <AppFooter />
   </div>
 </template>
 
 <script>
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
 
 export default {
   name: 'ToursListPage',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
+  },
+  setup() {
+    const { locale } = useI18n()
+    const currentLocale = ref(locale.value)
+
+    return {
+      currentLocale
+    }
   },
   methods: {
     scrollToTop() {
@@ -327,6 +346,38 @@ export default {
 .viator-badge:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+}
+
+.tour-pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.price-original {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price-discounted {
+  font-size: 1.8rem;
+  color: #10b981;
+  font-weight: 800;
+}
+
+.price-label {
+  font-size: 0.85rem;
+  color: white;
+  background-color: #10b981;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .tour-button {
