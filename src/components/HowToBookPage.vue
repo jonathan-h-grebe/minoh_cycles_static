@@ -79,9 +79,6 @@
 
           <div class="coming-soon-content">
             <p class="coming-soon-text">{{ $t('howToBook.cycleHire.comingSoon') }}</p>
-            <router-link to="/rentals" class="inline-link">
-              {{ $t('howToBook.cycleHire.linkText') }} →
-            </router-link>
           </div>
         </div>
 
