@@ -183,7 +183,9 @@
         <h2>{{ $t('cta.title') }}</h2>
         <p>{{ $t('cta.description') }}</p>
         <p class="schedule-info">{{ $t('cta.schedule') }}</p>
-        <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button-large">{{ $t('cta.button') }}</a>
+        <div class="cta-button-wrapper">
+          <router-link to="/tours" class="cta-button-large">{{ $t('cta.button') }}</router-link>
+        </div>
         <div class="social-media">
           <p class="social-text">{{ currentLocale === 'ja' ? '最新の写真とアップデートはこちら' : 'Follow us for latest photos and updates' }}</p>
           <a href="https://www.instagram.com/minoh.cycle.tours/" target="_blank" rel="noopener noreferrer" class="instagram-link">
@@ -770,6 +772,10 @@ export default {
   margin-bottom: 2.5rem !important;
   display: inline-block;
   color: #60a5fa;
+}
+
+.cta-button-wrapper {
+  margin-bottom: 2rem;
 }
 
 .cta-button-large {
