@@ -7,14 +7,11 @@
         <h1 class="tours-title">{{ $t('tourDetails.title') }}</h1>
         <p class="tours-subtitle">{{ $t('tourDetails.subtitle') }}</p>
         <p class="tours-description">{{ $t('tourDetails.description') }}</p>
-        <a
-          href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="viator-book-button"
-        >
-          Book Exclusively on Viator
-        </a>
+        <div class="hero-book-button-wrapper">
+          <BookingWidget
+            :button-text="$t('tourDetails.cta.button')"
+          />
+        </div>
       </div>
     </section>
 
@@ -113,7 +110,7 @@
           <div class="step-content">
             <div class="step-number">7</div>
             <div class="step-details">
-              <h3 class="step-title">{{ currentLocale === 'ja' ? '地元レストランでのランチ' : 'Lunch at Local Restaurant' }}</h3>
+              <h3 class="step-title">{{ currentLocale === 'ja' ? '【オプション】地元レストランでのランチ' : 'Lunch at Local Restaurant (Optional) ' }}</h3>
               <p class="step-description">{{ currentLocale === 'ja' ? '地元の人気レストランで美味しい昼食をお楽しみください。ツアーガイドが地域の人気スポットへご案内します。' : 'At a local restaurant specially chosen by the guide. Preferences and dietary requirements will be taken into account.' }}</p>
             </div>
           </div>
@@ -177,7 +174,11 @@
         <h2>{{ $t('tourDetails.cta.title') }}</h2>
         <p>{{ $t('tourDetails.cta.description') }}</p>
         <p class="schedule-info">{{ $t('tourDetails.cta.schedule') }}</p>
-        <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="cta-button-large">{{ $t('tourDetails.cta.button') }}</a>
+        <div class="cta-book-button-wrapper">
+          <BookingWidget
+            :button-text="$t('tourDetails.cta.button')"
+          />
+        </div>
       </div>
     </section>
   </div>
@@ -187,11 +188,13 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppHeader from './AppHeader.vue'
+import BookingWidget from './BookingWidget.vue'
 
 export default {
   name: 'KatsuojiMinohTourPage',
   components: {
-    AppHeader
+    AppHeader,
+    BookingWidget
   },
   setup() {
     const { locale } = useI18n()
@@ -257,25 +260,8 @@ export default {
   margin-bottom: 2rem;
 }
 
-.viator-book-button {
-  display: inline-block;
-  background-color: #2563eb;
-  color: white;
-  padding: 1rem 2.5rem;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.viator-book-button:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 12px -2px rgba(37, 99, 235, 0.4);
+.hero-book-button-wrapper {
+  margin-top: 3rem;
 }
 
 .tours-description {
@@ -511,21 +497,8 @@ export default {
   color: #60a5fa;
 }
 
-.cta-button-large {
-  background-color: #2563eb;
-  color: white;
-  padding: 1.5rem 3rem;
-  text-decoration: none;
-  border-radius: 12px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  margin-left: 20px;
-}
-
-.cta-button-large:hover {
-  background-color: #1d4ed8;
+.cta-book-button-wrapper {
+  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
