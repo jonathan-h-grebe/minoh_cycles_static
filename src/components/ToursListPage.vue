@@ -30,9 +30,14 @@
                 <div class="tour-meta">
                   <span class="duration">{{ $t('toursList.tours.katsuojiMinohFalls.duration') }}</span>
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiMinohFalls.difficulty') }}</span>
-                  <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2" target="_blank" rel="noopener noreferrer" class="viator-badge">Viator Exclusive</a>
                 </div>
-                <router-link to="/tours/katsuoji-minoh-falls" @click="scrollToTop" class="tour-button">{{ $t('toursList.viewDetails') }}</router-link>
+                <div class="tour-actions">
+                  <BookingWidget
+                    :button-text="currentLocale === 'ja' ? '今すぐ予約' : 'Book Now'"
+                    button-class="tour-book-button"
+                  />
+                  <router-link to="/tours/katsuoji-minoh-falls" @click="scrollToTop" class="tour-button secondary">{{ $t('toursList.viewDetails') }}</router-link>
+                </div>
               </div>
             </div>
 
@@ -94,12 +99,14 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
+import BookingWidget from './BookingWidget.vue'
 
 export default {
   name: 'ToursListPage',
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    BookingWidget
   },
   setup() {
     const { locale } = useI18n()
@@ -331,23 +338,6 @@ export default {
   background-color: #dbeafe !important;
 }
 
-.viator-badge {
-  color: white !important;
-  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%) !important;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
-}
-
-.viator-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
-}
-
 .tour-pricing {
   display: flex;
   align-items: center;
@@ -380,6 +370,13 @@ export default {
   letter-spacing: 0.05em;
 }
 
+.tour-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .tour-button {
   display: inline-block;
   background-color: #2563eb;
@@ -396,6 +393,17 @@ export default {
 
 .tour-button:hover {
   background-color: #1d4ed8;
+}
+
+.tour-button.secondary {
+  background-color: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.tour-button.secondary:hover {
+  background-color: #2563eb;
+  color: white;
 }
 
 .tour-button.disabled {

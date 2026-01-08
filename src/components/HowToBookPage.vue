@@ -35,16 +35,15 @@
                 <p v-if="$t('howToBook.guidedTours.step2.description')">{{ $t('howToBook.guidedTours.step2.description') }}</p>
 
                 <div class="tour-types">
-                  <div class="tour-type-card viator-card">
-                    <div class="card-badge">Viator Exclusive</div>
-                    <h4>{{ $t('howToBook.guidedTours.step2.viatorTour.title') }}</h4>
-                    <p>{{ $t('howToBook.guidedTours.step2.viatorTour.description') }}</p>
-                    <a href="https://www.viator.com/tours/Osaka-Prefecture/Scenic-E-Bike-Tour-of-Minoh-Falls-and-Katsuoji-Temple/d50171-5603445P2"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="book-button viator">
-                      {{ $t('howToBook.guidedTours.step2.viatorTour.button') }}
-                    </a>
+                  <div class="tour-type-card booking-widget-card">
+                    <h4>{{ $t('howToBook.guidedTours.step2.onlineBooking.title') }}</h4>
+                    <p>{{ $t('howToBook.guidedTours.step2.onlineBooking.description') }}</p>
+                    <div class="booking-widget-wrapper">
+                      <BookingWidget
+                        :button-text="$t('howToBook.guidedTours.step2.onlineBooking.button')"
+                        button-class="book-button-bokun"
+                      />
+                    </div>
                   </div>
 
                   <div class="tour-type-card direct-card">
@@ -93,8 +92,8 @@
             <div class="payment-method">
               <div class="payment-icon">🌐</div>
               <div class="payment-details">
-                <h4>{{ $t('howToBook.payments.viator.title') }}</h4>
-                <p>{{ $t('howToBook.payments.viator.description') }}</p>
+                <h4>{{ $t('howToBook.payments.online.title') }}</h4>
+                <p>{{ $t('howToBook.payments.online.description') }}</p>
               </div>
             </div>
 
@@ -118,8 +117,8 @@
 
           <div class="availability-info">
             <div class="availability-card">
-              <h4>{{ $t('howToBook.availability.viator.title') }}</h4>
-              <p>{{ $t('howToBook.availability.viator.description') }}</p>
+              <h4>{{ $t('howToBook.availability.online.title') }}</h4>
+              <p>{{ $t('howToBook.availability.online.description') }}</p>
             </div>
 
             <div class="availability-card">
@@ -158,13 +157,15 @@
 <script>
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
+import BookingWidget from './BookingWidget.vue'
 import { useI18n } from 'vue-i18n'
 
 export default {
   name: 'HowToBookPage',
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    BookingWidget
   },
   setup() {
     const { t } = useI18n()
@@ -327,9 +328,14 @@ export default {
   box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.15);
 }
 
-.viator-card {
-  border-color: #8b5cf6;
-  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+.booking-widget-card {
+  border-color: #408C3D;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.booking-widget-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .direct-card {
@@ -379,16 +385,6 @@ export default {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease;
-}
-
-.book-button.viator {
-  background-color: #8b5cf6;
-  color: white;
-}
-
-.book-button.viator:hover {
-  background-color: #7c3aed;
-  transform: scale(1.02);
 }
 
 .book-button.direct {

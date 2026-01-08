@@ -187,10 +187,10 @@
       "step2": {
         "title": "Make your booking request",
         "description": "In both cases, please specify the names and heights of your party members.",
-        "viatorTour": {
+        "onlineBooking": {
           "title": "Katsuoji and Minoh Falls",
-          "description": "Our original Katsuoji and Minoh Falls tour is available exclusively through Viator.",
-          "button": "Book on Viator"
+          "description": "Book our original Katsuoji and Minoh Falls tour instantly using our online booking system.",
+          "button": "Book Now"
         },
         "directTours": {
           "title": "Other tours",
@@ -201,7 +201,7 @@
       },
       "step3": {
         "title": "We check bike availability and send confirmation",
-        "description": "After checking the availability of appropriate sized bikes, we will send you a booking confirmation either through the Viator platform, or by direct email. If we don't have the bikes to meet your request, we may suggest other dates.<br><br>We typically respond to booking requests within a few hours, though if you're requesting from outside Japan while we're asleep, it might take a bit longer."
+        "description": "After checking the availability of appropriate sized bikes, we will send you a booking confirmation either through the online booking system, or by direct email. If we don't have the bikes to meet your request, we may suggest other dates.<br><br>We typically respond to booking requests within a few hours, though if you're requesting from outside Japan while we're asleep, it might take a bit longer."
       },
       "step4": {
         "title": "",
@@ -210,9 +210,9 @@
     },
     "payments": {
       "title": "Payments",
-      "viator": {
-        "title": "Viator Bookings",
-        "description": "When booking tours through Viator, please pay via the Viator platform."
+      "online": {
+        "title": "Online Bookings",
+        "description": "When booking tours through our online booking system, payment is processed securely at the time of booking."
       },
       "direct": {
         "title": "All other bookings",
@@ -227,9 +227,9 @@
     },
     "availability": {
       "title": "Checking Availability",
-      "viator": {
-        "title": "Viator Bookings",
-        "description": "For bookings through Viator, availability is reflected on the Viator platform."
+      "online": {
+        "title": "Online Bookings",
+        "description": "For bookings through our online system, real-time availability is displayed in the booking widget."
       },
       "direct": {
         "title": "Other bookings",
