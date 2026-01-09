@@ -97,6 +97,7 @@
 <script>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
 import BookingWidget from './BookingWidget.vue'
@@ -109,6 +110,9 @@ export default {
     BookingWidget
   },
   setup() {
+    // Apply SEO
+    useSeo('tours')
+
     const { locale } = useI18n()
     const currentLocale = ref(locale.value)
 

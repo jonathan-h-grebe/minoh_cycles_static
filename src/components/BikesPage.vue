@@ -63,6 +63,7 @@
 <script>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
 
@@ -73,6 +74,9 @@ export default {
     AppFooter
   },
   setup() {
+    // Apply SEO
+    useSeo('bikes')
+
     const { locale } = useI18n()
     const currentLocale = ref(locale.value)
 

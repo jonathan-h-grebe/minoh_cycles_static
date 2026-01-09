@@ -155,6 +155,7 @@
 </template>
 
 <script>
+import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
 import BookingWidget from './BookingWidget.vue'
@@ -168,6 +169,9 @@ export default {
     BookingWidget
   },
   setup() {
+    // Apply SEO
+    useSeo('howToBook')
+
     const { t } = useI18n()
     return { t }
   }

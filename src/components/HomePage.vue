@@ -7,6 +7,8 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useSeo } from '@/composables/useSeo'
+import { useStructuredData } from '@/composables/useStructuredData'
 import DesktopLanding from './DesktopLanding.vue'
 import MobileLanding from './MobileLanding.vue'
 
@@ -17,6 +19,12 @@ export default {
     MobileLanding
   },
   setup() {
+    // Apply SEO
+    useSeo('home')
+
+    // Add structured data for local business
+    useStructuredData('localBusiness')
+
     const isMobile = ref(false)
 
     const checkScreenSize = () => {

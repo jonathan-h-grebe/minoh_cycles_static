@@ -1,16 +1,16 @@
 <template>
   <header class="header flex justify-between items-center rounded-b-lg shadow-sm">
     <div class="text-2xl font-bold text-gray-800">
-      <router-link v-if="$route.path !== '/'" to="/" class="brand-link">Minoh Cycles</router-link>
+      <router-link v-if="!isHomePage" :to="`/${currentLocale}/`" class="brand-link">Minoh Cycles</router-link>
       <span v-else>Minoh Cycles</span>
     </div>
     <div class="flex items-center space-x-6">
       <nav class="space-x-4 desktop-nav">
-        <router-link to="/tours" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.tours') }}</router-link>
-        <router-link to="/bikes" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bikes') }}</router-link>
-        <router-link to="/rentals" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Cycle Hire</router-link>
-        <router-link to="/about" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.about') }}</router-link>
-        <router-link to="/how-to-book" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bookNow') }}</router-link>
+        <router-link :to="`/${currentLocale}/tours`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.tours') }}</router-link>
+        <router-link :to="`/${currentLocale}/bikes`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bikes') }}</router-link>
+        <router-link :to="`/${currentLocale}/rentals`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Cycle Hire</router-link>
+        <router-link :to="`/${currentLocale}/about`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.about') }}</router-link>
+        <router-link :to="`/${currentLocale}/how-to-book`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bookNow') }}</router-link>
       </nav>
       <div class="language-selector">
         <select v-model="currentLocale" @change="changeLanguage" class="lang-select">
@@ -47,11 +47,11 @@
             </svg>
           </button>
         </div>
-        <router-link to="/tours" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
-        <router-link to="/bikes" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
-        <router-link to="/rentals" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
-        <router-link to="/about" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
-        <router-link to="/how-to-book" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link>
+        <router-link :to="`/${currentLocale}/tours`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
+        <router-link :to="`/${currentLocale}/bikes`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
+        <router-link :to="`/${currentLocale}/rentals`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
+        <router-link :to="`/${currentLocale}/about`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
+        <router-link :to="`/${currentLocale}/how-to-book`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link>
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
             <option value="en">EN</option>
@@ -64,18 +64,32 @@
 </template>
 
 <script>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter, useRoute } from 'vue-router'
 
 export default {
   name: 'AppHeader',
   setup() {
     const { locale } = useI18n()
+    const router = useRouter()
+    const route = useRoute()
     const currentLocale = ref(locale.value)
     const menuOpen = ref(false)
 
+    const isHomePage = computed(() => {
+      return route.path === `/${currentLocale.value}/` || route.path === '/'
+    })
+
     const changeLanguage = () => {
-      locale.value = currentLocale.value
+      const newLocale = currentLocale.value
+      const currentPath = route.path
+
+      // Extract the path without language prefix
+      const pathWithoutLocale = currentPath.replace(/^\/(en|ja)/, '')
+
+      // Navigate to new language version of current page
+      router.push(`/${newLocale}${pathWithoutLocale}`)
     }
 
     const scrollToTop = () => {
@@ -109,6 +123,8 @@ export default {
 
     onMounted(() => {
       document.addEventListener('keydown', handleEscapeKey)
+      // Sync locale with current route
+      currentLocale.value = route.meta.locale || locale.value
     })
 
     onUnmounted(() => {
@@ -117,6 +133,7 @@ export default {
 
     return {
       currentLocale,
+      isHomePage,
       changeLanguage,
       scrollToTop,
       menuOpen,

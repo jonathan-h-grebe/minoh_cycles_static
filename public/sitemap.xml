@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home Page - English -->
+  <url>
+    <loc>https://minohcycles.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Home Page - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Tours List - English -->
+  <url>
+    <loc>https://minohcycles.com/en/tours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tours List - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/tours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Katsuoji & Minoh Falls Tour - English -->
+  <url>
+    <loc>https://minohcycles.com/en/tours/katsuoji-minoh-falls</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours/katsuoji-minoh-falls"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours/katsuoji-minoh-falls"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours/katsuoji-minoh-falls"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Katsuoji & Minoh Falls Tour - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/tours/katsuoji-minoh-falls</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours/katsuoji-minoh-falls"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours/katsuoji-minoh-falls"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours/katsuoji-minoh-falls"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Katsuoji & Visitor Center Tour - English -->
+  <url>
+    <loc>https://minohcycles.com/en/tours/katsuoji-visitor-center</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours/katsuoji-visitor-center"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours/katsuoji-visitor-center"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours/katsuoji-visitor-center"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Katsuoji & Visitor Center Tour - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/tours/katsuoji-visitor-center</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours/katsuoji-visitor-center"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours/katsuoji-visitor-center"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours/katsuoji-visitor-center"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Satsukiyama Sky Tour - English -->
+  <url>
+    <loc>https://minohcycles.com/en/tours/satsukiyama-sky</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours/satsukiyama-sky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours/satsukiyama-sky"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours/satsukiyama-sky"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Satsukiyama Sky Tour - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/tours/satsukiyama-sky</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/tours/satsukiyama-sky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/tours/satsukiyama-sky"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/tours/satsukiyama-sky"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Bikes Page - English -->
+  <url>
+    <loc>https://minohcycles.com/en/bikes</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/bikes"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/bikes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/bikes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Bikes Page - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/bikes</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/bikes"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/bikes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/bikes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Rentals Page - English -->
+  <url>
+    <loc>https://minohcycles.com/en/rentals</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/rentals"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/rentals"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/rentals"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Rentals Page - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/rentals</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/rentals"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/rentals"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/rentals"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Page - English -->
+  <url>
+    <loc>https://minohcycles.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Page - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- How to Book Page - English -->
+  <url>
+    <loc>https://minohcycles.com/en/how-to-book</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/how-to-book"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/how-to-book"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/how-to-book"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- How to Book Page - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/how-to-book</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/how-to-book"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/how-to-book"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/how-to-book"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Insurance Page - English -->
+  <url>
+    <loc>https://minohcycles.com/en/insurance</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/insurance"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/insurance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/insurance"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Insurance Page - Japanese -->
+  <url>
+    <loc>https://minohcycles.com/ja/insurance</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minohcycles.com/en/insurance"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://minohcycles.com/ja/insurance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minohcycles.com/en/insurance"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

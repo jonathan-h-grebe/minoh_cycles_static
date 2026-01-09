@@ -10,12 +10,17 @@
 </template>
 
 <script>
+import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
 
 export default {
   name: 'RentalPage',
   components: {
     AppHeader
+  },
+  setup() {
+    // Apply SEO
+    useSeo('rentals')
   }
 }
 </script>

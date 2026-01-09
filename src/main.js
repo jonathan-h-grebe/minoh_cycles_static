@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import { createHead } from '@vueuse/head'
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n.js'
@@ -12,4 +13,10 @@ import '@fontsource/inter/400.css'
 import '@fontsource/inter/700.css'
 import '@fontsource/inter/800.css'
 
-createApp(App).use(router).use(i18n).mount('#app')
+const head = createHead()
+
+createApp(App)
+  .use(router)
+  .use(i18n)
+  .use(head)
+  .mount('#app')

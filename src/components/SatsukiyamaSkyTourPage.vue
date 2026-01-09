@@ -13,12 +13,17 @@
 </template>
 
 <script>
+import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
 
 export default {
   name: 'SatsukiyamaSkyTourPage',
   components: {
     AppHeader
+  },
+  setup() {
+    // Apply SEO
+    useSeo('tourSatsukiyama')
   }
 }
 </script>

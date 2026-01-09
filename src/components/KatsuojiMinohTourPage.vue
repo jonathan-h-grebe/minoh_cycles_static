@@ -187,6 +187,8 @@
 <script>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useSeo } from '@/composables/useSeo'
+import { useStructuredData } from '@/composables/useStructuredData'
 import AppHeader from './AppHeader.vue'
 import BookingWidget from './BookingWidget.vue'
 
@@ -197,6 +199,23 @@ export default {
     BookingWidget
   },
   setup() {
+    // Apply SEO
+    useSeo('tourKatsuojiMinoh')
+
+    // Add structured data for tour
+    const { t } = useI18n()
+    useStructuredData('tour', {
+      name: t('toursList.tours.katsuojiMinohFalls.name'),
+      description: t('toursList.tours.katsuojiMinohFalls.description'),
+      image: 'https://minohcycles.com/assets/viator_tour_combo.png',
+      price: '15000',
+      url: 'https://minohcycles.com/en/tours/katsuoji-minoh-falls',
+      rating: {
+        value: '5.0',
+        count: '50'
+      }
+    })
+
     const { locale } = useI18n()
     const currentLocale = ref(locale.value)
 

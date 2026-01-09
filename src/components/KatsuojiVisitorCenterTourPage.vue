@@ -161,6 +161,8 @@
 <script>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useSeo } from '@/composables/useSeo'
+import { useStructuredData } from '@/composables/useStructuredData'
 import AppHeader from './AppHeader.vue'
 
 export default {
@@ -169,6 +171,19 @@ export default {
     AppHeader
   },
   setup() {
+    // Apply SEO
+    useSeo('tourKatsuojiVisitor')
+
+    // Add structured data for tour
+    const { t } = useI18n()
+    useStructuredData('tour', {
+      name: t('toursList.tours.katsuojiVisitorCenter.name'),
+      description: t('toursList.tours.katsuojiVisitorCenter.description'),
+      image: 'https://minohcycles.com/assets/direct_katsuoji_tour_combo.png',
+      price: '5000',
+      url: 'https://minohcycles.com/en/tours/katsuoji-visitor-center'
+    })
+
     const { locale } = useI18n()
     const currentLocale = ref(locale.value)
 

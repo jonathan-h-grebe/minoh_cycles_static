@@ -49,6 +49,8 @@
 <script>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useSeo } from '@/composables/useSeo'
+import { useStructuredData } from '@/composables/useStructuredData'
 import AppHeader from './AppHeader.vue'
 
 export default {
@@ -57,6 +59,12 @@ export default {
     AppHeader
   },
   setup() {
+    // Apply SEO
+    useSeo('about')
+
+    // Add structured data for local business
+    useStructuredData('localBusiness')
+
     const { locale } = useI18n()
     const currentLocale = ref(locale.value)
 

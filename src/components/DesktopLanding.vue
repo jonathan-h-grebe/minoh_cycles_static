@@ -157,10 +157,12 @@
         <h2>{{ $t('cta.title') }}</h2>
         <p>{{ $t('cta.description') }}</p>
         <p class="schedule-info">{{ $t('cta.schedule') }}</p>
-        <BookingWidget
-          :button-text="$t('cta.button')"
-          button-class="cta-button-large"
-        />
+        <div class="booking-widget-wrapper">
+          <BookingWidget
+            :button-text="$t('cta.button')"
+            button-class="cta-button-large"
+          />
+        </div>
         <div class="social-media">
           <p class="social-text">{{ currentLocale === 'ja' ? '最新の写真とアップデートはこちら' : 'Follow us for latest photos and updates' }}</p>
           <a href="https://www.instagram.com/minoh.cycle.tours/" target="_blank" rel="noopener noreferrer" class="instagram-link">
@@ -835,6 +837,11 @@ export default {
   margin-bottom: 2.5rem !important;
   display: inline-block;
   color: #60a5fa;
+}
+
+.booking-widget-wrapper {
+  display: inline-block;
+  margin-left: 1.25rem;
 }
 
 .cta-button-large {

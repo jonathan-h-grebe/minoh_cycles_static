@@ -174,6 +174,73 @@
       "button": "Book Now"
     }
   },
+  "seo": {
+    "home": {
+      "title": "Minoh Cycles - E-Bike Tours & Rentals in Osaka",
+      "description": "Experience Northern Osaka by e-bike. Guided tours to Minoh Falls, Katsuoji Temple, and mountain trails. Premium e-bike rentals available.",
+      "keywords": "osaka bike tours, minoh falls tour, katsuoji temple, e-bike rental osaka, cycling osaka"
+    },
+    "tours": {
+      "title": "Guided E-Bike Tours - Minoh Cycles",
+      "description": "Discover Minoh's natural beauty and cultural treasures on our guided e-bike tours. Visit waterfalls, temples, and scenic mountain roads.",
+      "keywords": "minoh bike tours, osaka cycling tours, katsuoji tour, temple tours osaka"
+    },
+    "tourKatsuojiMinoh": {
+      "title": "Katsuoji & Minoh Falls Half-Day Tour - Minoh Cycles",
+      "description": "Half-day guided e-bike tour visiting Katsuoji Temple and Minoh Falls. Includes lunch at local restaurant. Experience Osaka's mountain nature.",
+      "keywords": "katsuoji temple tour, minoh falls tour, osaka day trip, bike tour with lunch"
+    },
+    "tourKatsuojiVisitor": {
+      "title": "Katsuoji & Visitor Center Tour - Minoh Cycles",
+      "description": "Explore Katsuoji Temple and Minoh's natural history at the Visitor Center. Perfect for culture and nature enthusiasts.",
+      "keywords": "katsuoji temple, minoh visitor center, nature tour osaka"
+    },
+    "tourSatsukiyama": {
+      "title": "Satsukiyama Sky Tour - Minoh Cycles",
+      "description": "Discover a hidden gem with stunning views over Osaka. Lesser-known but equally beautiful mountain cycling route.",
+      "keywords": "satsukiyama tour, osaka mountain views, scenic bike tour"
+    },
+    "bikes": {
+      "title": "Premium E-Bikes - Minoh Cycles",
+      "description": "High-performance e-bikes for mountain cycling. Trek and Panasonic quality brands. All bikes maintained and insured under Japanese TS-Mark.",
+      "keywords": "e-bike rental osaka, electric bike rental, trek bikes osaka"
+    },
+    "rentals": {
+      "title": "E-Bike Rentals - Minoh Cycles",
+      "description": "Rent premium e-bikes to explore Minoh at your own pace. Flexible rental periods available.",
+      "keywords": "bike rental minoh, e-bike hire osaka, cycle hire"
+    },
+    "about": {
+      "title": "About Us - Minoh Cycles",
+      "description": "Learn about Minoh Cycles, your local guide to exploring Northern Osaka by e-bike. Expert local knowledge and premium equipment.",
+      "keywords": "minoh cycles, bike tours osaka, local guides osaka"
+    },
+    "howToBook": {
+      "title": "How to Book - Minoh Cycles",
+      "description": "Book your e-bike tour or rental. Easy reservation process. Located 10 minutes from Sakurai Station, 30 minutes from Osaka-Umeda.",
+      "keywords": "book bike tour osaka, reserve e-bike, minoh booking"
+    },
+    "insurance": {
+      "title": "Insurance Information - Minoh Cycles",
+      "description": "All bikes insured under Japanese TS-Mark scheme. Comprehensive coverage details.",
+      "keywords": "bike insurance japan, ts mark insurance"
+    }
+  },
+  "structured": {
+    "business": {
+      "name": "Minoh Cycles",
+      "description": "E-bike tours and rentals in Minoh, Northern Osaka",
+      "address": {
+        "streetAddress": "Near Sakurai Station",
+        "addressLocality": "Minoh",
+        "addressRegion": "Osaka",
+        "addressCountry": "JP"
+      },
+      "telephone": "",
+      "priceRange": "¥¥",
+      "openingHours": "Mo-Su 09:00-18:00"
+    }
+  },
   "howToBook": {
     "title": "How To Book",
     "subtitle": "",
