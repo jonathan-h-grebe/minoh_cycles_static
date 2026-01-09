@@ -1,0 +1,317 @@
+{
+  "nav": {
+    "tours": "旅遊行程",
+    "bikes": "自行車",
+    "about": "關於我們",
+    "bookNow": "如何預約"
+  },
+  "hero": {
+    "brandName": "Minoh Cycles",
+    "title": "電動自行車租賃與導覽行程",
+    "subtitle": "騎乘自行車體驗大阪北部的最佳景點",
+    "cta": "立即預約您的冒險",
+    "scrollDown": ""
+  },
+  "tours": {
+    "sectionTitle": "探索自然與文化",
+    "waterfall": {
+      "title": "瀑布、山中寺廟與壯麗景觀",
+      "description": "造訪{minohFallsLink}，在歷史悠久的{katsuojiLink}與數千尊達摩相遇。在森林山路上騎行，欣賞大阪及周邊地區的壯麗景色。"
+    },
+    "cultural": {
+      "title": "文化與歷史體驗",
+      "description": "探索古老的寺廟和神社，沉浸在日本文化和歷史之中。了解佛教傳統和這些神聖場所的意義，同時享受寧靜的山中環境。"
+    },
+    "ebike": {
+      "title": "輕鬆享受活力樂趣",
+      "description": "騎乘高性能電動自行車，輕鬆征服爬坡路段。體驗在山路上騎行的刺激，欣賞大阪的壯麗景色。"
+    },
+    "efficiency": {
+      "title": "驚人的時間效率",
+      "description": "在半天內體驗箕面的精華，而不會感到匆忙。我們精心規劃的路線讓您的時間發揮最大效益，並避開人潮前往最佳景點。"
+    },
+    "accessibility": {
+      "title": "從大阪輕鬆抵達",
+      "description": "Minoh Cycles 距離櫻井站步行僅需10分鐘，從大阪梅田搭乘電車僅需20分鐘。這是逃離城市、親近自然而無需長途跋涉的絕佳方式。"
+    }
+  },
+  "route": {
+    "takarazukaLine": "寶塚線（4/5號月台）",
+    "changeToMinoh": "轉乘箕面線",
+    "walkToMinohCycles": "步行",
+    "totalTime": "總計：20分鐘 + 1次轉乘"
+  },
+  "bikes": {
+    "sectionTitle": "高級自行車",
+    "title": "提供高品質電動自行車與裝備",
+    "description": "與城市旅遊中常用的經濟型電動自行車不同，我們的自行車適合運動使用，具備爬山所需的動力。每輛自行車都經過妥善維護，並根據日本TS-Mark制度投保。保險詳情請見{insuranceLink}。",
+    "insuranceLink": "這裡",
+    "viewAll": "查看我們所有的自行車 →"
+  },
+  "cta": {
+    "title": "準備好您的冒險了嗎？",
+    "description": "立即預約您的箕面瀑布與勝尾寺自行車行程",
+    "schedule": "行程於每個工作日早上9點出發",
+    "button": "立即預約"
+  },
+  "comingSoon": {
+    "title": "即將推出",
+    "bikes": "我們正在準備關於自行車和租賃選項的詳細資訊。同時，請參閱我們的{viatorLink}以獲取詳細資訊。",
+    "viatorLinkText": "Viator 清單",
+    "about": "同時，您可以在我們的{viatorLink}上了解更多關於我們行程的資訊。",
+    "backToTours": "返回行程",
+    "katsuojiLinkText": "勝尾寺",
+    "minohFallsLinkText": "箕面瀑布"
+  },
+  "bikesPage": {
+    "title": "我們的電動自行車",
+    "subtitle": "從我們精選的高品質電動輔助自行車中選擇，每輛車都經過專業維護並根據您的舒適度和安全性進行調整。",
+    "trek": {
+      "name": "Trek FX+ 2",
+      "height": "適合騎士身高：175cm - 185cm",
+      "tireSize": "輪胎尺寸：700×40C",
+      "gears": "8速變速系統",
+      "brakes": "Tektro MD-U310 機械碟煞"
+    },
+    "panasonic": {
+      "name": "Panasonic Xealt L3",
+      "height": "適合騎士身高：150cm - 180cm",
+      "tireSize": "輪胎尺寸：700×38C",
+      "gears": "8速變速系統",
+      "brakes": "Shimano V型煞車附動力調節器"
+    },
+    "note": "提供安全帽，座位位置將根據騎士身高進行調整。完美適合山地地形和所有健身程度。兩款自行車的電池續航力足以支持多次行程，您無需擔心電量不足。"
+  },
+  "toursList": {
+    "title": "我們的行程",
+    "subtitle_1": "想了解勝尾寺神社背後的意義、\n造訪大阪的內行建議，以及當地餐廳推薦嗎？",
+    "subtitle_2": "對日本騎車規則不確定，或只是希望有翻譯人員在場？",
+    "subtitle_3": "參加導覽行程，享受這一切及更多。",
+    "categories": {
+      "minohKatsuoji": "箕面公園與勝尾寺地區行程",
+      "other": "其他行程"
+    },
+    "tours": {
+      "katsuojiMinohFalls": {
+        "name": "勝尾寺與箕面瀑布半日遊附午餐",
+        "description": "在這趟半日冒險中造訪勝尾寺和箕面瀑布，並在當地人喜愛的餐廳享用午餐作為完美結尾。",
+        "duration": "上午9點~下午2點",
+        "difficulty": "中等難度"
+      },
+      "katsuojiVisitorCenter": {
+        "name": "勝尾寺與箕面遊客中心行程",
+        "description": "體驗勝尾寺並在遊客中心探索箕面的自然歷史。非常適合自然和文化愛好者。",
+        "duration": "上午9點~12:30",
+        "difficulty": "中等難度"
+      },
+      "satsukiyamaSky": {
+        "name": "皐月山天空行程",
+        "description": "走一條較少人知但同樣美麗的路線，欣賞周邊地區的景色。",
+        "duration": "3小時",
+        "difficulty": "中等難度"
+      }
+    },
+    "viewDetails": "查看詳情",
+    "comingSoon": "即將推出",
+    "comingSoonMessage": "此行程目前正在開發中。請稍後再來查看更多詳情！",
+    "backToTours": "返回行程"
+  },
+  "tourDetails": {
+    "title": "勝尾寺與箕面瀑布半日遊",
+    "subtitle": "騎乘電動自行車體驗箕面的山路，並造訪箕面瀑布和勝利之寺勝尾寺。包含在當地推薦餐廳享用午餐。",
+    "description": "提供適合各種身高的高品質電動輔助自行車和安全帽。",
+    "itinerary": "行程表",
+    "steps": {
+      "orientation": {
+        "title": "行前說明",
+        "description": "簡短的歡迎和說明，我會解釋如何操作電動自行車，並確保每個人的自行車和安全帽都已正確調整。"
+      },
+      "rideToTemple": {
+        "title": "騎乘前往勝尾寺",
+        "description": "沿著阪急鐵路線騎行至箕面站（2.7公里），然後進入森林山路，爬升至勝尾寺（3.2公里）。"
+      },
+      "experienceTemple": {
+        "title": "體驗勝尾寺",
+        "description": "悠閒地繞行勝利之寺勝尾寺。了解日本佛教並欣賞大阪的壯麗景色。"
+      },
+      "continueToFalls": {
+        "title": "繼續前往箕面瀑布",
+        "description": "下坡然後再次爬升穿越山區到達瀑布。"
+      },
+      "enjoyFalls": {
+        "title": "欣賞箕面瀑布",
+        "description": "享受當之無愧的休息，欣賞瀑布的美景。"
+      },
+      "returnToSakurai": {
+        "title": "返回 Minoh Cycles 總部",
+        "description": "收穫先前爬坡的回報，在我們下坡返回市區時欣賞大阪的景色。歸還自行車後，步行10分鐘即可抵達櫻井站。"
+      }
+    },
+    "preparation": {
+      "whatToBring": "攜帶物品",
+      "whatIncluded": "包含項目",
+      "items": {
+        "exerciseClothes": "適合運動的衣服",
+        "water": "飲用水",
+        "waterNote": "每輛自行車提供一瓶600ml的水，但夏天需要更多",
+        "sunscreen": "防曬乳",
+        "backpack": "用來裝東西的背包",
+        "money": "現金",
+        "moneyNote": "包含勝尾寺門票，但您可能想要額外的零食或紀念品",
+        "premiumEbike": "電動自行車",
+        "helmet": "自行車安全帽",
+        "waterBottle": "600ml 瓶裝水",
+        "tsMarkInsurance": "藍色TS-Mark自行車保險（涵蓋騎士傷害與第三方責任）",
+        "snack": "撐到午餐的小點心",
+        "entranceFee": "寺廟門票",
+        "guide": "專業導遊"
+      }
+    },
+    "cta": {
+      "title": "準備好您的冒險了嗎？",
+      "description": "立即預約您的箕面瀑布與勝尾寺自行車行程",
+      "schedule": "行程於每個工作日早上9點出發",
+      "button": "立即預約"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Minoh Cycles - 大阪電動自行車行程與租賃",
+      "description": "騎乘電動自行車體驗大阪北部。前往箕面瀑布、勝尾寺和山路的導覽行程。提供高級電動自行車租賃。",
+      "keywords": "大阪自行車行程, 箕面瀑布行程, 勝尾寺, 大阪電動自行車租賃, 大阪騎自行車"
+    },
+    "tours": {
+      "title": "電動自行車導覽行程 - Minoh Cycles",
+      "description": "在我們的電動自行車導覽行程中探索箕面的自然美景和文化寶藏。造訪瀑布、寺廟和風景秀麗的山路。",
+      "keywords": "箕面自行車行程, 大阪騎自行車行程, 勝尾寺行程, 大阪寺廟行程"
+    },
+    "tourKatsuojiMinoh": {
+      "title": "勝尾寺與箕面瀑布半日遊 - Minoh Cycles",
+      "description": "半日電動自行車導覽行程，造訪勝尾寺和箕面瀑布。包含在當地餐廳享用午餐。體驗大阪的山中自然。",
+      "keywords": "勝尾寺行程, 箕面瀑布行程, 大阪一日遊, 附午餐的自行車行程"
+    },
+    "tourKatsuojiVisitor": {
+      "title": "勝尾寺與遊客中心行程 - Minoh Cycles",
+      "description": "探索勝尾寺並在遊客中心了解箕面的自然歷史。非常適合文化和自然愛好者。",
+      "keywords": "勝尾寺, 箕面遊客中心, 大阪自然行程"
+    },
+    "tourSatsukiyama": {
+      "title": "皐月山天空行程 - Minoh Cycles",
+      "description": "探索一個隱藏的寶石，欣賞大阪周邊的壯麗景色。較少人知但同樣美麗的山地騎行路線。",
+      "keywords": "皐月山行程, 大阪山景, 風景秀麗的自行車行程"
+    },
+    "bikes": {
+      "title": "高級電動自行車 - Minoh Cycles",
+      "description": "適合山地騎行的高性能電動自行車。Trek 和 Panasonic 優質品牌。所有自行車均經過維護並根據日本TS-Mark投保。",
+      "keywords": "大阪電動自行車租賃, 電動自行車租賃, 大阪 Trek 自行車"
+    },
+    "rentals": {
+      "title": "電動自行車租賃 - Minoh Cycles",
+      "description": "租用高級電動自行車，按照自己的節奏探索箕面。提供靈活的租賃期限。",
+      "keywords": "箕面自行車租賃, 大阪電動自行車租賃, 自行車租賃"
+    },
+    "about": {
+      "title": "關於我們 - Minoh Cycles",
+      "description": "了解 Minoh Cycles，您騎乘電動自行車探索大阪北部的本地嚮導。專業的當地知識和高級裝備。",
+      "keywords": "minoh cycles, 大阪自行車行程, 大阪當地嚮導"
+    },
+    "howToBook": {
+      "title": "如何預約 - Minoh Cycles",
+      "description": "預約您的電動自行車行程或租賃。簡單的預約流程。距離櫻井站10分鐘，距離大阪梅田30分鐘。",
+      "keywords": "預約大阪自行車行程, 預約電動自行車, 箕面預約"
+    },
+    "insurance": {
+      "title": "保險資訊 - Minoh Cycles",
+      "description": "所有自行車均根據日本TS-Mark制度投保。詳細的保險範圍詳情。",
+      "keywords": "日本自行車保險, ts mark 保險"
+    }
+  },
+  "structured": {
+    "business": {
+      "name": "Minoh Cycles",
+      "description": "大阪北部箕面的電動自行車行程和租賃",
+      "address": {
+        "street": "櫻井站附近",
+        "city": "箕面",
+        "region": "大阪",
+        "postalCode": "",
+        "addressLocality": "箕面",
+        "addressRegion": "大阪",
+        "addressCountry": "JP"
+      },
+      "telephone": "",
+      "priceRange": "¥¥",
+      "openingHours": "週一至週日 09:00-18:00"
+    }
+  },
+  "howToBook": {
+    "title": "如何預約",
+    "subtitle": "",
+    "guidedTours": {
+      "title": "導覽行程",
+      "step1": {
+        "title": "從「行程」頁面選擇您的行程，然後點擊「查看詳情」",
+        "description": "",
+        "linkText": "查看行程"
+      },
+      "step2": {
+        "title": "提出您的預約請求",
+        "description": "在這兩種情況下，請指定您的團隊成員的姓名和身高。",
+        "onlineBooking": {
+          "title": "勝尾寺和箕面瀑布",
+          "description": "使用我們的線上預約系統立即預約我們的原創勝尾寺和箕面瀑布行程。",
+          "button": "立即預約"
+        },
+        "directTours": {
+          "title": "其他行程",
+          "badge": "新",
+          "description": "對於其他行程，請填寫預約請求表以直接預約。",
+          "button": "提交預約請求"
+        }
+      },
+      "step3": {
+        "title": "我們確認自行車可用性並發送確認",
+        "description": "在確認適當尺寸的自行車可用性後，我們將透過線上預約系統或直接電子郵件向您發送預約確認。如果我們沒有符合您要求的自行車，我們可能會建議其他日期。<br><br>我們通常會在幾小時內回覆預約請求，但如果您從日本以外的地方請求而我們正在睡覺，可能需要更長時間。"
+      },
+      "step4": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "payments": {
+      "title": "付款",
+      "online": {
+        "title": "線上預約",
+        "description": "透過我們的線上預約系統預約行程時，付款會在預約時安全處理。"
+      },
+      "direct": {
+        "title": "所有其他預約",
+        "description": "對於所有其他預約，請在抵達時以現金支付。",
+        "note": "※ 我們的預約和付款系統正在開發中，請稍候"
+      }
+    },
+    "cycleHire": {
+      "title": "自行車租賃",
+      "comingSoon": "即將推出",
+      "linkText": "了解更多"
+    },
+    "availability": {
+      "title": "查詢可用性",
+      "online": {
+        "title": "線上預約",
+        "description": "透過我們的線上系統預約時，預約小工具會顯示即時可用性。"
+      },
+      "direct": {
+        "title": "其他預約",
+        "description": "對於其他預約，請透過此表格查詢。",
+        "button": "查詢"
+      }
+    },
+    "quickLinks": {
+      "title": "快速連結",
+      "viewTours": "查看所有行程",
+      "viewBikes": "我們的自行車",
+      "cycleHire": "自行車租賃資訊"
+    }
+  }
+}

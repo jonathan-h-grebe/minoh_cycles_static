@@ -31,6 +31,11 @@
                   <span class="duration">{{ $t('toursList.tours.katsuojiMinohFalls.duration') }}</span>
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiMinohFalls.difficulty') }}</span>
                 </div>
+                <div class="tour-pricing">
+                  <span class="price-original">¥9,500</span>
+                  <span class="price-discounted">¥5,225</span>
+                  <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格 - 2月6日まで' : currentLocale === 'zh' ? '優惠價格 - 至2月6日' : currentLocale === 'ko' ? '특별 가격 - 2월 6일까지' : 'Introductory Price - Until Feb 6th' }}</span>
+                </div>
                 <div class="tour-actions">
                   <BookingWidget
                     :button-text="currentLocale === 'ja' ? '今すぐ予約' : 'Book Now'"
@@ -55,9 +60,9 @@
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiVisitorCenter.difficulty') }}</span>
                 </div>
                 <div class="tour-pricing">
-                  <span class="price-original">¥10,000</span>
+                  <span class="price-original">¥9,000</span>
                   <span class="price-discounted">¥5,000</span>
-                  <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格' : 'Introductory Price' }}</span>
+                  <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格 - 2月6日まで' : currentLocale === 'zh' ? '優惠價格 - 至2月6日' : currentLocale === 'ko' ? '특별 가격 - 2월 6일까지' : 'Introductory Price - Until Feb 6th' }}</span>
                 </div>
                 <router-link to="/tours/katsuoji-visitor-center" @click="scrollToTop" class="tour-button">{{ $t('toursList.viewDetails') }}</router-link>
               </div>

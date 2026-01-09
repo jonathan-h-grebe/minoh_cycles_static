@@ -64,10 +64,10 @@ const baseRoutes = [
   }
 ]
 
-// Generate routes for both languages
+// Generate routes for all languages
 function generateLocalizedRoutes() {
   const routes = []
-  const languages = ['en', 'ja']
+  const languages = ['en', 'ja', 'zh', 'ko']
 
   languages.forEach(lang => {
     baseRoutes.forEach(route => {

@@ -1,0 +1,317 @@
+{
+  "nav": {
+    "tours": "투어",
+    "bikes": "자전거",
+    "about": "소개",
+    "bookNow": "예약 방법"
+  },
+  "hero": {
+    "brandName": "Minoh Cycles",
+    "title": "전기 자전거 대여 및 가이드 투어",
+    "subtitle": "자전거로 오사카 북부의 최고를 경험하세요",
+    "cta": "모험 예약하기",
+    "scrollDown": ""
+  },
+  "tours": {
+    "sectionTitle": "자연과 문화 발견",
+    "waterfall": {
+      "title": "폭포, 산속 사원 및 멋진 전망",
+      "description": "{minohFallsLink}를 방문하고 역사적인 {katsuojiLink}에서 수천 개의 다루마를 만나보세요. 숲속 산길을 따라 페달을 밟으며 오사카와 주변 지역의 숨막히는 전망을 감상하세요."
+    },
+    "cultural": {
+      "title": "문화 및 역사 체험",
+      "description": "고대 사원과 신사를 탐험하며 일본 문화와 역사에 푹 빠져보세요. 평화로운 산속 환경을 즐기며 불교 전통과 이러한 신성한 장소의 의미에 대해 배워보세요."
+    },
+    "ebike": {
+      "title": "부담 없는 액티브 재미",
+      "description": "오르막의 부담을 덜어주는 고성능 전기 자전거로 활동적인 모험을 즐기세요. 오사카의 멋진 전망을 바라보며 산길을 자전거로 달리는 스릴을 경험하세요."
+    },
+    "efficiency": {
+      "title": "놀라운 시간 효율성",
+      "description": "단 반나절 만에 미노의 최고를 경험하며 서두르는 느낌 없이 여유롭게 즐기세요. 신중하게 계획된 경로로 시간을 최대한 활용하고 최고의 명소에서 군중을 피하세요."
+    },
+    "accessibility": {
+      "title": "오사카에서 쉽게 접근 가능",
+      "description": "Minoh Cycles는 사쿠라이역에서 도보 10분 거리에 위치하며 오사카 우메다에서 기차로 단 20분 거리에 있습니다. 긴 여행 없이 도시를 벗어나 자연을 찾을 수 있는 좋은 방법입니다."
+    }
+  },
+  "route": {
+    "takarazukaLine": "다카라즈카선 (4/5번 플랫폼)",
+    "changeToMinoh": "미노선으로 환승",
+    "walkToMinohCycles": "도보",
+    "totalTime": "총: 20분 + 환승 1회"
+  },
+  "bikes": {
+    "sectionTitle": "프리미엄 자전거",
+    "title": "고품질 전기 자전거 및 장비 제공",
+    "description": "도시 투어에서 일반적으로 사용되는 저가 전기 자전거와 달리 우리 자전거는 스포츠에 적합하며 산을 오르는 데 필요한 힘을 가지고 있습니다. 모든 자전거는 잘 관리되고 일본 TS-Mark 제도에 따라 보험에 가입되어 있습니다. 보험 세부사항은 {insuranceLink}를 참조하세요.",
+    "insuranceLink": "여기",
+    "viewAll": "모든 자전거 보기 →"
+  },
+  "cta": {
+    "title": "모험을 시작할 준비가 되셨나요?",
+    "description": "오늘 미노 폭포 및 가쓰오지 자전거 투어를 예약하세요",
+    "schedule": "투어는 매주 평일 오전 9시에 운영됩니다",
+    "button": "지금 예약"
+  },
+  "comingSoon": {
+    "title": "곧 출시",
+    "bikes": "자전거 및 대여 옵션에 대한 자세한 정보를 준비 중입니다. 그동안 자세한 내용은 {viatorLink}를 참조하세요.",
+    "viatorLinkText": "Viator 리스팅",
+    "about": "그동안 {viatorLink}에서 투어에 대해 자세히 알아볼 수 있습니다.",
+    "backToTours": "투어로 돌아가기",
+    "katsuojiLinkText": "가쓰오지 사원",
+    "minohFallsLinkText": "미노 폭포"
+  },
+  "bikesPage": {
+    "title": "우리의 전기 자전거",
+    "subtitle": "전문적으로 유지 관리되고 편안함과 안전을 위해 조정된 고품질 전기 보조 자전거 중에서 선택하세요.",
+    "trek": {
+      "name": "Trek FX+ 2",
+      "height": "적합한 라이더 키: 175cm - 185cm",
+      "tireSize": "타이어 크기: 700×40C",
+      "gears": "8단 변속기",
+      "brakes": "Tektro MD-U310 기계식 디스크 브레이크"
+    },
+    "panasonic": {
+      "name": "Panasonic Xealt L3",
+      "height": "적합한 라이더 키: 150cm - 180cm",
+      "tireSize": "타이어 크기: 700×38C",
+      "gears": "8단 변속기",
+      "brakes": "파워 모듈레이터가 있는 Shimano V브레이크"
+    },
+    "note": "헬멧이 제공되며 좌석 위치는 라이더 키에 따라 조정됩니다. 산악 지형과 모든 체력 수준에 완벽합니다. 두 자전거 모두 배터리 수명이 여러 번의 여행에 충분하므로 전력 부족을 걱정할 필요가 없습니다."
+  },
+  "toursList": {
+    "title": "우리의 투어",
+    "subtitle_1": "가쓰오지의 신사 뒤에 숨겨진 의미, \n오사카 방문을 위한 내부자 팁, 현지 레스토랑 추천을 알고 싶으신가요?",
+    "subtitle_2": "일본의 자전거 도로 규칙이 확실하지 않거나 통역사를 대기시키는 것을 선호하시나요?",
+    "subtitle_3": "이 모든 것과 그 이상을 위해 가이드 투어에 참여하세요.",
+    "categories": {
+      "minohKatsuoji": "미노 공원 및 가쓰오지 지역 투어",
+      "other": "기타 투어"
+    },
+    "tours": {
+      "katsuojiMinohFalls": {
+        "name": "점심 포함 가쓰오지 및 미노 폭포 반일 투어",
+        "description": "이 반나절 모험에서 가쓰오지 사원과 미노 폭포를 모두 방문하고 사랑받는 지역 레스토랑에서 점심으로 마무리하세요.",
+        "duration": "오전 9시~오후 2시",
+        "difficulty": "중급"
+      },
+      "katsuojiVisitorCenter": {
+        "name": "가쓰오지 및 미노 방문자 센터 투어",
+        "description": "가쓰오지 사원을 경험하고 방문자 센터에서 미노의 자연사를 발견하세요. 자연과 문화 애호가에게 완벽합니다.",
+        "duration": "오전 9시~12시 30분",
+        "difficulty": "중급"
+      },
+      "satsukiyamaSky": {
+        "name": "사츠키야마 스카이 투어",
+        "description": "덜 알려져 있지만 똑같이 아름다운 경로를 따라 주변 지역의 전망을 감상하세요.",
+        "duration": "3시간",
+        "difficulty": "중급"
+      }
+    },
+    "viewDetails": "세부 정보 보기",
+    "comingSoon": "곧 출시",
+    "comingSoonMessage": "이 투어는 현재 개발 중입니다. 곧 자세한 내용을 확인하세요!",
+    "backToTours": "투어로 돌아가기"
+  },
+  "tourDetails": {
+    "title": "가쓰오지 및 미노 폭포 반일 투어",
+    "subtitle": "전기 자전거로 미노의 산길을 경험하고 미노 폭포와 승리의 사원 가쓰오지를 모두 방문하세요. 현지 추천 레스토랑에서 점심이 포함됩니다.",
+    "description": "다양한 키에 맞는 고품질 전기 보조 자전거와 헬멧이 제공됩니다.",
+    "itinerary": "일정",
+    "steps": {
+      "orientation": {
+        "title": "오리엔테이션",
+        "description": "간단한 환영 및 브리핑으로 전기 자전거 작동 방법을 설명하고 모든 사람의 자전거와 헬멧이 올바르게 조정되었는지 확인합니다."
+      },
+      "rideToTemple": {
+        "title": "가쓰오지까지 라이딩",
+        "description": "한큐 철도선을 따라 미노역까지 라이딩(2.7km)한 후 숲속 산길로 들어가 가쓰오지 사원까지 오르기(3.2km)."
+      },
+      "experienceTemple": {
+        "title": "가쓰오지 체험",
+        "description": "승리의 사원 가쓰오지를 여유롭게 둘러보세요. 일본 불교에 대해 배우고 오사카의 멋진 전망을 감상하세요."
+      },
+      "continueToFalls": {
+        "title": "미노 폭포로 계속",
+        "description": "산을 내려갔다가 다시 올라가 폭포에 도달합니다."
+      },
+      "enjoyFalls": {
+        "title": "미노 폭포 감상",
+        "description": "잘 쉬어가며 폭포의 아름다움을 감상하세요."
+      },
+      "returnToSakurai": {
+        "title": "Minoh Cycles 본부로 복귀",
+        "description": "이전 오르막의 보상을 받으며 시내로 내려가며 오사카의 전망을 감상하세요. 자전거를 반납한 후 사쿠라이역까지 도보로 10분입니다."
+      }
+    },
+    "preparation": {
+      "whatToBring": "준비물",
+      "whatIncluded": "포함 사항",
+      "items": {
+        "exerciseClothes": "운동할 수 있는 옷",
+        "water": "물",
+        "waterNote": "자전거당 600ml 병이 제공되지만 여름에는 더 필요합니다",
+        "sunscreen": "자외선 차단제",
+        "backpack": "물건을 담을 배낭",
+        "money": "현금",
+        "moneyNote": "가쓰오지 입장료는 포함되어 있지만 추가 간식이나 기념품을 원할 수 있습니다",
+        "premiumEbike": "전기 자전거",
+        "helmet": "자전거 헬멧",
+        "waterBottle": "600ml 생수",
+        "tsMarkInsurance": "블루 TS-Mark 자전거 보험 (라이더 부상 및 제3자 책임 보상)",
+        "snack": "점심 때까지 버틸 작은 간식",
+        "entranceFee": "사원 입장료",
+        "guide": "전문 가이드"
+      }
+    },
+    "cta": {
+      "title": "모험을 시작할 준비가 되셨나요?",
+      "description": "오늘 미노 폭포 및 가쓰오지 자전거 투어를 예약하세요",
+      "schedule": "투어는 매주 평일 오전 9시에 운영됩니다",
+      "button": "지금 예약"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Minoh Cycles - 오사카 전기 자전거 투어 및 대여",
+      "description": "전기 자전거로 오사카 북부를 경험하세요. 미노 폭포, 가쓰오지 사원 및 산길로의 가이드 투어. 프리미엄 전기 자전거 대여 가능.",
+      "keywords": "오사카 자전거 투어, 미노 폭포 투어, 가쓰오지 사원, 오사카 전기 자전거 대여, 오사카 사이클링"
+    },
+    "tours": {
+      "title": "가이드 전기 자전거 투어 - Minoh Cycles",
+      "description": "가이드 전기 자전거 투어로 미노의 자연미와 문화 보물을 발견하세요. 폭포, 사원 및 경치 좋은 산길을 방문하세요.",
+      "keywords": "미노 자전거 투어, 오사카 사이클링 투어, 가쓰오지 투어, 오사카 사원 투어"
+    },
+    "tourKatsuojiMinoh": {
+      "title": "가쓰오지 및 미노 폭포 반일 투어 - Minoh Cycles",
+      "description": "가쓰오지 사원과 미노 폭포를 방문하는 반나절 가이드 전기 자전거 투어. 현지 레스토랑에서 점심 포함. 오사카의 산악 자연을 경험하세요.",
+      "keywords": "가쓰오지 사원 투어, 미노 폭포 투어, 오사카 당일 여행, 점심 포함 자전거 투어"
+    },
+    "tourKatsuojiVisitor": {
+      "title": "가쓰오지 및 방문자 센터 투어 - Minoh Cycles",
+      "description": "가쓰오지 사원을 탐험하고 방문자 센터에서 미노의 자연사를 발견하세요. 문화 및 자연 애호가에게 완벽합니다.",
+      "keywords": "가쓰오지 사원, 미노 방문자 센터, 오사카 자연 투어"
+    },
+    "tourSatsukiyama": {
+      "title": "사츠키야마 스카이 투어 - Minoh Cycles",
+      "description": "오사카 주변의 멋진 전망을 가진 숨겨진 보석을 발견하세요. 덜 알려져 있지만 똑같이 아름다운 산악 사이클링 경로.",
+      "keywords": "사츠키야마 투어, 오사카 산 전망, 경치 좋은 자전거 투어"
+    },
+    "bikes": {
+      "title": "프리미엄 전기 자전거 - Minoh Cycles",
+      "description": "산악 사이클링을 위한 고성능 전기 자전거. Trek 및 Panasonic 고급 브랜드. 모든 자전거는 유지 관리되고 일본 TS-Mark에 따라 보험에 가입되어 있습니다.",
+      "keywords": "오사카 전기 자전거 대여, 전기 자전거 대여, 오사카 트렉 자전거"
+    },
+    "rentals": {
+      "title": "전기 자전거 대여 - Minoh Cycles",
+      "description": "프리미엄 전기 자전거를 대여하여 자신만의 속도로 미노를 탐험하세요. 유연한 대여 기간을 이용할 수 있습니다.",
+      "keywords": "미노 자전거 대여, 오사카 전기 자전거 대여, 사이클 대여"
+    },
+    "about": {
+      "title": "소개 - Minoh Cycles",
+      "description": "Minoh Cycles에 대해 알아보세요. 전기 자전거로 오사카 북부를 탐험하는 현지 가이드입니다. 전문 현지 지식과 프리미엄 장비.",
+      "keywords": "minoh cycles, 오사카 자전거 투어, 오사카 현지 가이드"
+    },
+    "howToBook": {
+      "title": "예약 방법 - Minoh Cycles",
+      "description": "전기 자전거 투어 또는 대여를 예약하세요. 간편한 예약 절차. 사쿠라이역에서 10분, 오사카 우메다에서 30분 거리에 있습니다.",
+      "keywords": "오사카 자전거 투어 예약, 전기 자전거 예약, 미노 예약"
+    },
+    "insurance": {
+      "title": "보험 정보 - Minoh Cycles",
+      "description": "모든 자전거는 일본 TS-Mark 제도에 따라 보험에 가입되어 있습니다. 포괄적인 보험 범위 세부사항.",
+      "keywords": "일본 자전거 보험, ts mark 보험"
+    }
+  },
+  "structured": {
+    "business": {
+      "name": "Minoh Cycles",
+      "description": "오사카 북부 미노의 전기 자전거 투어 및 대여",
+      "address": {
+        "street": "사쿠라이역 근처",
+        "city": "미노",
+        "region": "오사카",
+        "postalCode": "",
+        "addressLocality": "미노",
+        "addressRegion": "오사카",
+        "addressCountry": "JP"
+      },
+      "telephone": "",
+      "priceRange": "¥¥",
+      "openingHours": "월요일~일요일 09:00-18:00"
+    }
+  },
+  "howToBook": {
+    "title": "예약 방법",
+    "subtitle": "",
+    "guidedTours": {
+      "title": "가이드 투어",
+      "step1": {
+        "title": "\"투어\" 페이지에서 투어를 선택하고 \"세부 정보 보기\"를 클릭하세요",
+        "description": "",
+        "linkText": "투어 보기"
+      },
+      "step2": {
+        "title": "예약 요청하기",
+        "description": "두 경우 모두 귀하의 일행 구성원의 이름과 키를 명시해 주세요.",
+        "onlineBooking": {
+          "title": "가쓰오지 및 미노 폭포",
+          "description": "온라인 예약 시스템을 사용하여 오리지널 가쓰오지 및 미노 폭포 투어를 즉시 예약하세요.",
+          "button": "지금 예약"
+        },
+        "directTours": {
+          "title": "기타 투어",
+          "badge": "새로운",
+          "description": "다른 투어의 경우 예약 요청 양식을 작성하여 직접 예약하세요.",
+          "button": "예약 요청 제출"
+        }
+      },
+      "step3": {
+        "title": "자전거 가용성 확인 및 확인서 발송",
+        "description": "적절한 크기의 자전거 가용성을 확인한 후 온라인 예약 시스템 또는 직접 이메일을 통해 예약 확인을 보내드립니다. 요청을 충족할 자전거가 없으면 다른 날짜를 제안할 수 있습니다.<br><br>일반적으로 몇 시간 내에 예약 요청에 응답하지만 일본 외부에서 요청하고 저희가 자고 있는 경우 시간이 더 걸릴 수 있습니다."
+      },
+      "step4": {
+        "title": "",
+        "description": ""
+      }
+    },
+    "payments": {
+      "title": "결제",
+      "online": {
+        "title": "온라인 예약",
+        "description": "온라인 예약 시스템을 통해 투어를 예약할 때 결제는 예약 시 안전하게 처리됩니다."
+      },
+      "direct": {
+        "title": "기타 모든 예약",
+        "description": "기타 모든 예약의 경우 도착 시 현금으로 지불해 주세요.",
+        "note": "※ 예약 및 결제 시스템이 개발 중이니 잠시 기다려 주세요"
+      }
+    },
+    "cycleHire": {
+      "title": "사이클 대여",
+      "comingSoon": "곧 출시",
+      "linkText": "자세히 알아보기"
+    },
+    "availability": {
+      "title": "가용성 확인",
+      "online": {
+        "title": "온라인 예약",
+        "description": "온라인 시스템을 통한 예약의 경우 예약 위젯에 실시간 가용성이 표시됩니다."
+      },
+      "direct": {
+        "title": "기타 예약",
+        "description": "다른 예약의 경우 이 양식을 통해 문의하세요.",
+        "button": "문의"
+      }
+    },
+    "quickLinks": {
+      "title": "빠른 링크",
+      "viewTours": "모든 투어 보기",
+      "viewBikes": "우리의 자전거",
+      "cycleHire": "사이클 대여 정보"
+    }
+  }
+}
