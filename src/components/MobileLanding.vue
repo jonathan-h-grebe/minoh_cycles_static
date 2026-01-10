@@ -29,15 +29,17 @@
             </svg>
           </button>
         </div>
-        <router-link to="/tours" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
-        <router-link to="/bikes" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
-        <router-link to="/rentals" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
-        <router-link to="/about" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
-        <router-link to="/how-to-book" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link>
+        <router-link :to="`/${currentLocale}/tours`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.tours') }}</router-link>
+        <router-link :to="`/${currentLocale}/bikes`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
+        <router-link :to="`/${currentLocale}/rentals`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
+        <router-link :to="`/${currentLocale}/about`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
+        <router-link :to="`/${currentLocale}/how-to-book`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link>
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
             <option value="en">EN</option>
             <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+            <option value="ko">한국어</option>
           </select>
         </div>
       </div>
@@ -55,7 +57,7 @@
             {{ $t('hero.subtitle') }}
           </p>
           <div class="cta-buttons">
-            <router-link to="/tours" class="cta-button primary">View Tours</router-link>
+            <router-link :to="`/${currentLocale}/tours`" class="cta-button primary">View Tours</router-link>
             <button class="cta-button secondary disabled" disabled>
               Rent An E-Bike
               <span class="tooltip">Coming Soon</span>
@@ -167,11 +169,11 @@
             <p>
               <i18n-t keypath="bikes.description" tag="span">
                 <template #insuranceLink>
-                  <router-link to="/insurance" class="insurance-link-mobile">{{ $t('bikes.insuranceLink') }}</router-link>
+                  <router-link :to="`/${currentLocale}/insurance`" class="insurance-link-mobile">{{ $t('bikes.insuranceLink') }}</router-link>
                 </template>
               </i18n-t>
             </p>
-            <router-link to="/bikes" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</router-link>
+            <router-link :to="`/${currentLocale}/bikes`" class="bike-link-mobile">{{ $t('bikes.viewAll') }}</router-link>
           </div>
         </div>
       </div>
@@ -184,7 +186,7 @@
         <p>{{ $t('cta.description') }}</p>
         <p class="schedule-info">{{ $t('cta.schedule') }}</p>
         <div class="cta-button-wrapper">
-          <router-link to="/tours" class="cta-button-large">{{ $t('cta.button') }}</router-link>
+          <router-link :to="`/${currentLocale}/tours`" class="cta-button-large">{{ $t('cta.button') }}</router-link>
         </div>
         <div class="social-media">
           <p class="social-text">{{ currentLocale === 'ja' ? '最新の写真とアップデートはこちら' : 'Follow us for latest photos and updates' }}</p>
@@ -209,11 +211,14 @@
 <script>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter, useRoute } from 'vue-router'
 
 export default {
   name: 'MobileLanding',
   setup() {
     const { locale } = useI18n()
+    const router = useRouter()
+    const route = useRoute()
     const menuOpen = ref(false)
     const currentLocale = ref(locale.value)
 
@@ -238,7 +243,14 @@ export default {
     }
 
     const changeLanguage = () => {
-      locale.value = currentLocale.value
+      const newLocale = currentLocale.value
+      const currentPath = route.path
+
+      // Extract the path without language prefix
+      const pathWithoutLocale = currentPath.replace(/^\/(en|ja|zh|ko)/, '')
+
+      // Navigate to new language version of current page
+      router.push(`/${newLocale}${pathWithoutLocale}`)
     }
 
     const closeMenuAndScrollTop = () => {
@@ -248,6 +260,8 @@ export default {
 
     onMounted(() => {
       document.addEventListener('keydown', handleEscapeKey)
+      // Sync locale with current route
+      currentLocale.value = route.meta.locale || locale.value
     })
 
     onUnmounted(() => {
