@@ -9,6 +9,7 @@ import RentalPage from '../components/RentalPage.vue'
 import AboutPage from '../components/AboutPage.vue'
 import InsurancePage from '../components/InsurancePage.vue'
 import HowToBookPage from '../components/HowToBookPage.vue'
+import FaqPage from '../components/FaqPage.vue'
 
 // Define base routes (without language prefix)
 const baseRoutes = [
@@ -61,6 +62,11 @@ const baseRoutes = [
     path: 'how-to-book',
     name: 'HowToBook',
     component: HowToBookPage
+  },
+  {
+    path: 'faq',
+    name: 'Faq',
+    component: FaqPage
   }
 ]
 
@@ -145,6 +151,10 @@ const routes = [
   {
     path: '/how-to-book',
     redirect: () => `/${getPreferredLanguage()}/how-to-book`
+  },
+  {
+    path: '/faq',
+    redirect: () => `/${getPreferredLanguage()}/faq`
   },
   // Catch-all redirect to home
   {

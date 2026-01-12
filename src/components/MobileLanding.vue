@@ -33,6 +33,7 @@
         <router-link :to="`/${currentLocale}/bikes`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bikes') }}</router-link>
         <router-link :to="`/${currentLocale}/rentals`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Cycle Hire</router-link>
         <router-link :to="`/${currentLocale}/about`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.about') }}</router-link>
+        <router-link :to="`/${currentLocale}/faq`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.faq') }}</router-link>
         <router-link :to="`/${currentLocale}/how-to-book`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link>
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
