@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Daruma body (red) -->
+  <ellipse cx="32" cy="38" rx="22" ry="20" fill="#D32F2F"/>
+  
+  <!-- Daruma face (cream/beige) -->
+  <ellipse cx="32" cy="30" rx="18" ry="16" fill="#FFF8E1"/>
+  
+  <!-- Bike helmet -->
+  <path d="M 32 8 C 20 8 14 14 14 22 L 14 26 C 14 26 16 24 20 24 C 24 24 26 26 32 26 C 38 26 40 24 44 24 C 48 24 50 26 50 26 L 50 22 C 50 14 44 8 32 8 Z" fill="#D32F2F"/>
+  
+  <!-- Helmet vents -->
+  <ellipse cx="26" cy="16" rx="2" ry="3" fill="#8B0000"/>
+  <ellipse cx="32" cy="14" rx="2" ry="3" fill="#8B0000"/>
+  <ellipse cx="38" cy="16" rx="2" ry="3" fill="#8B0000"/>
+  
+  <!-- Helmet highlight -->
+  <path d="M 24 12 C 24 12 28 10 34 10 C 38 10 40 11 40 11 C 40 11 38 9 32 9 C 26 9 24 11 24 12 Z" fill="#EF5350" opacity="0.6"/>
+  
+  <!-- Left eyebrow -->
+  <path d="M 20 30 Q 22 28 26 29" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Right eyebrow -->
+  <path d="M 38 29 Q 42 28 44 30" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Left eye (white) -->
+  <ellipse cx="24" cy="34" rx="4" ry="5" fill="#FFF"/>
+  
+  <!-- Right eye (white) -->
+  <ellipse cx="40" cy="34" rx="4" ry="5" fill="#FFF"/>
+  
+  <!-- Left pupil -->
+  <circle cx="24" cy="35" r="2.5" fill="#000"/>
+  
+  <!-- Right pupil -->
+  <circle cx="40" cy="35" r="2.5" fill="#000"/>
+  
+  <!-- Nose -->
+  <ellipse cx="32" cy="38" rx="1.5" ry="2" fill="#000"/>
+  
+  <!-- Mustache/beard area (gold outline traditional pattern) -->
+  <path d="M 20 42 Q 32 46 44 42" stroke="#FFD700" stroke-width="2" fill="none"/>
+  <path d="M 22 44 Q 32 47 42 44" stroke="#FFD700" stroke-width="1.5" fill="none"/>
+  
+  <!-- Body decorative pattern -->
+  <path d="M 16 40 Q 20 38 24 40" stroke="#8B0000" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 40 40 Q 44 38 48 40" stroke="#8B0000" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
