@@ -3,7 +3,7 @@
     <AppHeader />
     <header class="food-header">
       <h1>Local Food Recommendations</h1>
-      <p class="subtitle">Great places to eat near the end of your tour</p>
+      <p class="subtitle">Great places to eat after your tour, located around Hankyu Sakurai station</p>
     </header>
 
     <div class="food-container">
