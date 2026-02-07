@@ -9,9 +9,7 @@
         <p class="tours-description">{{ currentLocale === 'ja' ? '箕面の山々を探索し、美しい勝尾寺を訪れ、箕面ビジターセンターで自然について学びます。' : 'Explore the mountains of Minoh, visit the beautiful Katsuoji Temple, and learn about nature at the Minoh Visitor Center.' }}</p>
 
         <div class="tour-pricing-hero">
-          <span class="price-original">¥10,000</span>
-          <span class="price-discounted">¥5,000</span>
-          <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格' : 'Introductory Price' }}</span>
+          <span class="price-main-hero">¥9,000</span>
         </div>
 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="booking-request-button">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
@@ -146,11 +144,7 @@
         <h2>{{ currentLocale === 'ja' ? '今すぐ予約' : 'Book Your Tour Today' }}</h2>
         <p>{{ currentLocale === 'ja' ? 'このユニークなEバイク体験を予約して、箕面の美しさを発見しましょう。' : 'Reserve your spot on this unique e-bike experience and discover the beauty of Minoh.' }}</p>
         <div class="tour-pricing-detail">
-          <div class="pricing-row">
-            <span class="price-original-detail">¥10,000</span>
-            <span class="price-discounted-detail">¥5,000</span>
-          </div>
-          <span class="price-label-detail">{{ currentLocale === 'ja' ? '導入特別価格' : 'Introductory Price' }}</span>
+          <span class="price-main-detail">¥9,000</span>
         </div>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="booking-request-button-cta">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
       </div>
@@ -464,27 +458,10 @@ export default {
   flex-wrap: wrap;
 }
 
-.price-original {
-  font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: line-through;
-  font-weight: 500;
-}
-
-.price-discounted {
+.price-main-hero {
   font-size: 2.5rem;
-  color: #10b981;
-  font-weight: 800;
-}
-
-.price-label {
-  font-size: 0.9rem;
   color: white;
-  background-color: #10b981;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 800;
   letter-spacing: 0.05em;
 }
 
@@ -540,34 +517,10 @@ export default {
   backdrop-filter: blur(10px);
 }
 
-.pricing-row {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.price-original-detail {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: line-through;
-  font-weight: 500;
-}
-
-.price-discounted-detail {
+.price-main-detail {
   font-size: 3rem;
-  color: #10b981;
-  font-weight: 800;
-}
-
-.price-label-detail {
-  font-size: 0.9rem;
   color: white;
-  background-color: #10b981;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 800;
 }
 
 @media (max-width: 768px) {

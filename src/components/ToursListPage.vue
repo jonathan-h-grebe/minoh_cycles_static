@@ -60,9 +60,7 @@
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiVisitorCenter.difficulty') }}</span>
                 </div>
                 <div class="tour-pricing">
-                  <span class="price-original">¥9,000</span>
-                  <span class="price-discounted">¥5,000</span>
-                  <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格 - 2月6日まで' : currentLocale === 'zh' ? '優惠價格 - 至2月6日' : currentLocale === 'ko' ? '특별 가격 - 2월 6일까지' : 'Introductory Price - Until Feb 6th' }}</span>
+                  <span class="price-main">¥9,000</span>
                 </div>
                 <router-link to="/tours/katsuoji-visitor-center" @click="scrollToTop" class="tour-button">{{ $t('toursList.viewDetails') }}</router-link>
               </div>
