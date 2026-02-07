@@ -50,7 +50,7 @@ export function useStructuredData(type, data = {}) {
       offers: {
         '@type': 'Offer',
         priceCurrency: 'JPY',
-        price: data.price || '15000',
+        price: data.price || '12500',
         availability: 'https://schema.org/InStock',
         url: data.url || 'https://minohcycles.com/en/tours/katsuoji-minoh-falls',
         validFrom: '2024-01-01'

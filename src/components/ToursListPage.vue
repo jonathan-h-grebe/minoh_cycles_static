@@ -33,9 +33,8 @@
                   <span class="difficulty">{{ $t('toursList.tours.katsuojiMinohFalls.difficulty') }}</span>
                 </div>
                 <div class="tour-pricing">
-                  <span class="price-original">¥9,500</span>
-                  <span class="price-discounted">¥5,225</span>
-                  <span class="price-label">{{ currentLocale === 'ja' ? '導入特別価格 - 2月6日まで' : currentLocale === 'zh' ? '優惠價格 - 至2月6日' : currentLocale === 'ko' ? '특별 가격 - 2월 6일까지' : 'Introductory Price - Until Feb 6th' }}</span>
+                  <span class="price-main">¥12,500</span>
+                  <span class="price-extra">{{ currentLocale === 'ja' ? 'ランチ付き: ¥15,500' : currentLocale === 'zh' ? '含午餐: ¥15,500' : currentLocale === 'ko' ? '점심 포함: ¥15,500' : 'With lunch: ¥15,500' }}</span>
                 </div>
                 <div class="tour-actions">
                   <BookingWidget
@@ -369,6 +368,18 @@ export default {
   font-size: 1.8rem;
   color: #10b981;
   font-weight: 800;
+}
+
+.price-main {
+  font-size: 1.8rem;
+  color: #1e293b;
+  font-weight: 800;
+}
+
+.price-extra {
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 500;
 }
 
 .price-label {

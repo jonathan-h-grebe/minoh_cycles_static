@@ -208,7 +208,7 @@ export default {
       name: t('toursList.tours.katsuojiMinohFalls.name'),
       description: t('toursList.tours.katsuojiMinohFalls.description'),
       image: 'https://minohcycles.com/assets/viator_tour_combo.png',
-      price: '15000',
+      price: '12500',
       url: 'https://minohcycles.com/en/tours/katsuoji-minoh-falls',
       rating: {
         value: '5.0',
