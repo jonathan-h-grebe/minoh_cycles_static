@@ -1,4 +1,9 @@
 {
+  "alert": {
+    "scheduleNotice1": "2月と3月は休業いたします。",
+    "scheduleNotice2": "2月15日および3月の毎週木曜日のみ営業いたします。",
+    "scheduleNotice3": "ご理解のほどよろしくお願いいたします。"
+  },
   "nav": {
     "tours": "ツアー",
     "bikes": "自転車",

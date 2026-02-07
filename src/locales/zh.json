@@ -1,4 +1,9 @@
 {
+  "alert": {
+    "scheduleNotice1": "Minoh Cycles 将于2月和3月暂停营业。",
+    "scheduleNotice2": "仅2月15日及3月每周四提供有限服务。",
+    "scheduleNotice3": "感谢您的理解。"
+  },
   "nav": {
     "tours": "旅遊行程",
     "bikes": "自行車",

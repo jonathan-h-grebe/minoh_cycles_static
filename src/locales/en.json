@@ -1,4 +1,9 @@
 {
+  "alert": {
+    "scheduleNotice1": "Minoh Cycles will be closed during February and March.",
+    "scheduleNotice2": "Limited availability on February 15th and every Thursday in March.",
+    "scheduleNotice3": "We appreciate your understanding."
+  },
   "nav": {
     "tours": "Tours",
     "bikes": "Bikes",
