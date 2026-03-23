@@ -12,7 +12,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "brandName": "Minoh Cycles",
+    "brandName": "Minoh Cycle Tours ",
     "title": "E-Bike Rentals & Guided Tours",
     "subtitle": "Experience the best of Northern Osaka by bike",
     "cta": "Book Your Adventure",
@@ -99,9 +99,9 @@
     },
     "tours": {
       "katsuojiMinohFalls": {
-        "name": "Katsuoji & Minoh Falls Half-Day Tour With Lunch",
+        "name": "Katsuoji & Minoh Falls Half-Day Tour",
         "description": "Visit both Katsuoji Temple and Minoh Falls on this half-day adventure, rounded off with lunch at a beloved local restaurant.",
-        "duration": "9AM~2PM",
+        "duration": "9AM~1PM",
         "difficulty": "Moderate"
       },
       "katsuojiVisitorCenter": {

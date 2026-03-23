@@ -99,9 +99,9 @@
     },
     "tours": {
       "katsuojiMinohFalls": {
-        "name": "점심 포함 가쓰오지 및 미노 폭포 반일 투어",
+        "name": "가쓰오지 및 미노 폭포 반일 투어",
         "description": "이 반나절 모험에서 가쓰오지 사원과 미노 폭포를 모두 방문하고 사랑받는 지역 레스토랑에서 점심으로 마무리하세요.",
-        "duration": "오전 9시~오후 2시",
+        "duration": "오전 9시~오후 1시",
         "difficulty": "중급"
       },
       "katsuojiVisitorCenter": {

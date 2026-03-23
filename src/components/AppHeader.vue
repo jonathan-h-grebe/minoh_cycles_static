@@ -1,8 +1,8 @@
 <template>
   <header class="header flex justify-between items-center rounded-b-lg shadow-sm">
     <div class="text-2xl font-bold text-gray-800">
-      <router-link v-if="!isHomePage" :to="`/${currentLocale}/`" class="brand-link">Minoh Cycles</router-link>
-      <span v-else>Minoh Cycles</span>
+      <router-link v-if="!isHomePage" :to="`/${currentLocale}/`" class="brand-link">Minoh Cycles Tours</router-link>
+      <span v-else>Minoh Cycle Tours</span>
     </div>
     <div class="flex items-center space-x-6">
       <nav class="space-x-4 desktop-nav">
