@@ -1,7 +1,6 @@
 <template>
   <div class="tours-list-page">
     <AppHeader />
-    <AlertBanner />
 
     <!-- Hero Section -->
     <section class="tours-hero-section">
@@ -102,7 +101,6 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
-import AlertBanner from './AlertBanner.vue'
 import AppFooter from './AppFooter.vue'
 import BookingWidget from './BookingWidget.vue'
 
@@ -110,7 +108,6 @@ export default {
   name: 'ToursListPage',
   components: {
     AppHeader,
-    AlertBanner,
     AppFooter,
     BookingWidget
   },

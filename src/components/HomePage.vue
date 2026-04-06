@@ -1,7 +1,6 @@
 <template>
   <div class="homepage">
     <AppHeader />
-    <AlertBanner />
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -191,14 +190,12 @@ import { useRoute } from 'vue-router'
 import { useSeo } from '@/composables/useSeo'
 import { useStructuredData } from '@/composables/useStructuredData'
 import AppHeader from './AppHeader.vue'
-import AlertBanner from './AlertBanner.vue'
 import BookingWidget from './BookingWidget.vue'
 
 export default {
   name: 'HomePage',
   components: {
     AppHeader,
-    AlertBanner,
     BookingWidget
   },
   setup() {
