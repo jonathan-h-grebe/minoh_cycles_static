@@ -89,8 +89,8 @@
     "subtitle_2": "Unsure about Japanese cycling road rules, or just prefer to have a translator on hand?",
     "subtitle_3": "Join a guided tour, for all this and more.",
     "categories": {
-      "minohKatsuoji": "Tours of Minoh Park & Katsuoji Area",
-      "other": "Other Tours"
+      "minohKatsuoji": "Minoh Park & Katsuoji Area",
+      "other": "Other"
     },
     "tours": {
       "katsuojiMinohFalls": {
@@ -98,6 +98,14 @@
         "description": "Visit both Katsuoji Temple and Minoh Falls on this half-day adventure, rounded off with lunch at a beloved local restaurant.",
         "duration": "9AM~2PM",
         "difficulty": "Moderate"
+      },
+      "katsuojiOnsen": {
+        "name": "Katsuoji & Onsen Tour",
+        "description": "Cycle up to Katsuoji Temple, then unwind with a soak at a mountain onsen boasting sweeping panoramic views over Osaka.",
+        "duration": "9AM~2PM (3PM with hotel lunch)",
+        "difficulty": "Moderate",
+        "withSakuraiLunch": "With standard lunch: ¥16,000",
+        "withOnsenLunch": "With luxury lunch at Ryokan: ¥25,000"
       },
       "katsuojiVisitorCenter": {
         "name": "Katsuoji & Minoh Visitor Center Tour",
@@ -107,9 +115,9 @@
       },
       "satsukiyamaSky": {
         "name": "Satsukiyama Sky Tour",
-        "description": "Take a lesser known, but equally beautiful route, and take in views over the surrounding areas.",
+        "description": "A lesser known, but equally beautiful route, and take in views over the surrounding areas.",
         "duration": "3 hours",
-        "difficulty": "Moderate"
+        "difficulty": "Advanced"
       }
     },
     "viewDetails": "View Details",
@@ -150,7 +158,7 @@
     },
     "preparation": {
       "whatToBring": "What to Bring",
-      "whatIncluded": "What is Included",
+      "whatIncluded": "What's Included",
       "items": {
         "exerciseClothes": "Clothes you can exercise in",
         "water": "Water",

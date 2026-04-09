@@ -47,12 +47,13 @@ export default {
 
 #bokun_e9774066_d681_4fa1_ac19_19e60cdefba8 {
   display: inline-block;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
   background: #408C3D;
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(64, 140, 61, 0.3);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
   text-decoration: none;
   text-align: center;
   color: #FFFFFF;

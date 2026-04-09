@@ -36,11 +36,36 @@
                   <span class="price-extra">{{ currentLocale === 'ja' ? 'ランチ付き: ¥15,500' : currentLocale === 'zh' ? '含午餐: ¥15,500' : currentLocale === 'ko' ? '점심 포함: ¥15,500' : 'With lunch: ¥15,500' }}</span>
                 </div>
                 <div class="tour-actions">
+                  <router-link to="/tours/katsuoji-minoh-falls" @click="scrollToTop" class="tour-button secondary">{{ $t('toursList.viewDetails') }}</router-link>
                   <BookingWidget
                     :button-text="currentLocale === 'ja' ? '今すぐ予約' : 'Book Now'"
                     button-class="tour-book-button"
                   />
-                  <router-link to="/tours/katsuoji-minoh-falls" @click="scrollToTop" class="tour-button secondary">{{ $t('toursList.viewDetails') }}</router-link>
+                </div>
+              </div>
+            </div>
+
+            <!-- Katsuoji & Onsen Tour -->
+            <div class="tour-card">
+              <div class="tour-image">
+                <img src="/assets/outdoor_bath_1.webp" alt="Katsuoji and Onsen Tour">
+                <div class="new-badge">NEW!</div>
+              </div>
+              <div class="tour-content">
+                <h3 class="tour-name">{{ $t('toursList.tours.katsuojiOnsen.name') }}</h3>
+                <p class="tour-description">{{ $t('toursList.tours.katsuojiOnsen.description') }}</p>
+                <div class="tour-meta">
+                  <span class="duration">{{ $t('toursList.tours.katsuojiOnsen.duration') }}</span>
+                  <span class="difficulty">{{ $t('toursList.tours.katsuojiOnsen.difficulty') }}</span>
+                </div>
+                <div class="tour-pricing">
+                  <span class="price-main">¥14,000</span>
+                  <span class="price-extra">{{ $t('toursList.tours.katsuojiOnsen.withSakuraiLunch') }}</span>
+                  <span class="price-extra">{{ $t('toursList.tours.katsuojiOnsen.withOnsenLunch') }}</span>
+                </div>
+                <div class="coming-soon-action">
+                  <button class="tour-button disabled" disabled>{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</button>
+                  <span class="coming-soon-label">{{ $t('toursList.comingSoon') }}</span>
                 </div>
               </div>
             </div>
@@ -49,7 +74,6 @@
             <div class="tour-card">
               <div class="tour-image">
                 <img src="/assets/direct_katsuoji_tour_combo.png" alt="Katsuoji and Visitor Center Tour">
-                <div class="new-badge">NEW!</div>
               </div>
               <div class="tour-content">
                 <h3 class="tour-name">{{ $t('toursList.tours.katsuojiVisitorCenter.name') }}</h3>
@@ -61,7 +85,10 @@
                 <div class="tour-pricing">
                   <span class="price-main">¥9,000</span>
                 </div>
-                <router-link to="/tours/katsuoji-visitor-center" @click="scrollToTop" class="tour-button">{{ $t('toursList.viewDetails') }}</router-link>
+                <div class="tour-actions stacked">
+                  <router-link to="/tours/katsuoji-visitor-center" @click="scrollToTop" class="tour-button secondary">{{ $t('toursList.viewDetails') }}</router-link>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="tour-button green">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
+                </div>
               </div>
             </div>
           </div>
@@ -207,9 +234,28 @@ export default {
 }
 
 .tours-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 3rem;
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1.5rem;
+  /* hide scrollbar visually but keep it functional */
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.tours-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.tours-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tours-grid::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
 }
 
 .tour-card {
@@ -218,6 +264,8 @@ export default {
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 380px;
+  scroll-snap-align: start;
 }
 
 .tour-card:hover {
@@ -390,8 +438,8 @@ export default {
 
 .tour-actions {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -399,11 +447,12 @@ export default {
   display: inline-block;
   background-color: #2563eb;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   text-decoration: none;
   border-radius: 8px;
   font-size: 1.1rem;
   font-weight: 600;
+  white-space: nowrap;
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
@@ -422,6 +471,37 @@ export default {
 .tour-button.secondary:hover {
   background-color: #2563eb;
   color: white;
+}
+
+.coming-soon-action {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.coming-soon-label {
+  background-color: #fbbf24;
+  color: #78350f;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.tour-button.green {
+  background-color: #408C3D;
+}
+
+.tour-button.green:hover {
+  background-color: #285726;
+}
+
+.tour-actions.stacked {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .tour-button.disabled {
@@ -452,8 +532,11 @@ export default {
   }
 
   .tours-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .tour-card {
+    flex: 0 0 300px;
   }
 
   .tour-image {

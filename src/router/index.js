@@ -3,6 +3,7 @@ import HomePage from '../components/HomePage.vue'
 import ToursListPage from '../components/ToursListPage.vue'
 import KatsuojiMinohTourPage from '../components/KatsuojiMinohTourPage.vue'
 import KatsuojiVisitorCenterTourPage from '../components/KatsuojiVisitorCenterTourPage.vue'
+import KatsuojiOnsenTourPage from '../components/KatsuojiOnsenTourPage.vue'
 import SatsukiyamaSkyTourPage from '../components/SatsukiyamaSkyTourPage.vue'
 import BikesPage from '../components/BikesPage.vue'
 import RentalPage from '../components/RentalPage.vue'
@@ -28,6 +29,11 @@ const baseRoutes = [
     path: 'tours/katsuoji-minoh-falls',
     name: 'KatsuojiMinohTour',
     component: KatsuojiMinohTourPage
+  },
+  {
+    path: 'tours/katsuoji-onsen',
+    name: 'KatsuojiOnsenTour',
+    component: KatsuojiOnsenTourPage
   },
   {
     path: 'tours/katsuoji-visitor-center',
