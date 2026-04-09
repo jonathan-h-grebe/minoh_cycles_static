@@ -49,7 +49,7 @@
             <div class="tour-card">
               <div class="tour-image">
                 <img src="/assets/outdoor_bath_1.webp" alt="Katsuoji and Onsen Tour">
-                <div class="new-badge">NEW!</div>
+                <div class="coming-soon-badge">{{ $t('toursList.comingSoon') }}</div>
               </div>
               <div class="tour-content">
                 <h3 class="tour-name">{{ $t('toursList.tours.katsuojiOnsen.name') }}</h3>

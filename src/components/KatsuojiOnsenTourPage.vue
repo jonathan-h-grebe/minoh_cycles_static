@@ -222,7 +222,6 @@
 </template>
 
 <script>
-import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppHeader from './AppHeader.vue'
 
@@ -232,8 +231,7 @@ export default {
     AppHeader
   },
   setup() {
-    const { locale } = useI18n()
-    const currentLocale = ref(locale.value)
+    const { locale: currentLocale } = useI18n()
 
     return {
       currentLocale
