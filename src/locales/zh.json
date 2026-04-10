@@ -1,9 +1,4 @@
 {
-  "alert": {
-    "scheduleNotice1": "Minoh Cycles 将于2月和3月暂停营业。",
-    "scheduleNotice2": "仅2月15日及3月每周四提供有限服务。",
-    "scheduleNotice3": "感谢您的理解。"
-  },
   "nav": {
     "tours": "旅遊行程",
     "bikes": "自行車",
@@ -104,6 +99,14 @@
         "duration": "上午9點~下午1點",
         "difficulty": "中等難度"
       },
+      "katsuojiOnsen": {
+        "name": "勝尾寺與溫泉之旅",
+        "description": "騎車前往勝尾寺，再到可俯瞰大阪全景的山間溫泉放鬆身心。",
+        "duration": "上午9點~下午2點（飯店午餐至下午3點）",
+        "difficulty": "中等難度",
+        "withSakuraiLunch": "含桜井午餐: ¥16,000",
+        "withOnsenLunch": "含山莊風の森豪華午餐: ¥25,000"
+      },
       "katsuojiVisitorCenter": {
         "name": "勝尾寺與箕面遊客中心行程",
         "description": "體驗勝尾寺並在遊客中心探索箕面的自然歷史。非常適合自然和文化愛好者。",
@@ -114,7 +117,7 @@
         "name": "皐月山天空行程",
         "description": "走一條較少人知但同樣美麗的路線，欣賞周邊地區的景色。",
         "duration": "3小時",
-        "difficulty": "中等難度"
+        "difficulty": "困難"
       }
     },
     "viewDetails": "查看詳情",

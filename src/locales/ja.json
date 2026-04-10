@@ -1,9 +1,4 @@
 {
-  "alert": {
-    "scheduleNotice1": "2月と3月は休業いたします。",
-    "scheduleNotice2": "2月15日および3月の毎週木曜日のみ営業いたします。",
-    "scheduleNotice3": "ご理解のほどよろしくお願いいたします。"
-  },
   "nav": {
     "tours": "ツアー",
     "bikes": "自転車",
@@ -102,6 +97,14 @@
         "duration": "4時間",
         "difficulty": "中級"
       },
+      "katsuojiOnsen": {
+        "name": "勝尾寺・温泉ツアー",
+        "description": "勝尾寺まで自転車で登り、大阪を一望できる山の温泉でのんびりとリフレッシュしてください。",
+        "duration": "9時〜14時（温泉ホテルランチは〜15時）",
+        "difficulty": "中級",
+        "withSakuraiLunch": "桜井ランチ付き: ¥16,000",
+        "withOnsenLunch": "山荘風の森ランチ付き: ¥25,000"
+      },
       "katsuojiVisitorCenter": {
         "name": "勝尾寺・箕面ビジターセンターツアー",
         "description": "勝尾寺を探索し、ビジターセンターで箕面の自然史を発見。自然と文化の愛好家に最適です。",
@@ -112,7 +115,7 @@
         "name": "五月山スカイツアー",
         "description": "息を呑むような山の景色と曲がりくねった道で挑戦する、風景が美しい電動自転車ツアー。",
         "duration": "5時間",
-        "difficulty": "上級"
+        "difficulty": "上級（ハード）"
       }
     },
     "viewDetails": "詳細を見る",
