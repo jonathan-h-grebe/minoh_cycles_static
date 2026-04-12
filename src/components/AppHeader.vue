@@ -12,7 +12,8 @@
         <router-link :to="`/${currentLocale}/faq`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.faq') }}</router-link>
         <a href="https://blog.minohcycles.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Blog</a>
         <router-link :to="`/${currentLocale}/food`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Food</router-link>
-        <router-link :to="`/${currentLocale}/how-to-book`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bookNow') }}</router-link>
+        <!-- Temporarily removing How To Book nav item -->
+        <!-- <router-link :to="`/${currentLocale}/how-to-book`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bookNow') }}</router-link> -->
       </nav>
       <div class="language-selector">
         <select v-model="currentLocale" @change="changeLanguage" class="lang-select">
@@ -57,7 +58,8 @@
         <router-link :to="`/${currentLocale}/faq`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.faq') }}</router-link>
         <a href="https://blog.minohcycles.com" target="_blank" rel="noopener noreferrer" @click="closeMenu" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Blog</a>
         <router-link :to="`/${currentLocale}/food`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">Food</router-link>
-        <router-link :to="`/${currentLocale}/how-to-book`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link>
+        <!-- Temporarily removing How To Book nav item -->
+        <!-- <router-link :to="`/${currentLocale}/how-to-book`" @click="closeMenuAndScrollTop" class="text-center block w-full p-4 text-gray-600 hover:bg-gray-100 border-b border-gray-200">{{ $t('nav.bookNow') }}</router-link> -->
         <div class="language-selector-mobile p-4">
           <select v-model="currentLocale" @change="changeLanguage" class="lang-select-mobile">
             <option value="en">EN</option>

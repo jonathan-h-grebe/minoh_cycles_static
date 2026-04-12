@@ -1,6 +1,7 @@
 <template>
   <div class="tours-list-page">
     <AppHeader />
+    <AlertBanner />
 
     <!-- Hero Section -->
     <section class="tours-hero-section">
@@ -35,12 +36,9 @@
                   <span class="price-main">¥12,500</span>
                   <span class="price-extra">{{ currentLocale === 'ja' ? 'ランチ付き: ¥15,500' : currentLocale === 'zh' ? '含午餐: ¥15,500' : currentLocale === 'ko' ? '점심 포함: ¥15,500' : 'With lunch: ¥15,500' }}</span>
                 </div>
-                <div class="tour-actions">
+                <div class="tour-actions stacked">
                   <router-link to="/tours/katsuoji-minoh-falls" @click="scrollToTop" class="tour-button secondary">{{ $t('toursList.viewDetails') }}</router-link>
-                  <BookingWidget
-                    :button-text="currentLocale === 'ja' ? '今すぐ予約' : 'Book Now'"
-                    button-class="tour-book-button"
-                  />
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="tour-button green">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
                 </div>
               </div>
             </div>
@@ -129,14 +127,14 @@ import { useI18n } from 'vue-i18n'
 import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
-import BookingWidget from './BookingWidget.vue'
+import AlertBanner from './AlertBanner.vue'
 
 export default {
   name: 'ToursListPage',
   components: {
     AppHeader,
     AppFooter,
-    BookingWidget
+    AlertBanner
   },
   setup() {
     // Apply SEO

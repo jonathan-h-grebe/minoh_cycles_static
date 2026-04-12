@@ -1,4 +1,9 @@
 {
+  "alert": {
+    "scheduleNotice1": "四月份的行程名额有限。",
+    "scheduleNotice2": "4月15日、20日、24日及27日尚有座位。",
+    "scheduleNotice3": "请尽早预约以确保您的位置。"
+  },
   "nav": {
     "tours": "旅遊行程",
     "bikes": "自行車",

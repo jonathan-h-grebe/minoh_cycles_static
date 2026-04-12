@@ -1,4 +1,9 @@
 {
+  "alert": {
+    "scheduleNotice1": "Limited tour availability remaining in April.",
+    "scheduleNotice2": "Seats still available on April 15, 20, 24, and 27.",
+    "scheduleNotice3": "Book your spot now to secure your place."
+  },
   "nav": {
     "tours": "Tours",
     "bikes": "Bikes",

@@ -1,4 +1,9 @@
 {
+  "alert": {
+    "scheduleNotice1": "4月のツアー枠に限りがございます。",
+    "scheduleNotice2": "4月15日、20日、24日、27日にまだ空席がございます。",
+    "scheduleNotice3": "お早めにご予約ください。"
+  },
   "nav": {
     "tours": "ツアー",
     "bikes": "自転車",
