@@ -87,7 +87,7 @@
             </div>
           </div>
           <div class="step-image">
-            <img src="/assets/taki_landscape.JPG" alt="Minoh Falls waterfall" class="step-img">
+            <img src="/assets/minoh_falls_landscape.JPG" alt="Minoh Falls waterfall" class="step-img">
           </div>
         </div>
 

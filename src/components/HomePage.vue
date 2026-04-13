@@ -51,7 +51,7 @@
             </p>
           </div>
           <div class="feature-images">
-            <img src="/assets/taki_landscape.JPG" alt="Minoh Falls waterfall" class="feature-img">
+            <img src="/assets/minoh_falls_landscape.JPG" alt="Minoh Falls waterfall" class="feature-img">
             <img src="/assets/view_of_pond_at_katsuoji.jpg" alt="Katsuoji Temple pond" class="feature-img">
           </div>
         </div>
@@ -258,7 +258,7 @@ export default {
 
 /* Hero Section */
 .hero-section {
-  background-image: url('/assets/deep_image.jpg');
+  background-image: url('/assets/minoh_mountain_road.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
