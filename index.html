@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/assets/kachidaruma-favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/minoh_cycles_contrast_smaller.jpg">
     <title>Redirecting...</title>
     <style>
         body {
@@ -27,16 +27,21 @@
             font-weight: bold;
             color: #007bff;
         }
+        #dots {
+            display: inline-block;
+            width: 3em;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
 
     <div>
-        Minoh Cycles has been renamed to <span class="brand-name">Minoh Cycle Tours</span>!
+        Minoh Cycles has been renamed to <span class="brand-name">Minoh Cycle Tours</span>.
     </div>
     
     <div id="message">
-        Redirecting to <span class="brand-name">minohcycletours.com</span><span id="dots"></span>
+        Redirecting to <span class="brand-name">https://minohcycletours.com</span><span id="dots" style="color: transparent">・・・</span>
     </div>
 
     <script>
@@ -49,6 +54,7 @@
             
             // This only updates the empty span at the end
             dotsElement.textContent = '・'.repeat(secondsPassed);
+            dotsElement.style.color = '';
 
             if (secondsPassed >= 3) {
                 clearInterval(timer);
