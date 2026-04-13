@@ -2,34 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Preconnect to external domains for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://widgets.bokun.io">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/kachidaruma-favicon.svg">
-
-    <!-- Default title (will be overridden by @vueuse/head) -->
-    <title>Minoh Cycles - E-Bike Tours & Rentals in Osaka</title>
-
-    <!-- Default meta description (will be overridden by @vueuse/head) -->
-    <meta name="description" content="Experience Northern Osaka by e-bike. Guided tours to Minoh Falls, Katsuoji Temple, and mountain trails. Premium e-bike rentals available.">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KERWGX0NGW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-KERWGX0NGW');
-    </script>
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        div {
+            font-size: 1.5rem;
+            color: #333;
+            text-align: center;
+        }
+        /* The styling for both names */
+        .brand-name {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+
+    <div>
+        Minoh Cycles has been renamed to <span class="brand-name">Minoh Cycle Tours</span>!
+    </div>
+    
+    <div id="message">
+        Redirecting to <span class="brand-name">minohcycletours.com</span><span id="dots"></span>
+    </div>
+
+    <script>
+        // We now target the specific 'dots' span instead of the whole div
+        const dotsElement = document.getElementById('dots');
+        let secondsPassed = 0;
+
+        const timer = setInterval(() => {
+            secondsPassed++;
+            
+            // This only updates the empty span at the end
+            dotsElement.textContent = '・'.repeat(secondsPassed);
+
+            if (secondsPassed >= 3) {
+                clearInterval(timer);
+                
+                setTimeout(() => {
+                    console.log("Redirecting now...");
+                    window.location.href = "https://minohcycletours.com"; 
+                }, 600);
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
