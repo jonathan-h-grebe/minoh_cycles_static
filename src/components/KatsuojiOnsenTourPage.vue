@@ -36,7 +36,7 @@
             <div class="step-number">1</div>
             <div class="step-details">
               <h3 class="step-title">{{ currentLocale === 'ja' ? 'オリエンテーション' : 'Orientation' }} <span class="duration">({{ currentLocale === 'ja' ? '15分' : '15 mins' }})</span></h3>
-              <p class="step-description">{{ currentLocale === 'ja' ? '桜井駅近くのMinoh Cyclesで集合。Eバイクに慣れ、安全に関する説明を受け、今日のルートについて学びます。' : 'Meet at Minoh Cycles near Sakurai Station. Get fitted to your e-bike, receive a safety briefing, and learn about today\'s route.' }}</p>
+              <p class="step-description">{{ currentLocale === 'ja' ? '桜井駅近くのMinoh Cycle Toursで集合。Eバイクに慣れ、安全に関する説明を受け、今日のルートについて学びます。' : 'Meet at Minoh Cycle Tours near Sakurai Station. Get fitted to your e-bike, receive a safety briefing, and learn about today\'s route.' }}</p>
             </div>
           </div>
           <div class="step-image">
@@ -116,12 +116,12 @@
               <div class="step-content">
                 <div class="step-number step-number--a">6</div>
                 <div class="step-details">
-                  <h3 class="step-title">{{ currentLocale === 'ja' ? 'Minoh Cycles本社に戻る' : 'Return to Minoh Cycles HQ' }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
-                  <p class="step-description">{{ currentLocale === 'ja' ? 'Minoh Cycles本社に戻り、Eバイクを返却します。そこから桜井駅まで徒歩10分です。' : 'Ride back to Minoh Cycles HQ and return your e-bike. From there it\'s a 10 minute walk to Sakurai Station.' }}</p>
+                  <h3 class="step-title">{{ currentLocale === 'ja' ? 'Minoh Cycle Toursに戻る' : 'Return to Minoh Cycle Tours HQ' }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
+                  <p class="step-description">{{ currentLocale === 'ja' ? 'Minoh Cycle Tours本社に戻り、Eバイクを返却します。そこから桜井駅まで徒歩10分です。' : 'Ride back to Minoh Cycle Tours HQ and return your e-bike. From there it\'s a 10 minute walk to Sakurai Station.' }}</p>
                 </div>
               </div>
               <div class="step-image">
-                <img src="/assets/group_picture_with_view.jpg" alt="Return to Minoh Cycles" class="step-img">
+                <img src="/assets/group_picture_with_view.jpg" alt="Return to Minoh Cycle Tours HQ" class="step-img">
               </div>
             </div>
 
@@ -160,12 +160,12 @@
               <div class="step-content">
                 <div class="step-number step-number--b">7</div>
                 <div class="step-details">
-                  <h3 class="step-title">{{ currentLocale === 'ja' ? 'Minoh Cycles本社に戻る' : 'Return to Minoh Cycles HQ' }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
-                  <p class="step-description">{{ currentLocale === 'ja' ? 'Minoh Cycles本社に戻り、Eバイクを返却します。そこから桜井駅まで徒歩10分です。' : 'Ride back to Minoh Cycles HQ and return your e-bike. From there it\'s a 10 minute walk to Sakurai Station.' }}</p>
+                  <h3 class="step-title">{{ currentLocale === 'ja' ? 'Minoh Cycle Tours本社に戻る' : 'Return to Minoh Cycle Tours HQ' }} <span class="duration">({{ currentLocale === 'ja' ? '20分' : '20 mins' }})</span></h3>
+                  <p class="step-description">{{ currentLocale === 'ja' ? 'Minoh Cycle Tours本社に戻り、Eバイクを返却します。そこから桜井駅まで徒歩10分です。' : 'Ride back to Minoh Cycle Tours HQ and return your e-bike. From there it\'s a 10 minute walk to Sakurai Station.' }}</p>
                 </div>
               </div>
               <div class="step-image">
-                <img src="/assets/riders_together.jpg" alt="Return to Minoh Cycles" class="step-img">
+                <img src="/assets/riders_together.jpg" alt="Return to Minoh Cycle Tours HQ" class="step-img">
               </div>
             </div>
           </div>

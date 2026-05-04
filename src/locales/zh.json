@@ -12,7 +12,7 @@
     "faq": "常見問題"
   },
   "hero": {
-    "brandName": "Minoh Cycles",
+    "brandName": "Minoh Cycle Tours",
     "title": "電動自行車租賃與導覽行程",
     "subtitle": "騎乘自行車體驗大阪北部的最佳景點",
     "cta": "立即預約您的冒險",
@@ -38,7 +38,7 @@
     },
     "accessibility": {
       "title": "從大阪輕鬆抵達",
-      "description": "Minoh Cycles 距離櫻井站步行僅需10分鐘，從大阪梅田搭乘電車僅需20分鐘。這是逃離城市、親近自然而無需長途跋涉的絕佳方式。"
+      "description": "Minoh Cycle Tours 距離櫻井站步行僅需10分鐘，從大阪梅田搭乘電車僅需20分鐘。這是逃離城市、親近自然而無需長途跋涉的絕佳方式。"
     }
   },
   "route": {
@@ -157,7 +157,7 @@
         "description": "享受當之無愧的休息，欣賞瀑布的美景。"
       },
       "returnToSakurai": {
-        "title": "返回 Minoh Cycles 總部",
+        "title": "返回 Minoh Cycle Tours 總部",
         "description": "收穫先前爬坡的回報，在我們下坡返回市區時欣賞大阪的景色。歸還自行車後，步行10分鐘即可抵達櫻井站。"
       }
     },
@@ -190,59 +190,59 @@
   },
   "seo": {
     "home": {
-      "title": "Minoh Cycles - 大阪電動自行車行程與租賃",
+      "title": "Minoh Cycle Tours - 大阪電動自行車行程與租賃",
       "description": "騎乘電動自行車體驗大阪北部。前往箕面瀑布、勝尾寺和山路的導覽行程。提供高級電動自行車租賃。",
       "keywords": "大阪自行車行程, 箕面瀑布行程, 勝尾寺, 大阪電動自行車租賃, 大阪騎自行車"
     },
     "tours": {
-      "title": "電動自行車導覽行程 - Minoh Cycles",
+      "title": "電動自行車導覽行程 - Minoh Cycle Tours",
       "description": "在我們的電動自行車導覽行程中探索箕面的自然美景和文化寶藏。造訪瀑布、寺廟和風景秀麗的山路。",
       "keywords": "箕面自行車行程, 大阪騎自行車行程, 勝尾寺行程, 大阪寺廟行程"
     },
     "tourKatsuojiMinoh": {
-      "title": "勝尾寺與箕面瀑布半日遊 - Minoh Cycles",
+      "title": "勝尾寺與箕面瀑布半日遊 - Minoh Cycle Tours",
       "description": "半日電動自行車導覽行程，造訪勝尾寺和箕面瀑布。包含在當地餐廳享用午餐。體驗大阪的山中自然。",
       "keywords": "勝尾寺行程, 箕面瀑布行程, 大阪一日遊, 附午餐的自行車行程"
     },
     "tourKatsuojiVisitor": {
-      "title": "勝尾寺與遊客中心行程 - Minoh Cycles",
+      "title": "勝尾寺與遊客中心行程 - Minoh Cycle Tours",
       "description": "探索勝尾寺並在遊客中心了解箕面的自然歷史。非常適合文化和自然愛好者。",
       "keywords": "勝尾寺, 箕面遊客中心, 大阪自然行程"
     },
     "tourSatsukiyama": {
-      "title": "皐月山天空行程 - Minoh Cycles",
+      "title": "皐月山天空行程 - Minoh Cycle Tours",
       "description": "探索一個隱藏的寶石，欣賞大阪周邊的壯麗景色。較少人知但同樣美麗的山地騎行路線。",
       "keywords": "皐月山行程, 大阪山景, 風景秀麗的自行車行程"
     },
     "bikes": {
-      "title": "高級電動自行車 - Minoh Cycles",
+      "title": "高級電動自行車 - Minoh Cycle Tours",
       "description": "適合山地騎行的高性能電動自行車。Trek 和 Panasonic 優質品牌。所有自行車均經過維護並根據日本TS-Mark投保。",
       "keywords": "大阪電動自行車租賃, 電動自行車租賃, 大阪 Trek 自行車"
     },
     "rentals": {
-      "title": "電動自行車租賃 - Minoh Cycles",
+      "title": "電動自行車租賃 - Minoh Cycle Tours",
       "description": "租用高級電動自行車，按照自己的節奏探索箕面。提供靈活的租賃期限。",
       "keywords": "箕面自行車租賃, 大阪電動自行車租賃, 自行車租賃"
     },
     "about": {
-      "title": "關於我們 - Minoh Cycles",
-      "description": "了解 Minoh Cycles，您騎乘電動自行車探索大阪北部的本地嚮導。專業的當地知識和高級裝備。",
-      "keywords": "minoh cycles, 大阪自行車行程, 大阪當地嚮導"
+      "title": "關於我們 - Minoh Cycle Tours",
+      "description": "了解 Minoh Cycle Tours，您騎乘電動自行車探索大阪北部的本地嚮導。專業的當地知識和高級裝備。",
+      "keywords": "minoh cycle tours, 大阪自行車行程, 大阪當地嚮導"
     },
     "howToBook": {
-      "title": "如何預約 - Minoh Cycles",
+      "title": "如何預約 - Minoh Cycle Tours",
       "description": "預約您的電動自行車行程或租賃。簡單的預約流程。距離櫻井站10分鐘，距離大阪梅田30分鐘。",
       "keywords": "預約大阪自行車行程, 預約電動自行車, 箕面預約"
     },
     "insurance": {
-      "title": "保險資訊 - Minoh Cycles",
+      "title": "保險資訊 - Minoh Cycle Tours",
       "description": "所有自行車均根據日本TS-Mark制度投保。詳細的保險範圍詳情。",
       "keywords": "日本自行車保險, ts mark 保險"
     }
   },
   "structured": {
     "business": {
-      "name": "Minoh Cycles",
+      "name": "Minoh Cycle Tours",
       "description": "大阪北部箕面的電動自行車行程和租賃",
       "address": {
         "street": "櫻井站附近",
@@ -340,7 +340,7 @@
     },
     "q3": {
       "question": "惡劣天氣時會取消行程嗎？",
-      "answer": "如遇大雨或其他危險情況，Minoh Cycles將酌情決定在旅行當天取消行程並全額退款。"
+      "answer": "如遇大雨或其他危險情況，Minoh Cycle Tours將酌情決定在旅行當天取消行程並全額退款。"
     },
     "q4": {
       "question": "騎行距離有多遠？",

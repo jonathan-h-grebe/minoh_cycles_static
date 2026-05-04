@@ -159,7 +159,7 @@
         <div class="video-wrapper">
           <iframe
             src="https://www.youtube.com/embed/aML0fkEdhyQ?start=33"
-            title="Minoh Cycles Tour Route Preview"
+            title="Minoh Cycle Tours Route Preview"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen

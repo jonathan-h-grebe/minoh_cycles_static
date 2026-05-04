@@ -45,7 +45,7 @@ export function useStructuredData(type, data = {}) {
       image: data.image || 'https://minohcycles.com/assets/viator_tour_combo.png',
       brand: {
         '@type': 'Organization',
-        name: 'Minoh Cycles'
+        name: 'Minoh Cycle Tours'
       },
       offers: {
         '@type': 'Offer',

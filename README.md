@@ -1,6 +1,6 @@
 # Minoh Cycles Static Site
 
-A Vue.js static website for Minoh Cycles bike tour business.
+A Vue.js static website for Minoh Cycle Tours tour business.
 
 ## Features
 

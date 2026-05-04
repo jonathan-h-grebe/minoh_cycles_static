@@ -12,7 +12,7 @@
     "faq": "자주 묻는 질문"
   },
   "hero": {
-    "brandName": "Minoh Cycles",
+    "brandName": "Minoh Cycle Tours",
     "title": "전기 자전거 대여 및 가이드 투어",
     "subtitle": "자전거로 오사카 북부의 최고를 경험하세요",
     "cta": "모험 예약하기",
@@ -38,7 +38,7 @@
     },
     "accessibility": {
       "title": "오사카에서 쉽게 접근 가능",
-      "description": "Minoh Cycles는 사쿠라이역에서 도보 10분 거리에 위치하며 오사카 우메다에서 기차로 단 20분 거리에 있습니다. 긴 여행 없이 도시를 벗어나 자연을 찾을 수 있는 좋은 방법입니다."
+      "description": "Minoh Cycle Tours는 사aku라이역에서 도보 10분 거리에 위치하며 오사카 우메다에서 기차로 단 20분 거리에 있습니다. 긴 여행 없이 도시를 벗어나 자연을 찾을 수 있는 좋은 방법입니다."
     }
   },
   "route": {
@@ -157,7 +157,7 @@
         "description": "잘 쉬어가며 폭포의 아름다움을 감상하세요."
       },
       "returnToSakurai": {
-        "title": "Minoh Cycles 본부로 복귀",
+        "title": "Minoh Cycle Tours 본부로 복귀",
         "description": "이전 오르막의 보상을 받으며 시내로 내려가며 오사카의 전망을 감상하세요. 자전거를 반납한 후 사쿠라이역까지 도보로 10분입니다."
       }
     },
@@ -190,59 +190,59 @@
   },
   "seo": {
     "home": {
-      "title": "Minoh Cycles - 오사카 전기 자전거 투어 및 대여",
+      "title": "Minoh Cycle Tours - 오사카 전기 자전거 투어 및 대여",
       "description": "전기 자전거로 오사카 북부를 경험하세요. 미노 폭포, 가쓰오지 사원 및 산길로의 가이드 투어. 프리미엄 전기 자전거 대여 가능.",
       "keywords": "오사카 자전거 투어, 미노 폭포 투어, 가쓰오지 사원, 오사카 전기 자전거 대여, 오사카 사이클링"
     },
     "tours": {
-      "title": "가이드 전기 자전거 투어 - Minoh Cycles",
+      "title": "가이드 전기 자전거 투어 - Minoh Cycle Tours",
       "description": "가이드 전기 자전거 투어로 미노의 자연미와 문화 보물을 발견하세요. 폭포, 사원 및 경치 좋은 산길을 방문하세요.",
       "keywords": "미노 자전거 투어, 오사카 사이클링 투어, 가쓰오지 투어, 오사카 사원 투어"
     },
     "tourKatsuojiMinoh": {
-      "title": "가쓰오지 및 미노 폭포 반일 투어 - Minoh Cycles",
+      "title": "가쓰오지 및 미노 폭포 반일 투어 - Minoh Cycle Tours",
       "description": "가쓰오지 사원과 미노 폭포를 방문하는 반나절 가이드 전기 자전거 투어. 현지 레스토랑에서 점심 포함. 오사카의 산악 자연을 경험하세요.",
       "keywords": "가쓰오지 사원 투어, 미노 폭포 투어, 오사카 당일 여행, 점심 포함 자전거 투어"
     },
     "tourKatsuojiVisitor": {
-      "title": "가쓰오지 및 방문자 센터 투어 - Minoh Cycles",
+      "title": "가쓰오지 및 방문자 센터 투어 - Minoh Cycle Tours",
       "description": "가쓰오지 사원을 탐험하고 방문자 센터에서 미노의 자연사를 발견하세요. 문화 및 자연 애호가에게 완벽합니다.",
       "keywords": "가쓰오지 사원, 미노 방문자 센터, 오사카 자연 투어"
     },
     "tourSatsukiyama": {
-      "title": "사츠키야마 스카이 투어 - Minoh Cycles",
+      "title": "사츠키야마 스카이 투어 - Minoh Cycle Tours",
       "description": "오사카 주변의 멋진 전망을 가진 숨겨진 보석을 발견하세요. 덜 알려져 있지만 똑같이 아름다운 산악 사이클링 경로.",
       "keywords": "사츠키야마 투어, 오사카 산 전망, 경치 좋은 자전거 투어"
     },
     "bikes": {
-      "title": "프리미엄 전기 자전거 - Minoh Cycles",
+      "title": "프리미엄 전기 자전거 - Minoh Cycle Tours",
       "description": "산악 사이클링을 위한 고성능 전기 자전거. Trek 및 Panasonic 고급 브랜드. 모든 자전거는 유지 관리되고 일본 TS-Mark에 따라 보험에 가입되어 있습니다.",
       "keywords": "오사카 전기 자전거 대여, 전기 자전거 대여, 오사카 트렉 자전거"
     },
     "rentals": {
-      "title": "전기 자전거 대여 - Minoh Cycles",
+      "title": "전기 자전거 대여 - Minoh Cycle Tours",
       "description": "프리미엄 전기 자전거를 대여하여 자신만의 속도로 미노를 탐험하세요. 유연한 대여 기간을 이용할 수 있습니다.",
       "keywords": "미노 자전거 대여, 오사카 전기 자전거 대여, 사이클 대여"
     },
     "about": {
-      "title": "소개 - Minoh Cycles",
-      "description": "Minoh Cycles에 대해 알아보세요. 전기 자전거로 오사카 북부를 탐험하는 현지 가이드입니다. 전문 현지 지식과 프리미엄 장비.",
-      "keywords": "minoh cycles, 오사카 자전거 투어, 오사카 현지 가이드"
+      "title": "소개 - Minoh Cycle Tours",
+      "description": "Minoh Cycle Tours에 대해 알아보세요. 전기 자전거로 오사카 북부를 탐험하는 현지 가이드입니다. 전문 현지 지식과 프리미엄 장비.",
+      "keywords": "Minoh Cycle Tours, 오사카 자전거 투어, 오사카 현지 가이드"
     },
     "howToBook": {
-      "title": "예약 방법 - Minoh Cycles",
+      "title": "예약 방법 - Minoh Cycle Tours",
       "description": "전기 자전거 투어 또는 대여를 예약하세요. 간편한 예약 절차. 사쿠라이역에서 10분, 오사카 우메다에서 30분 거리에 있습니다.",
       "keywords": "오사카 자전거 투어 예약, 전기 자전거 예약, 미노 예약"
     },
     "insurance": {
-      "title": "보험 정보 - Minoh Cycles",
+      "title": "보험 정보 - Minoh Cycle Tours",
       "description": "모든 자전거는 일본 TS-Mark 제도에 따라 보험에 가입되어 있습니다. 포괄적인 보험 범위 세부사항.",
       "keywords": "일본 자전거 보험, ts mark 보험"
     }
   },
   "structured": {
     "business": {
-      "name": "Minoh Cycles",
+      "name": "Minoh Cycle Tours",
       "description": "오사카 북부 미노의 전기 자전거 투어 및 대여",
       "address": {
         "street": "사쿠라이역 근처",
@@ -340,7 +340,7 @@
     },
     "q3": {
       "question": "악천후의 경우 투어가 취소됩니까?",
-      "answer": "폭우나 기타 위험한 조건의 경우, 투어는 Minoh Cycles의 재량에 따라 여행 당일 취소되며 전액 환불됩니다."
+      "answer": "폭우나 기타 위험한 조건의 경우, 투어는 Minoh Cycle Tours의 재량에 따라 여행 당일 취소되며 전액 환불됩니다."
     },
     "q4": {
       "question": "라이딩 거리는 얼마나 됩니까?",

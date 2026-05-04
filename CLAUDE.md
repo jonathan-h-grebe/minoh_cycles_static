@@ -20,7 +20,7 @@ npm run preview
 
 ## Architecture Overview
 
-This is a Vue.js 3 static website for Minoh Cycles bike tour business, built with Vite. The application uses a responsive design pattern with separate components for desktop and mobile views.
+This is a Vue.js 3 static website for Minoh Cycle Tours, built with Vite. The application uses a responsive design pattern with separate components for desktop and mobile views.
 
 ### Key Architecture Patterns
 
