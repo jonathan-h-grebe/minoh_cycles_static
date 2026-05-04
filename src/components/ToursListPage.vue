@@ -38,7 +38,7 @@
                 </div>
                 <div class="tour-actions stacked">
                   <router-link to="/tours/katsuoji-minoh-falls" @click="scrollToTop" class="tour-button secondary">{{ $t('toursList.viewDetails') }}</router-link>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSciB9DLiWjZOrWJau70qXlSVRerGiLRzN4PqdSRyXUvjO4OTA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="tour-button green">{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</a>
+                  <BookingWidget :buttonText="currentLocale === 'ja' ? '予約する' : currentLocale === 'zh' ? '立即預約' : currentLocale === 'ko' ? '지금 예약' : 'Book Now'" />
                 </div>
               </div>
             </div>
@@ -128,13 +128,15 @@ import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
 import AlertBanner from './AlertBanner.vue'
+import BookingWidget from './BookingWidget.vue'
 
 export default {
   name: 'ToursListPage',
   components: {
     AppHeader,
     AppFooter,
-    AlertBanner
+    AlertBanner,
+    BookingWidget
   },
   setup() {
     // Apply SEO
