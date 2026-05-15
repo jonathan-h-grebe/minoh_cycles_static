@@ -4,53 +4,71 @@
 
     <section class="about-section">
       <div class="about-container">
-        <div class="about-content">
-          <h1 class="about-title">About Your Guide</h1>
-          <p class="bio-text">
-            Hi, I'm Jonathan — a cyclist, Minoh local, and your guide for the day.
-          </p>
-          <p class="bio-text">
-            I founded Minoh Cycle Tours, and run it as a way to share my favourite part of Osaka with visitors and locals by bike.
-          </p>
-          <p class="bio-text">
-            I'm originally from the UK and have called Japan home since 2017, settling in Minoh in 2021.
-            What drew me here was exactly what I hope to share with you — lush nature and mountain trails,
-            just 30 minutes from central Osaka but feeling like a completely different world.
-          </p>
-          <p class="bio-text">
-            The idea for Minoh Cycle Tours came from a simple moment. A friend visited, and I took him out
-            for a ride through the area. Afterwards he said something that stuck with me: "Without knowing
-            you, I'd never have thought to do this — cycling was such a fun way to visit Katsuoji Temple
-            and the surrounding area."
-          </p>
-          <p class="bio-text">
-            That's exactly what this is. Not just a bike ride, but a way into a side of Osaka that most
-            visitors never see.
-          </p>
-          <div class="social-links">
-            <a
-              href="https://www.instagram.com/minoh.cycle.tours/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://www.youtube.com/@MinohCycles"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link"
-            >
-              YouTube
-            </a>
+
+        <div class="about-row">
+          <div class="about-text">
+            <h2 class="about-title">About Minoh Cycle Tours</h2>
+            <p class="bio-text">
+              Minoh Cycle Tours provides guided cycle tours and bike rentals in north Osaka.
+              We believe cycling is the best way to experience Minoh, and the nearby attractions such as Katsuoji Temple.
+            </p>
           </div>
-          <router-link to="/" class="back-button">{{ $t('comingSoon.backToTours') }}</router-link>
+          <div class="about-photo-wrap">
+            <img src="/assets/4_riders_outside_katsuoji.jpg" alt="Riders outside Katsuoji Temple" class="about-photo" />
+          </div>
         </div>
 
-        <div class="about-photo-wrap">
-          <img src="/assets/just_me.jpg" alt="Jonathan, your guide" class="about-photo" />
+        <div class="row-divider"></div>
+
+        <div class="about-row">
+          <div class="about-text">
+            <h1 class="about-title">About Your Guide</h1>
+            <p class="bio-text">
+              Hi, I'm Jonathan — a cyclist, Minoh local, and your guide for the day.
+            </p>
+            <p class="bio-text">
+              I founded Minoh Cycle Tours, and run it as a way to share my favourite part of Osaka with visitors and locals by bike.
+            </p>
+            <p class="bio-text">
+              I'm originally from the UK and have called Japan home since 2017, settling in Minoh in 2021.
+              What drew me here was exactly what I hope to share with you — lush nature and mountain trails,
+              just 30 minutes from central Osaka but feeling like a completely different world.
+            </p>
+            <p class="bio-text">
+              The idea for Minoh Cycle Tours came from a simple moment. A friend visited, and I took him out
+              for a ride through the area. Afterwards he said something that stuck with me: "Without knowing
+              you, I'd never have thought to do this — cycling was such a fun way to visit Katsuoji Temple
+              and the surrounding area."
+            </p>
+            <p class="bio-text">
+              That's exactly what this is. Not just a bike ride, but a way into a side of Osaka that most
+              visitors never see.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/minoh.cycle.tours/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.youtube.com/@MinohCycles"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                YouTube
+              </a>
+            </div>
+            <router-link to="/" class="back-button">{{ $t('comingSoon.backToTours') }}</router-link>
+          </div>
+          <div class="about-photo-wrap">
+            <img src="/assets/just_me.jpg" alt="Jonathan, your guide" class="about-photo portrait" />
+          </div>
         </div>
+
       </div>
     </section>
   </div>
@@ -99,24 +117,33 @@ export default {
 }
 
 .about-container {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
   max-width: 1100px;
   width: 100%;
 }
 
-.about-content {
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-text {
   flex: 1;
   color: white;
+}
+
+.row-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 3rem 0;
 }
 
 .about-title {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 1.5rem;
   line-height: 1.1;
   color: white;
+  margin-bottom: 1.5rem;
 }
 
 .bio-text {
@@ -164,32 +191,41 @@ export default {
 
 .about-photo-wrap {
   flex-shrink: 0;
-  width: 340px;
+  width: 400px;
 }
 
 .about-photo {
   width: 100%;
-  height: 480px;
+  height: 300px;
   object-fit: cover;
-  object-position: top center;
+  object-position: center;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   display: block;
 }
 
+.about-photo.portrait {
+  height: 480px;
+  object-position: top center;
+}
+
 @media (max-width: 900px) {
-  .about-container {
+  .about-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-row:last-child {
     flex-direction: column-reverse;
-    gap: 2.5rem;
   }
 
   .about-photo-wrap {
     width: 100%;
-    max-width: 340px;
+    max-width: 420px;
     margin: 0 auto;
   }
 
-  .about-photo {
+  .about-photo.portrait {
     height: 380px;
   }
 
@@ -204,6 +240,10 @@ export default {
   }
 
   .about-photo {
+    height: 220px;
+  }
+
+  .about-photo.portrait {
     height: 300px;
   }
 }

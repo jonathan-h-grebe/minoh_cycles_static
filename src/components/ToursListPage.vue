@@ -207,7 +207,7 @@ export default {
 
 .tours-grid-section {
   background-color: #f8fafc;
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 .container {
