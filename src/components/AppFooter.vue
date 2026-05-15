@@ -7,6 +7,7 @@
     <section class="footer-social">
       <div class="container">
         <p class="social-text">{{ currentLocale === 'ja' ? '最新の写真とアップデートはこちら' : 'Follow us for latest photos and updates' }}</p>
+        <p class="copyright">© 2026 Minoh Cycle Tours合同会社</p>
         <div class="social-links">
           <a href="https://www.instagram.com/minoh.cycle.tours/" target="_blank" rel="noopener noreferrer" class="social-link">
             <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -65,6 +66,12 @@ export default {
   font-size: 1rem;
   margin-bottom: 1rem;
   opacity: 0.8;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin-bottom: 1.25rem;
 }
 
 .social-links {
