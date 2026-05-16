@@ -7,6 +7,7 @@
     <div class="flex items-center space-x-6">
       <nav class="space-x-4 desktop-nav">
         <router-link :to="`/${currentLocale}/tours`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.tours') }}</router-link>
+        <router-link :to="`/${currentLocale}/rentals`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Rentals</router-link>
         <router-link :to="`/${currentLocale}/bikes`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.bikes') }}</router-link>
         <router-link :to="`/${currentLocale}/about`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.about') }}</router-link>
         <router-link :to="`/${currentLocale}/faq`" @click="scrollToTop" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">{{ $t('nav.faq') }}</router-link>
