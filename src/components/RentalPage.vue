@@ -14,17 +14,21 @@
         </a>
       </div>
     </div>
+
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import { useSeo } from '@/composables/useSeo'
 import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
 
 export default {
   name: 'RentalPage',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   setup() {
     useSeo('rentals')

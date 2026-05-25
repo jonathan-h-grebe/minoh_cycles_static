@@ -71,6 +71,8 @@
 
       </div>
     </section>
+
+    <AppFooter />
   </div>
 </template>
 
@@ -80,11 +82,13 @@ import { useI18n } from 'vue-i18n'
 import { useSeo } from '@/composables/useSeo'
 import { useStructuredData } from '@/composables/useStructuredData'
 import AppHeader from './AppHeader.vue'
+import AppFooter from './AppFooter.vue'
 
 export default {
   name: 'AboutPage',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   setup() {
     useSeo('about')

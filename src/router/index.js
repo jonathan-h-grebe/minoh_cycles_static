@@ -12,6 +12,7 @@ import InsurancePage from '../components/InsurancePage.vue'
 import HowToBookPage from '../components/HowToBookPage.vue'
 import FaqPage from '../components/FaqPage.vue'
 import FoodPage from '../components/FoodPage.vue'
+import CommerceDisclosurePage from '../components/CommerceDisclosurePage.vue'
 
 // Define base routes (without language prefix)
 const baseRoutes = [
@@ -79,6 +80,11 @@ const baseRoutes = [
     path: 'food',
     name: 'Food',
     component: FoodPage
+  },
+  {
+    path: 'commerce-disclosure',
+    name: 'CommerceDisclosure',
+    component: CommerceDisclosurePage
   }
 ]
 
@@ -171,6 +177,10 @@ const routes = [
   {
     path: '/food',
     redirect: () => `/${getPreferredLanguage()}/food`
+  },
+  {
+    path: '/commerce-disclosure',
+    redirect: () => `/${getPreferredLanguage()}/commerce-disclosure`
   },
   // Catch-all redirect to home
   {

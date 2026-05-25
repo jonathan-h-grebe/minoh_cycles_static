@@ -8,6 +8,11 @@
       <div class="container">
         <p class="social-text">{{ currentLocale === 'ja' ? '最新の写真とアップデートはこちら' : 'Follow us for latest photos and updates' }}</p>
         <p class="copyright">© 2026 Minoh Cycle Tours合同会社</p>
+        <p class="legal-link">
+          <router-link :to="`/${currentLocale}/commerce-disclosure`" class="disclosure-link">
+            {{ currentLocale === 'ja' ? '特定商取引法に基づく表記' : 'Commerce Disclosure' }}
+          </router-link>
+        </p>
         <div class="social-links">
           <a href="https://www.instagram.com/minoh.cycle.tours/" target="_blank" rel="noopener noreferrer" class="social-link">
             <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -71,7 +76,23 @@ export default {
 .copyright {
   font-size: 0.85rem;
   opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.legal-link {
   margin-bottom: 1.25rem;
+}
+
+.disclosure-link {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  transition: color 0.2s ease;
+}
+
+.disclosure-link:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .social-links {
