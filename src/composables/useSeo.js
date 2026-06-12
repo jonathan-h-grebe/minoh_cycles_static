@@ -44,7 +44,7 @@ export function useSeo(seoKey) {
       { property: 'og:url', content: canonicalUrl.value },
       { property: 'og:type', content: 'website' },
       { property: 'og:locale', content: locale.value === 'ja' ? 'ja_JP' : 'en_US' },
-      { property: 'og:site_name', content: 'Minoh Cycles' },
+      { property: 'og:site_name', content: 'Minoh Cycle Tours' },
 
       // Twitter Card tags
       { name: 'twitter:card', content: 'summary_large_image' },

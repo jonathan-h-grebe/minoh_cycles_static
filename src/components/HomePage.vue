@@ -115,7 +115,7 @@
                   <span class="change-info">{{ $t('route.walkToMinohCycles') }}</span>
                   <span class="time">10 min</span>
                 </div>
-                <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end">Minoh Cycles</a>
+                <a href="https://maps.app.goo.gl/duLA4qhKMkeXgdkd9" target="_blank" rel="noopener noreferrer" class="station-end">Minoh Cycle Tours</a>
               </div>
             </div>
             <iframe class="google-maps-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26203.169862743463!2d135.42458197431637!3d34.82112890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fb9093906f1b%3A0x4a18e9ef8a34f850!2sMinoh%20Cycles!5e0!3m2!1sen!2sjp!4v1763531840085!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
