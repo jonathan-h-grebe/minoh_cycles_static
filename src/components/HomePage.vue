@@ -6,9 +6,7 @@
       <div class="hero-content">
         <div class="hero-text fade-in">
           <p class="brand-name">{{ $t('hero.brandName') }}</p>
-          <h1 class="hero-title">
-            {{ $t('hero.title') }}
-          </h1>
+          <h1 class="hero-title" v-html="$t('hero.title')"></h1>
           <p class="hero-subtitle">
             {{ $t('hero.subtitle') }}
           </p>
@@ -299,6 +297,10 @@ export default {
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.1;
+}
+
+.hero-title :deep(.nowrap) {
+  white-space: nowrap;
 }
 
 .hero-subtitle {
@@ -884,10 +886,16 @@ export default {
     font-size: 1.5rem;
   }
 
+  .hero-content {
+    padding: 2rem 0.75rem;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   .hero-subtitle {
