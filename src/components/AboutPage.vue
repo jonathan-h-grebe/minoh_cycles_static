@@ -7,11 +7,8 @@
 
         <div class="about-row">
           <div class="about-text">
-            <h2 class="about-title">About Minoh Cycle Tours</h2>
-            <p class="bio-text">
-              Minoh Cycle Tours provides guided cycle tours and bike rentals in north Osaka.
-              We believe cycling is the best way to experience Minoh, and the nearby attractions such as Katsuoji Temple.
-            </p>
+            <h2 class="about-title">{{ $t('aboutPage.title1') }}</h2>
+            <p class="bio-text">{{ $t('aboutPage.intro') }}</p>
           </div>
           <div class="about-photo-wrap">
             <img src="/assets/4_riders_outside_katsuoji.jpg" alt="Riders outside Katsuoji Temple" class="about-photo" />
@@ -22,28 +19,12 @@
 
         <div class="about-row">
           <div class="about-text">
-            <h1 class="about-title">About Your Guide</h1>
-            <p class="bio-text">
-              Hi, I'm Jonathan — a cyclist, Minoh local, and your guide for the day.
-            </p>
-            <p class="bio-text">
-              I founded Minoh Cycle Tours, and run it as a way to share my favourite part of Osaka with visitors and locals by bike.
-            </p>
-            <p class="bio-text">
-              I'm originally from the UK and have called Japan home since 2017, settling in Minoh in 2021.
-              What drew me here was exactly what I hope to share with you — lush nature and mountain trails,
-              just 30 minutes from central Osaka but feeling like a completely different world.
-            </p>
-            <p class="bio-text">
-              The idea for Minoh Cycle Tours came from a simple moment. A friend visited, and I took him out
-              for a ride through the area. Afterwards he said something that stuck with me: "Without knowing
-              you, I'd never have thought to do this — cycling was such a fun way to visit Katsuoji Temple
-              and the surrounding area."
-            </p>
-            <p class="bio-text">
-              That's exactly what this is. Not just a bike ride, but a way into a side of Osaka that most
-              visitors never see.
-            </p>
+            <h1 class="about-title">{{ $t('aboutPage.title2') }}</h1>
+            <p class="bio-text">{{ $t('aboutPage.bio1') }}</p>
+            <p class="bio-text">{{ $t('aboutPage.bio2') }}</p>
+            <p class="bio-text">{{ $t('aboutPage.bio3') }}</p>
+            <p class="bio-text">{{ $t('aboutPage.bio4') }}</p>
+            <p class="bio-text">{{ $t('aboutPage.bio5') }}</p>
             <div class="social-links">
               <a
                 href="https://www.instagram.com/minoh.cycle.tours/"

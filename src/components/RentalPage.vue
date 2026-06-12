@@ -4,13 +4,10 @@
 
     <div class="rental-page">
       <div class="rental-content">
-        <h1 class="rental-title">Bike Rentals</h1>
-        <p class="rental-text">
-          Rentals are available on request. If you'd like to hire an e-bike without joining a guided tour,
-          please fill in the form below and we'll get back to you to confirm availability and details.
-        </p>
+        <h1 class="rental-title">{{ $t('rentalPage.title') }}</h1>
+        <p class="rental-text">{{ $t('rentalPage.description') }}</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWY0wq2uRry027UEqjMHrpJoAGmsslF-WxbOTB2xDf5KnUvg/viewform?usp=publish-editor" class="rental-form-link" target="_blank" rel="noopener noreferrer">
-          Request a rental
+          {{ $t('rentalPage.requestButton') }}
         </a>
       </div>
     </div>

@@ -381,5 +381,20 @@
         "Those looking to walk the trail from Minoh Station up to the waterfall (Minoh Park). Whether that's because you would prefer to walk through the forest, or you specifically want to see the Minoh Park Insect Museum and Ryuanji Temple, our tour does not go along the main Minoh Park trail. If you want to see everything Minoh has to offer and also have an afternoon free though, we recommend taking our tour in the morning, then walking up to Ryuanji temple in the afternoon."
       ]
     }
+  },
+  "aboutPage": {
+    "title1": "About Minoh Cycle Tours",
+    "intro": "Minoh Cycle Tours provides guided cycle tours and bike rentals in north Osaka. We believe cycling is the best way to experience Minoh, and the nearby attractions such as Katsuoji Temple.",
+    "title2": "About Your Guide",
+    "bio1": "Hi, I'm Jonathan — a cyclist, Minoh local, and your guide for the day.",
+    "bio2": "I founded Minoh Cycle Tours, and run it as a way to share my favourite part of Osaka with visitors and locals by bike.",
+    "bio3": "I'm originally from the UK and have called Japan home since 2017, settling in Minoh in 2021. What drew me here was exactly what I hope to share with you — lush nature and mountain trails, just 30 minutes from central Osaka but feeling like a completely different world.",
+    "bio4": "The idea for Minoh Cycle Tours came from a simple moment. A friend visited, and I took him out for a ride through the area. Afterwards he said something that stuck with me: \"Without knowing you, I'd never have thought to do this — cycling was such a fun way to visit Katsuoji Temple and the surrounding area.\"",
+    "bio5": "That's exactly what this is. Not just a bike ride, but a way into a side of Osaka that most visitors never see."
+  },
+  "rentalPage": {
+    "title": "Bike Rentals",
+    "description": "Rentals are available on request. If you'd like to hire an e-bike without joining a guided tour, please fill in the form below and we'll get back to you to confirm availability and details.",
+    "requestButton": "Request a rental"
   }
 }
