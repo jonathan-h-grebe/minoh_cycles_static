@@ -9,7 +9,11 @@
     "bikes": "Bikes",
     "about": "About",
     "bookNow": "How To Book",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "reviews": "Reviews"
+  },
+  "reviews": {
+    "title": "Guest Reviews"
   },
   "hero": {
     "brandName": "Minoh Cycle Tours ",

@@ -9,7 +9,11 @@
     "bikes": "자전거",
     "about": "소개",
     "bookNow": "예약 방법",
-    "faq": "자주 묻는 질문"
+    "faq": "자주 묻는 질문",
+    "reviews": "리뷰"
+  },
+  "reviews": {
+    "title": "고객 후기"
   },
   "hero": {
     "brandName": "Minoh Cycle Tours",

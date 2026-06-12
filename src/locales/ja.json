@@ -9,7 +9,11 @@
     "bikes": "自転車",
     "about": "私たちについて",
     "bookNow": "予約方法",
-    "faq": "よくある質問"
+    "faq": "よくある質問",
+    "reviews": "レビュー"
+  },
+  "reviews": {
+    "title": "お客様のレビュー"
   },
   "hero": {
     "brandName": "箕面サイクルス",

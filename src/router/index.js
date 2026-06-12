@@ -13,6 +13,7 @@ import HowToBookPage from '../components/HowToBookPage.vue'
 import FaqPage from '../components/FaqPage.vue'
 import FoodPage from '../components/FoodPage.vue'
 import CommerceDisclosurePage from '../components/CommerceDisclosurePage.vue'
+import TestimonialsPage from '../components/TestimonialsPage.vue'
 
 // Define base routes (without language prefix)
 const baseRoutes = [
@@ -85,6 +86,11 @@ const baseRoutes = [
     path: 'commerce-disclosure',
     name: 'CommerceDisclosure',
     component: CommerceDisclosurePage
+  },
+  {
+    path: 'reviews',
+    name: 'Reviews',
+    component: TestimonialsPage
   }
 ]
 
@@ -181,6 +187,10 @@ const routes = [
   {
     path: '/commerce-disclosure',
     redirect: () => `/${getPreferredLanguage()}/commerce-disclosure`
+  },
+  {
+    path: '/reviews',
+    redirect: () => `/${getPreferredLanguage()}/reviews`
   },
   // Catch-all redirect to home
   {
