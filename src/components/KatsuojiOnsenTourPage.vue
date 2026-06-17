@@ -18,9 +18,12 @@
           </div>
         </div>
 
-        <div class="coming-soon-cta">
-          <button class="booking-request-button disabled" disabled>{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</button>
-          <span class="coming-soon-badge">{{ currentLocale === 'ja' ? '準備中' : 'Coming Soon' }}</span>
+        <div class="hero-book-button-wrapper">
+          <BookingWidget
+            widget-id="bokun_a923d9f3_9b21_4fcf_ad98_04dc0393f4b0"
+            experience-id="1215355"
+            :button-text="currentLocale === 'ja' ? '今すぐ予約' : 'Book Now'"
+          />
         </div>
       </div>
     </section>
@@ -208,14 +211,19 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
-        <h2>{{ currentLocale === 'ja' ? '準備中' : 'Booking Coming Soon' }}</h2>
-        <p>{{ currentLocale === 'ja' ? 'このツアーは間もなく予約可能になります。お楽しみに！' : 'Bookings for this tour will be available soon. Check back shortly!' }}</p>
+        <h2>{{ currentLocale === 'ja' ? '冒険の準備はできましたか？' : 'Ready for Your Adventure?' }}</h2>
         <div class="tour-pricing-detail">
           <span class="price-main-detail">¥14,000</span>
           <span class="price-option-detail">{{ currentLocale === 'ja' ? '桜井ランチ付き: ¥16,000' : 'With Sakurai lunch: ¥16,000' }}</span>
           <span class="price-option-detail">{{ currentLocale === 'ja' ? '山荘風の森ランチ付き: ¥25,000' : 'With Sanso Kaze No Mori luxury lunch: ¥25,000' }}</span>
         </div>
-        <button class="booking-request-button-cta disabled" disabled>{{ currentLocale === 'ja' ? '予約リクエスト（準備中）' : 'Booking Request (Coming Soon)' }}</button>
+        <div class="cta-book-button-wrapper">
+          <BookingWidget
+            widget-id="bokun_a923d9f3_9b21_4fcf_ad98_04dc0393f4b0"
+            experience-id="1215355"
+            :button-text="currentLocale === 'ja' ? '今すぐ予約' : 'Book Now'"
+          />
+        </div>
       </div>
     </section>
   </div>
@@ -224,11 +232,13 @@
 <script>
 import { useI18n } from 'vue-i18n'
 import AppHeader from './AppHeader.vue'
+import BookingWidget from './BookingWidget.vue'
 
 export default {
   name: 'KatsuojiOnsenTourPage',
   components: {
-    AppHeader
+    AppHeader,
+    BookingWidget
   },
   setup() {
     const { locale: currentLocale } = useI18n()

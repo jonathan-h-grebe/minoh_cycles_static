@@ -11,8 +11,8 @@
             {{ $t('hero.subtitle') }}
           </p>
           <div class="cta-buttons">
-            <router-link :to="`/${currentLocale}/tours`" class="cta-button primary">View Tours</router-link>
-            <router-link :to="`/${currentLocale}/rentals`" class="cta-button secondary">Rent An E-Bike</router-link>
+            <router-link :to="`/${currentLocale}/tours`" class="cta-button primary">{{ $t('hero.viewTours') }}</router-link>
+            <router-link :to="`/${currentLocale}/rentals`" class="cta-button secondary">{{ $t('hero.rentBike') }}</router-link>
           </div>
         </div>
       </div>
@@ -35,10 +35,10 @@
             <p>
               <i18n-t keypath="tours.waterfall.description" tag="span">
                 <template #minohFallsLink>
-                  <a :href="currentLocale === 'ja' ? 'https://www.mino-park.jp/about/182/' : 'https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/'" target="_blank" rel="noopener noreferrer" class="temple-link">{{ currentLocale === 'ja' ? '箕面大滝' : 'Minoh Falls' }}</a>
+                  <a :href="currentLocale === 'ja' ? 'https://www.mino-park.jp/about/182/' : 'https://enjoy-osaka-kyoto-kobe.com/article/a/minoh-waterfall-point/'" target="_blank" rel="noopener noreferrer" class="temple-link">{{ currentLocale === 'ja' ? '箕面大滝' : currentLocale === 'zh' ? '箕面大瀑布' : 'Minoh Falls' }}</a>
                 </template>
                 <template #katsuojiLink>
-                  <a :href="currentLocale === 'ja' ? 'https://katsuo-ji-temple.or.jp/' : 'https://katsuo-ji-temple.or.jp/audioguidance/index.php'" target="_blank" rel="noopener noreferrer" class="temple-link">{{ currentLocale === 'ja' ? '勝尾寺' : 'Katsuoji Temple' }}</a>
+                  <a :href="currentLocale === 'ja' ? 'https://katsuo-ji-temple.or.jp/' : 'https://katsuo-ji-temple.or.jp/audioguidance/index.php'" target="_blank" rel="noopener noreferrer" class="temple-link">{{ currentLocale === 'ja' ? '勝尾寺' : currentLocale === 'zh' ? '勝尾寺' : 'Katsuoji Temple' }}</a>
                 </template>
               </i18n-t>
             </p>

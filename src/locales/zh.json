@@ -17,9 +17,11 @@
   },
   "hero": {
     "brandName": "Minoh Cycle Tours",
-    "title": "電動自行車租賃與導覽行程",
-    "subtitle": "騎乘自行車體驗大阪北部的最佳景點",
+    "title": "電輔車租賃與導覽行程",
+    "subtitle": "讓電力幫你爬坡，把大阪近郊的山林美景一次收進眼底",
     "cta": "立即預約您的冒險",
+    "viewTours": "瀏覽行程",
+    "rentBike": "租借電輔車",
     "scrollDown": ""
   },
   "tours": {

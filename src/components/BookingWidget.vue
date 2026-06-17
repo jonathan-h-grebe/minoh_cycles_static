@@ -4,8 +4,8 @@
       class="bokunButton"
       :class="buttonClass"
       disabled
-      id="bokun_e9774066_d681_4fa1_ac19_19e60cdefba8"
-      data-src="https://widgets.bokun.io/online-sales/90f34eac-f5ea-4226-9dfa-234c305a93df/experience/1138472?partialView=1"
+      :id="widgetId"
+      :data-src="`https://widgets.bokun.io/online-sales/90f34eac-f5ea-4226-9dfa-234c305a93df/experience/${experienceId}?partialView=1`"
       data-testid="widget-book-button"
     >
       {{ buttonText || 'Book Now' }}
@@ -24,6 +24,14 @@ export default {
     buttonClass: {
       type: String,
       default: ''
+    },
+    widgetId: {
+      type: String,
+      default: 'bokun_e9774066_d681_4fa1_ac19_19e60cdefba8'
+    },
+    experienceId: {
+      type: String,
+      default: '1138472'
     }
   },
   mounted() {
@@ -45,7 +53,7 @@ export default {
   display: inline-block;
 }
 
-#bokun_e9774066_d681_4fa1_ac19_19e60cdefba8 {
+.bokunButton {
   display: inline-block;
   padding: 1rem 1.5rem;
   background: #408C3D;
@@ -62,13 +70,13 @@ export default {
   transition: all 0.3s ease;
 }
 
-#bokun_e9774066_d681_4fa1_ac19_19e60cdefba8:hover {
+.bokunButton:hover {
   background: #285726;
   transform: translateY(-2px);
   box-shadow: 0 8px 12px -2px rgba(64, 140, 61, 0.4);
 }
 
-#bokun_e9774066_d681_4fa1_ac19_19e60cdefba8:active {
+.bokunButton:active {
   background: #30682e;
 }
 </style>

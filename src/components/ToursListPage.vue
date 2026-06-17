@@ -45,7 +45,6 @@
             <div class="tour-card">
               <div class="tour-image">
                 <img src="/assets/outdoor_bath_1.webp" alt="Katsuoji and Onsen Tour">
-                <div class="coming-soon-badge">{{ $t('toursList.comingSoon') }}</div>
               </div>
               <div class="tour-content">
                 <h3 class="tour-name">{{ $t('toursList.tours.katsuojiOnsen.name') }}</h3>
@@ -59,10 +58,12 @@
                   <span class="price-extra">{{ $t('toursList.tours.katsuojiOnsen.withSakuraiLunch') }}</span>
                   <span class="price-extra">{{ $t('toursList.tours.katsuojiOnsen.withOnsenLunch') }}</span>
                 </div>
-                <div class="coming-soon-action">
-                  <button class="tour-button disabled" disabled>{{ currentLocale === 'ja' ? '予約リクエスト' : 'Booking Request' }}</button>
-                  <span class="coming-soon-label">{{ $t('toursList.comingSoon') }}</span>
-                </div>
+                <BookingWidget
+                  widget-id="bokun_a923d9f3_9b21_4fcf_ad98_04dc0393f4b0"
+                  experience-id="1215355"
+                  :button-text="currentLocale === 'ja' ? '予約する' : currentLocale === 'zh' ? '立即預約' : currentLocale === 'ko' ? '지금 예약' : 'Book Now'"
+                  button-class="tour-button"
+                />
               </div>
             </div>
 

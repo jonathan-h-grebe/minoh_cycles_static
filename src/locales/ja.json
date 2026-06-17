@@ -16,10 +16,12 @@
     "title": "お客様のレビュー"
   },
   "hero": {
-    "brandName": "箕面サイクルス",
+    "brandName": "Minoh Cycle Tours",
     "title": "スポーツ電動自転車のレンタル・ガイド付き<span class=\"nowrap\">ツアー</span>",
     "subtitle": "体を動かしながら、大阪の隠れた名所を体験",
     "cta": "冒険を予約する",
+    "viewTours": "ツアーを見る",
+    "rentBike": "電動自転車を借りる",
     "scrollDown": "ツアーを見る"
   },
   "tours": {
