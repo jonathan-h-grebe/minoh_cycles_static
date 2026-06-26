@@ -4,11 +4,10 @@
 
     <div class="rental-page">
       <div class="rental-content">
-        <h1 class="rental-title">{{ $t('rentalPage.title') }}</h1>
-        <p class="rental-text">{{ $t('rentalPage.description') }}</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWY0wq2uRry027UEqjMHrpJoAGmsslF-WxbOTB2xDf5KnUvg/viewform?usp=publish-editor" class="rental-form-link" target="_blank" rel="noopener noreferrer">
-          {{ $t('rentalPage.requestButton') }}
-        </a>
+        <div ref="widgetContainer">
+          <div class="bokunWidget" data-src="https://widgets.bokun.io/online-sales/90f34eac-f5ea-4226-9dfa-234c305a93df/experience/1241039"></div>
+          <noscript>Please enable javascript in your browser to book</noscript>
+        </div>
       </div>
     </div>
 
@@ -29,6 +28,13 @@ export default {
   },
   setup() {
     useSeo('rentals')
+  },
+  mounted() {
+    const script = document.createElement('script')
+    script.type = 'text/javascript'
+    script.src = 'https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=90f34eac-f5ea-4226-9dfa-234c305a93df'
+    script.async = true
+    document.head.appendChild(script)
   }
 }
 </script>
@@ -42,55 +48,18 @@ export default {
 
 .rental-page {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6rem 2rem 4rem;
+  padding: 8rem 2rem 4rem;
 }
 
 .rental-content {
-  max-width: 600px;
+  max-width: 900px;
+  margin: 0 auto;
   width: 100%;
 }
 
-.rental-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #1e293b;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-}
-
-.rental-text {
-  font-size: 1.1rem;
-  color: #475569;
-  line-height: 1.75;
-  margin-bottom: 2rem;
-}
-
-.rental-form-link {
-  display: inline-block;
-  background-color: #2563eb;
-  color: white;
-  padding: 0.875rem 1.75rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.rental-form-link:hover {
-  background-color: #1d4ed8;
-}
-
 @media (max-width: 768px) {
-  .rental-title {
-    font-size: 1.75rem;
-  }
-
-  .rental-text {
-    font-size: 1rem;
+  .rental-page {
+    padding: 6rem 1rem 4rem;
   }
 }
 </style>
