@@ -10,18 +10,18 @@
         </div>
 
         <div class="bikes-grid">
-          <!-- Trek FX+ 2 -->
+          <!-- Panasonic Velostar -->
           <div class="bike-card">
-            <div class="bike-image">
-              <img src="/assets/trek_fx_+_ebikes.jpg" alt="Trek FX+ 2 E-bike">
+            <div class="bike-image bike-image--coming-soon">
+              <span class="coming-soon-label">{{ $t('bikesPage.comingSoon') }}</span>
             </div>
             <div class="bike-details">
-              <h3 class="bike-name">{{ $t('bikesPage.trek.name') }}</h3>
+              <h3 class="bike-name">{{ $t('bikesPage.velostar.name') }}</h3>
               <ul class="bike-specs">
-                <li>{{ $t('bikesPage.trek.height') }}</li>
-                <li>{{ $t('bikesPage.trek.tyreSize') }}</li>
-                <li>{{ $t('bikesPage.trek.gears') }}</li>
-                <li>{{ $t('bikesPage.trek.brakes') }}</li>
+                <li>{{ $t('bikesPage.velostar.height') }}</li>
+                <li>{{ $t('bikesPage.velostar.tyreSize') }}</li>
+                <li>{{ $t('bikesPage.velostar.gears') }}</li>
+                <li>{{ $t('bikesPage.velostar.brakes') }}</li>
               </ul>
             </div>
           </div>
@@ -161,6 +161,21 @@ export default {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+.bike-image--coming-soon {
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-label {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .bike-card:hover .bike-image img {

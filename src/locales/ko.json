@@ -78,12 +78,13 @@
   "bikesPage": {
     "title": "우리의 전기 자전거",
     "subtitle": "전문적으로 유지 관리되고 편안함과 안전을 위해 조정된 고품질 전기 보조 자전거 중에서 선택하세요.",
-    "trek": {
-      "name": "Trek FX+ 2",
-      "height": "적합한 라이더 키: 175cm - 185cm",
-      "tyreSize": "타이어 크기: 700×40C",
-      "gears": "8단 변속기",
-      "brakes": "Tektro MD-U310 기계식 디스크 브레이크"
+    "comingSoon": "출시 예정",
+    "velostar": {
+      "name": "Panasonic Velostar",
+      "height": "적합한 라이더 키: 150cm - 185cm",
+      "tyreSize": "타이어 크기: 26×1.5",
+      "gears": "내장 3단 변속기",
+      "brakes": "롤러 브레이크"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",

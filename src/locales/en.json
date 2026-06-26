@@ -78,12 +78,13 @@
   "bikesPage": {
     "title": "Our E-Bikes",
     "subtitle": "Choose from our selection of high-quality electric-assist bikes, professionally maintained and fitted for your comfort and safety.",
-    "trek": {
-      "name": "Trek FX+ 2",
-      "height": "Suitable for riders: 175cm - 185cm",
-      "tyreSize": "Tyre size: 700×40C",
-      "gears": "8-speed drivetrain",
-      "brakes": "Tektro MD-U310 mechanical disc brakes"
+    "comingSoon": "Coming Soon",
+    "velostar": {
+      "name": "Panasonic Velostar",
+      "height": "Suitable for riders: 150cm - 185cm",
+      "tyreSize": "Tyre size: 26×1.5",
+      "gears": "3-speed internal hub",
+      "brakes": "Roller brakes"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",

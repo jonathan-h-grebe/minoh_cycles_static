@@ -78,12 +78,13 @@
   "bikesPage": {
     "title": "電動アシスト自転車",
     "subtitle": "お客様の安全性と快適性のため、プロによるメンテナンスとフィッティングが行われた高品質電動自転車からお選びいただけます。",
-    "trek": {
-      "name": "Trek FX+ 2",
-      "height": "適応身長：175cm〜185cm",
-      "tyreSize": "タイヤサイズ：700×40C",
-      "gears": "8速変速",
-      "brakes": "Tektro MD-U310 メカニカルディスクブレーキ"
+    "comingSoon": "近日公開",
+    "velostar": {
+      "name": "Panasonic Velostar",
+      "height": "適応身長：150cm〜185cm",
+      "tyreSize": "タイヤサイズ：26×1.5",
+      "gears": "内装3段変速",
+      "brakes": "ローラーブレーキ"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",

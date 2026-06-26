@@ -78,12 +78,13 @@
   "bikesPage": {
     "title": "我們的電動自行車",
     "subtitle": "從我們精選的高品質電動輔助自行車中選擇，每輛車都經過專業維護並根據您的舒適度和安全性進行調整。",
-    "trek": {
-      "name": "Trek FX+ 2",
-      "height": "適合騎士身高：175cm - 185cm",
-      "tyreSize": "輪胎尺寸：700×40C",
-      "gears": "8速變速系統",
-      "brakes": "Tektro MD-U310 機械碟煞"
+    "comingSoon": "即將推出",
+    "velostar": {
+      "name": "Panasonic Velostar",
+      "height": "適合騎士身高：150cm - 185cm",
+      "tyreSize": "輪胎尺寸：26×1.5",
+      "gears": "內裝3速變速系統",
+      "brakes": "滾筒煞車"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",
