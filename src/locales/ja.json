@@ -81,14 +81,14 @@
     "trek": {
       "name": "Trek FX+ 2",
       "height": "適応身長：175cm〜185cm",
-      "tireSize": "タイヤサイズ：700×40C",
+      "tyreSize": "タイヤサイズ：700×40C",
       "gears": "8速変速",
       "brakes": "Tektro MD-U310 メカニカルディスクブレーキ"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",
       "height": "適応身長：150cm〜180cm",
-      "tireSize": "タイヤサイズ：700×38C",
+      "tyreSize": "タイヤサイズ：700×38C",
       "gears": "8速変速",
       "brakes": "シマノVブレーキ（パワーモジュレーター付）"
     },

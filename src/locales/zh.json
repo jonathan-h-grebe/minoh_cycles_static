@@ -81,14 +81,14 @@
     "trek": {
       "name": "Trek FX+ 2",
       "height": "適合騎士身高：175cm - 185cm",
-      "tireSize": "輪胎尺寸：700×40C",
+      "tyreSize": "輪胎尺寸：700×40C",
       "gears": "8速變速系統",
       "brakes": "Tektro MD-U310 機械碟煞"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",
       "height": "適合騎士身高：150cm - 180cm",
-      "tireSize": "輪胎尺寸：700×38C",
+      "tyreSize": "輪胎尺寸：700×38C",
       "gears": "8速變速系統",
       "brakes": "Shimano V型煞車附動力調節器"
     },

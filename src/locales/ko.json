@@ -81,14 +81,14 @@
     "trek": {
       "name": "Trek FX+ 2",
       "height": "적합한 라이더 키: 175cm - 185cm",
-      "tireSize": "타이어 크기: 700×40C",
+      "tyreSize": "타이어 크기: 700×40C",
       "gears": "8단 변속기",
       "brakes": "Tektro MD-U310 기계식 디스크 브레이크"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",
       "height": "적합한 라이더 키: 150cm - 180cm",
-      "tireSize": "타이어 크기: 700×38C",
+      "tyreSize": "타이어 크기: 700×38C",
       "gears": "8단 변속기",
       "brakes": "파워 모듈레이터가 있는 Shimano V브레이크"
     },

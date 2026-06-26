@@ -19,7 +19,7 @@
               <h3 class="bike-name">{{ $t('bikesPage.trek.name') }}</h3>
               <ul class="bike-specs">
                 <li>{{ $t('bikesPage.trek.height') }}</li>
-                <li>{{ $t('bikesPage.trek.tireSize') }}</li>
+                <li>{{ $t('bikesPage.trek.tyreSize') }}</li>
                 <li>{{ $t('bikesPage.trek.gears') }}</li>
                 <li>{{ $t('bikesPage.trek.brakes') }}</li>
               </ul>
@@ -35,7 +35,7 @@
               <h3 class="bike-name">{{ $t('bikesPage.panasonic.name') }}</h3>
               <ul class="bike-specs">
                 <li>{{ $t('bikesPage.panasonic.height') }}</li>
-                <li>{{ $t('bikesPage.panasonic.tireSize') }}</li>
+                <li>{{ $t('bikesPage.panasonic.tyreSize') }}</li>
                 <li>{{ $t('bikesPage.panasonic.gears') }}</li>
                 <li>{{ $t('bikesPage.panasonic.brakes') }}</li>
               </ul>
