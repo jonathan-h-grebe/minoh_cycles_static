@@ -63,8 +63,8 @@
   "cta": {
     "title": "Ready for Your Adventure?",
     "description": "Book your Minoh Falls & Katsuoji bike tour today",
-    "schedule": "Tours run every weekday at 9am",
-    "button": "Book Now"
+    "schedule": "Tours run on select days at 9am",
+    "button": "Check Availability & Book"
   },
   "comingSoon": {
     "title": "Coming Soon",
@@ -191,8 +191,8 @@
     "cta": {
       "title": "Ready for Your Adventure?",
       "description": "Book your Minoh Falls & Katsuoji bike tour today",
-      "schedule": "Tours run every weekday at 9am",
-      "button": "Book Now"
+      "schedule": "Tours run on select days at 9am",
+      "button": "Check Availability & Book"
     }
   },
   "seo": {
