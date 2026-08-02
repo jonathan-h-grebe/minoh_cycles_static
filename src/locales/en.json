@@ -56,7 +56,7 @@
   "bikes": {
     "sectionTitle": "Premium Bikes",
     "title": "High-Quality E-Bikes & Equipment Provided",
-    "description": "In contrast to the budget e-bikes typically used in city tours, our bikes are suited to sports and have the power needed for climbing mountains. Every bike is well maintained, and insured under the Japanese TS-Mark scheme. Insurance details {insuranceLink}.",
+    "description": "In contrast to the budget e-bikes typically used in city tours, our bikes are suited to sports and have the power needed for climbing mountains. Every bike is well maintained, and covered by our liability insurance as well as the Japanese TS-Mark scheme. Insurance details {insuranceLink}.",
     "insuranceLink": "here",
     "viewAll": "View All Our Bikes →"
   },
@@ -182,7 +182,7 @@
         "premiumEbike": "E-bike",
         "helmet": "Bicyle helmet",
         "waterBottle": "600ml bottle of water",
-        "tsMarkInsurance": "Blue TS-Mark bicycle insurance (Covers rider injury & liability to 3rd parties)",
+        "tsMarkInsurance": "Liability insurance (covers 3rd parties; personal injury not included)",
         "snack": "A small snack to see you though to lunch",
         "entranceFee": "Temple entrance fee",
         "guide": "Professional guide"
@@ -243,7 +243,7 @@
     },
     "insurance": {
       "title": "Insurance Information - Minoh Cycle Tours",
-      "description": "All bikes insured under Japanese TS-Mark scheme. Comprehensive coverage details.",
+      "description": "Details on our liability insurance coverage for accidents, and what personal insurance we recommend you arrange yourself.",
       "keywords": "bike insurance japan, ts mark insurance"
     }
   },
@@ -372,7 +372,7 @@
     },
     "q10": {
       "question": "Do I need insurance?",
-      "answer": "While riding, you will be insured under the TS Mark system. This pays out compensation in the case of injuries to yourself, and liability to third parties that are involved in any accidents. For details please refer to {link}.",
+      "answer": "Minoh Cycle Tours provides insurance for 3rd party liabilities - ie for cases where you are involved in an accident and liable for injuries and damages incurred by 3rd parties. This insurance however does not cover any injuries or damages you yourself may incur, so obtaining additional insurance is recommended. See {link} for more details.",
       "linkText": "this page"
     },
     "q11": {

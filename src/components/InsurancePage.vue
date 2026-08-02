@@ -5,7 +5,7 @@
     <section class="insurance-hero-section">
       <div class="insurance-hero-content">
         <h1 class="insurance-title">{{ currentLocale === 'ja' ? '保険について' : 'About Insurance' }}</h1>
-        <p class="insurance-subtitle">{{ currentLocale === 'ja' ? 'TSマーク保険による補償' : 'TS Mark Insurance Coverage' }}</p>
+        <p class="insurance-subtitle">{{ currentLocale === 'ja' ? '賠償責任保険による補償' : 'Liability Insurance Coverage' }}</p>
       </div>
     </section>
 
@@ -15,42 +15,50 @@
         <div class="content-card">
           <p class="intro-text">
             {{ currentLocale === 'ja'
-              ? 'すべての自転車はTSマーク保険に加入しています。'
-              : 'All our bikes are covered by TS Mark insurance.' }}
+              ? '皆守サイクルツアーズは、お客様と第三者の双方を守るため、包括的な賠償責任保険に加入しています。'
+              : 'Minoh Cycle Tours carries comprehensive liability insurance to protect both you and third parties during your tour.' }}
           </p>
           <p class="intro-text">
             {{ currentLocale === 'ja'
-              ? '万が一の事故の際、ライダーは以下の補償を受けることができます：'
-              : 'This means in the unlikely event of an accident, the rider is eligible for:' }}
+              ? 'この保険は、以下のようなケースを補償します：'
+              : 'This insurance covers the following cases:' }}
           </p>
 
           <div class="coverage-section">
             <h3 class="coverage-title">
-              {{ currentLocale === 'ja' ? '賠償責任・損害補償' : 'Liability & Damage Compensation' }}
+              {{ currentLocale === 'ja' ? '第三者賠償責任' : '3rd-Party Liability' }}
             </h3>
             <p class="coverage-description">
               {{ currentLocale === 'ja'
-                ? '例：ライダーが車との衝突事故に巻き込まれ、車の損害賠償を支払う必要がある場合、TSマーク保険がこの費用を補償します。'
-                : 'e.g. if the rider is involved in a collision with a car, and they are required to pay for damages to the car, the TS Mark insurance will cover this cost.' }}
+                ? '例：お客様が自動車や歩行者など第三者との事故に巻き込まれ、相手への損害賠償責任を負った場合、この保険が費用を補償します。'
+                : 'e.g. if you are involved in an accident with a car, pedestrian, or other third party, and are found liable for their injuries or damages, this insurance covers the cost.' }}
             </p>
           </div>
 
           <div class="coverage-section">
             <h3 class="coverage-title">
-              {{ currentLocale === 'ja' ? '傷害補償' : 'Injury Compensation' }}
+              {{ currentLocale === 'ja' ? '事業者賠償責任' : 'Business Liability' }}
             </h3>
             <p class="coverage-description">
               {{ currentLocale === 'ja'
-                ? '例：ライダーが重傷を負ったり、入院または死亡した場合、TSマーク保険が補償金を支払います。'
-                : 'e.g. if the rider suffers a severe injury, and/or is hospitalized or dies, the TS Mark insurance will pay out compensation.' }}
+                ? '例：当社（皆守サイクルツアーズ）の過失、ミス、または機材の不具合が原因でお客様が負傷または損害を被った場合、この保険が費用を補償します。'
+                : 'e.g. if you are injured or suffer damages due to negligence, a mistake, or equipment failure on the part of Minoh Cycle Tours, this insurance covers the cost.' }}
+            </p>
+          </div>
+
+          <div class="recommendation-section">
+            <p class="recommendation-text">
+              {{ currentLocale === 'ja'
+                ? '重要：当社に過失がない事故（例えば、お客様ご自身の操作ミスなどにより転倒した場合など）で生じた、お客様ご自身の怪我や損害については、この保険の対象外です。ツアー前に、ご自身の傷害保険・旅行保険へのご加入を強くお勧めします。'
+                : 'Important: This insurance does not cover your own personal injury or damages arising from an accident that is not the fault of Minoh Cycle Tours — for example, if you lose control of the bike through no negligence on our part. We strongly recommend arranging your own personal accident or travel insurance before your tour.' }}
             </p>
           </div>
 
           <div class="details-section">
             <p class="details-text">
               {{ currentLocale === 'ja'
-                ? '詳細については、TSマークの'
-                : 'For further details, please refer to the TS Mark ' }}
+                ? '加えて、当店の自転車は日本のTSマーク自転車保険制度にも登録されており、第三者への賠償については追加の補償があります。ただし、ご本人の傷害に対する補償は限定的で、重傷等の深刻なケースにのみ支払われます。詳細については、TSマークの'
+                : 'In addition, our bikes are also registered under Japan\'s TS-Mark bicycle insurance scheme, which provides additional 3rd-party liability coverage. The TS Mark insurance also includes limited personal injury coverage, however this only pays out in the most severe cases. For more details, please refer to the TS Mark ' }}
               <a
                 href="https://www.tmt.or.jp/safety/pdf/English.pdf"
                 target="_blank"
@@ -60,14 +68,6 @@
                 {{ currentLocale === 'ja' ? 'ウェブサイト' : 'website' }}
               </a>
               {{ currentLocale === 'ja' ? 'をご参照ください。' : '.' }}
-            </p>
-          </div>
-
-          <div class="recommendation-section">
-            <p class="recommendation-text">
-              {{ currentLocale === 'ja'
-                ? 'これは妥当なベースのセキュリティを提供しますが、より包括的な補償をお求めの方には、個人保険の購入をお勧めします。'
-                : 'This provides a reasonable base of security, but for those looking for more comprehensive coverage, we recommend you purchase your own individual insurance.' }}
             </p>
           </div>
         </div>

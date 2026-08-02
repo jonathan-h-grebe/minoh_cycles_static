@@ -126,7 +126,7 @@
             <h3 class="preparation-title">{{ currentLocale === 'ja' ? 'ツアーに含まれるもの' : 'What\'s Included' }}</h3>
             <ul class="preparation-list included">
               <li>{{ currentLocale === 'ja' ? 'プレミアムEバイクレンタル' : 'Premium e-bike rental' }}</li>
-              <li>{{ currentLocale === 'ja' ? 'TSマーク保険' : 'TS Mark insurance' }}</li>
+              <li>{{ currentLocale === 'ja' ? '賠償責任保険（第三者への補償のみ）' : 'Liability insurance (covers 3rd parties)' }}</li>
               <li>{{ currentLocale === 'ja' ? 'ヘルメット' : 'Helmet' }}</li>
               <li>{{ currentLocale === 'ja' ? 'ウォーターボトル' : 'Water bottle' }}</li>
               <li>{{ currentLocale === 'ja' ? 'スナック' : 'Snack' }}</li>
