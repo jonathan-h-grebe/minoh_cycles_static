@@ -68,8 +68,8 @@
             <p>{{ $t('tours.ebike.description') }}</p>
           </div>
           <div class="feature-images">
-            <img src="/assets/bike_infront_of_taki.JPG" alt="E-bike at Minoh Falls" class="feature-img">
             <img src="/assets/riding_bikes_on_mountain_road.jpg" alt="Riders on mountain road" class="feature-img">
+            <img src="/assets/riding_with_view_over_osaka_smaller.jpg" alt="Riders on mountain road" class="feature-img">
           </div>
         </div>
 

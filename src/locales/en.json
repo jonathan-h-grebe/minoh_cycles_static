@@ -81,14 +81,14 @@
     "comingSoon": "Coming Soon",
     "velostar": {
       "name": "Panasonic Velostar",
-      "height": "Suitable for riders: 150cm - 185cm",
+      "height": "Suitable for rider heights: 150cm - 185cm",
       "tyreSize": "Tyre size: 26×1.5",
       "gears": "3-speed internal hub",
       "brakes": "Roller brakes"
     },
     "panasonic": {
       "name": "Panasonic Xealt L3",
-      "height": "Suitable for riders: 150cm - 180cm",
+      "height": "Suitable for rider heights: 150cm - 180cm",
       "tyreSize": "Tyre size: 700×38C",
       "gears": "8-speed drivetrain",
       "brakes": "Shimano V-brakes with power modulator"
